@@ -1,0 +1,23 @@
+.cat-bggreen{
+    background: green;
+    margin-top: 20px;
+
+}
+.cat-bgblue{
+    background: blue;
+    margin-top: 20px;
+
+}
+div {
+    display: block;
+}
+.section-padding {
+    padding: 60px 0;
+}
+.row{
+    display: flex;
+}
+#tiles{
+align-content: center;
+   /* max-width: 1200px;*/
+}
