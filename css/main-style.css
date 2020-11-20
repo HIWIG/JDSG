@@ -45,5 +45,12 @@ body
 
 .hidden-nav
 {
-    display:none;
+    visibility: hidden;
+    position:absolute;
+    background-color: #d7cfcf;
+    z-index:1002;
+    width:75%;
+    height:100%;
+    right:0;
+    top:0;
 }
