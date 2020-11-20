@@ -20,10 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37294f8f-2b65-4a74-b8ef-7de41c81fd7c" name="Default Changelist" comment="Test Commit">
-      <change afterPath="$PROJECT_DIR$/js/EventFunctions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605883391847</updated>
-      <workItem from="1605883393244" duration="12416000" />
+      <workItem from="1605883393244" duration="14389000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <created>1605883454913</created>
