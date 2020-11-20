@@ -20,4 +20,52 @@ div {
 #tiles{
 align-content: center;
    /* max-width: 1200px;*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+
+/* COLOURS */
+
+.main-content-color
+{
+    /*background-color: #166aca;*/
+    border-bottom:1px solid black;
+}
+
+/* ICONS */
+
+.icon-container
+{
+    font-size:20px;
+}
+
+.icon-title
+{
+    font-size:12px;
+}
+
+
+/* MOBILE MENU */
+
+.margin-mobile-menu
+{
+    margin: 0 5% 0 5%;
+}
+
+.brand
+{
+
+}
+
+.mobile-menu-ul
+{
+
+}
+
+.hidden-nav
+{
+    display:none;
 }
