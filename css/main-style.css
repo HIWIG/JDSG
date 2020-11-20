@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+
+/* COLOURS */
+
+.main-content-color
+{
+    /*background-color: #166aca;*/
+    border-bottom:1px solid black;
+}
 
 
 /* MOBILE MENU */
@@ -9,5 +23,15 @@
 
 .brand
 {
-    max-width:50%;
+
+}
+
+.mobile-menu-ul
+{
+
+}
+
+.hidden-nav
+{
+    display:none;
 }
