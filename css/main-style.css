@@ -13,6 +13,18 @@ body
     border-bottom:1px solid black;
 }
 
+/* ICONS */
+
+.icon-container
+{
+    font-size:20px;
+}
+
+.icon-title
+{
+    font-size:12px;
+}
+
 
 /* MOBILE MENU */
 
