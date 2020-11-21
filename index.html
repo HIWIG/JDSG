@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawsome/css/all.css">
     <link rel="stylesheet" type="text/css" href="css/main-style.css">
-    <!--Test Jakuba2-->
+    <!--TODO -->
+    <!--Trzeba ogarnąć problem z sekcją z img background. Magiczny margines tam fruwa. Obstawiam że row może mieć cos z tym wspólnego.-->
 </head>
 <body>
 
@@ -17,47 +18,83 @@
             <div class="container">
                 <!-- TUTAJ BĘDZIE KOD POD WIEKSZE ROZDZIELCZOSCI-->
             </div>
-            <div class="mobile-menu main-content-color">
-                <div class="d--flex align-items-center pt-3 pb-5 margin-mobile-menu">
+            <div class="mobile-menu menu-container font-menu-color">
+                <div class="d--flex align-items-center pt-3 pb-5 margin-mobile-menu ">
                     <div class="d-inline-block brand ">
-                        Logo Apki
+                        <img src="images/#" class="img-fluid max-width: 100%;">
                     </div>
                     <ul class="d-inline-block  float-right mobile-menu-ul">
                         <li class="list-inline-item pl-1 pr-2">
                             <div class="text-center icon-container">
-                                <span class="fas fa-shopping-basket"></span>
+                                <span class="fas fa-comments-dollar"></span>
                             </div>
-                            <p class="icon-title">Koszyk</p>
+                            <p class="icon-title">Moje ogłoszenia</p>
                         </li>
                         <li class="list-inline-item pl-1 pr-2">
                             <div class="text-center icon-container">
-                                <span class="fas fa-user "></span>
+                                <span class="fas fa-user " onClick="ChangeContainerDisplay('hidden-nav-user')"></span>
                             </div>
                             <p class="icon-title">Konto</p>
                         </li>
                         <li class="list-inline-item pl-1 pr-1">
                             <div class="text-center icon-container">
-                                <span class="fas fa-bars menuIcon"></span>
+                                <span class="fas fa-bars menuIcon" onClick="ChangeContainerDisplay('hidden-nav-menu')"></span>
                             </div>
                             <p class="icon-title">Menu</p>
                         </li>
                     </ul>
-                    <div class="hidden-nav">
-                        <div class=" pt-3 pb-2 pl-1 pr-1 h5 text-center">Ukryte okienko<span class="fas fa-times float-right pr-3" onclick="ChangeContainerDisplay('hidden-nav')"></span></div>
+
+                    <div id="hidden-nav-user" class="hidden-nav-user main-content-color-reverse text-black-50">
+                        <div class=" pt-3 pb-4 pl-1 pr-1 h5 text-center title-hidden-nav gray">Twoje konto<span class="fas fa-times float-right pr-3" onclick="ChangeContainerDisplay('hidden-nav-user')"></span></div>
                         <div>
-                            <ul class="list-group">
-                                <li class="list-group-item">Cras justo odio</li>
-                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                <li class="list-group-item">Morbi leo risus</li>
-                                <li class="list-group-item">Porta ac consectetur ac</li>
-                                <li class="list-group-item">Vestibulum at eros</li>
+                            <ul class="list-group main-content-color-revers">
+                                <li class="list-group-item text-white text-center">
+                                    <button type="submit" class="btn btn-primary mt-3 mb-3 w-75 rounded">Zaloguj się</button>
+                                    <hr class="">
+                                    <button type="submit" class="btn btn-primary mt-3 mb-3 w-75 rounded">Utwórz konto</button>
+                                </li>
+                                <li class="list-group-item pb-3 li-hidden-nav"><span class="fas fa-user mr-3"></span>Twoje konto</li>
+                                <li class="list-group-item pb-3 li-hidden-nav"><span class="fas fa-comments-dollar mr-3"></span>Twoje ogłoszenia</li>
+                                <li class="list-group-item pb-3 li-hidden-nav"><span class="fas fa-cog mr-3"></span>Ustawienia konta</li>
+                                <li class="list-group-item pb-3 li-hidden-nav"><span class="fas fa-info-circle mr-3"></span>Więcej</li>
+                                <li class="list-group-item pb-3 li-hidden-nav"><span class="fas fa-id-card mr-3"></span>Kontakt</li>
                             </ul>
                         </div>
                     </div>
+
+                    <div id="hidden-nav-menu" class="hidden-nav-menu main-content-color-reverse text-black-50">
+                        <div class=" pt-3 pb-4 pl-1 pr-1 h5 text-center title-hidden-nav gray">Menu<span class="fas fa-times float-right pr-3" onclick="ChangeContainerDisplay('hidden-nav-menu')"></span></div>
+                        <div>
+                            <ul class="list-group main-content-color-revers">
+                                <li class="list-group-item pb-3 li-hidden-nav">Strona Główna</li>
+                                <li class="list-group-item pb-3 li-hidden-nav">Kategorie</li>
+                                <li class="list-group-item pb-3 li-hidden-nav">Strony</li>
+                                <li class="list-group-item pb-3 li-hidden-nav">Więcej</li>
+                                <li class="list-group-item pb-3 li-hidden-nav">Kontakt</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </navbar>
     </header>
+    <section class="intro-section">
+        <div id="intro-bg">
+            <!--<div class="container">-->
+                <div class="row justify-content-center w-100">
+                    <div class="col-md-12 col-lg-9 col-12 text-center">
+                        <div class="contents">
+                            <div class="intro-title pt-5 pb-5">
+                                <h4>Witaj w [TUTAJ WPROWADZ WYMYSLONA NAZWE]</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           <!-- </div>-->
+        </div>
+    </section>
 
 <!-- JS -->
 

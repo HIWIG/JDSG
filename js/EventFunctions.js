@@ -6,19 +6,19 @@
 
 function ChangeContainerDisplay(elementID)
 {
-    console.log(elementID)
+   /* console.log(elementID)
     const element = document.querySelector("#"+elementID);
     console.log(element);
-    console.dir(element);
+    console.dir(element);*/
 
-    /*if (document.getElementById(elementID).style.display == 'none')
+    if (document.getElementById(elementID).style.display == 'none')
     {
         document.getElementById(elementID).style.display = 'block';
     }
     else
     {
         document.getElementById(elementID).style.display = 'none';
-    }*/
+    }
 }
 
 document.querySelector('.menuIcon').addEventListener("click", () => {
