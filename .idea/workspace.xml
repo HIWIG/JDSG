@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37294f8f-2b65-4a74-b8ef-7de41c81fd7c" name="Default Changelist" comment="Test Commit">
+      <change afterPath="$PROJECT_DIR$/images/example.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main-style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -57,16 +58,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Programowanie\JDSG\css\fontawsome\svgs" />
+      <recent name="E:\Programowanie\JDSG\css\fontawsome\webfonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Programowanie\JDSG\images" />
       <recent name="E:\Programowanie\JDSG\css\fontawsome\svgs" />
       <recent name="E:\Programowanie\JDSG\css\fontawsome\js" />
       <recent name="E:\Programowanie\JDSG\css\fontawsome\css" />
       <recent name="E:\Programowanie\JDSG\css\fontawsome" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Programowanie\JDSG\css\fontawsome\svgs" />
-      <recent name="E:\Programowanie\JDSG\css\fontawsome\webfonts" />
     </key>
   </component>
   <component name="RunManager">
@@ -89,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605883391847</updated>
       <workItem from="1605883393244" duration="14389000" />
-      <workItem from="1606155299165" duration="7855000" />
+      <workItem from="1606155299165" duration="14890000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <created>1605883454913</created>
@@ -141,9 +142,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="233" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605970035372" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605891224528">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606174846638">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605891224528" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606174846638" />
   </component>
 </project>
