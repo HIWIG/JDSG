@@ -100,11 +100,6 @@ body
 
 /* SECTIONS */
 
-#newsletter
-{
-    background: #ececec;
-}
-
 .section-padding {
     padding: 60px 0;
 }
@@ -241,6 +236,14 @@ body
 }
 
 /* Newsletter */
+
+#newsletter
+{
+    /*background: #ececec;*/
+    background: rgb(251,251,254);
+    background: linear-gradient(144deg, rgba(251,251,254,0.9556197478991597) 0%, rgba(145,209,251,1) 100%, rgba(50,98,175,1) 100%);
+}
+
 .myCircle
 {
     border-radius:60px;
