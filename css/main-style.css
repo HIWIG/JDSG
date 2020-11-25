@@ -87,7 +87,7 @@ body
 {
     border-bottom:1px solid black;
     background-color:#ffffff;
-    padding-bottom:0px;
+    padding-bottom:0;
 }
 
 .icon-container
@@ -239,6 +239,16 @@ body
     border-width: 0 1px 1px;
     border-style: solid;
     border-color: #ebebeb;
+}
+
+.advertTitle
+{
+    font-weight: 700;
+}
+
+.advertUl
+{
+    color:red;
 }
 
 /* Newsletter */
