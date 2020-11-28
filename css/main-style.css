@@ -1,13 +1,4 @@
-.cat-bggreen{
-    background: green;
-    margin-top: 20px;
 
-}
-.cat-bgblue{
-    background: blue;
-    margin-top: 20px;
-
-}
 .categoryContainer{
     display: grid;
     grid-column-gap: 15px;
