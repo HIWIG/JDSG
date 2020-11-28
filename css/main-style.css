@@ -4,17 +4,24 @@
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    grid-template-rows:9rem;
 }
 .categoryBox{
+    height: 9rem;
+    border-radius: 7px;
     background-color: #037afb;
-    /*background-image: linear-gradient(224deg, #B0C5FF 0%, #a0cb03 100%);*/
     display: flex;
     flex-flow: column;
     font-size: 1.2rem;
     align-items: center;
     justify-content: center;
     font-family:  sans-serif;
+    color: white;
+}
+.categoryName{
+    color: white;
+    padding-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 div {
     display: block;
