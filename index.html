@@ -20,25 +20,22 @@
             <div id="hidden-nav-user" class="hidden-nav-user main-content-color-reverse text-black-50">
                 <div class="modal-dialog m-0" role="document">
                     <div class="modal-content">
-                        <div class=" pt-3 pb-4 pl-1 pr-1 h5 text-center title-hidden-nav f-lightblack">
+                        <div class=" pt-3 pb-4 pl-4 h5 text-center title-hidden-nav f-lightblack">
                             Twoje konto
                             <span class="fas fa-times float-right pr-3 font-menu-color" data-dismiss="modal" aria-label="Close"></span>
-                                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>-->
                         </div>
                         <div class="">
-                            <ul class="list-group main-content-color-revers">
+                            <ul class="list-group main-content-color-revers navbar-font-ul ">
                                 <li class="list-group-item text-white text-center">
-                                    <button type="submit" class="btn btn-primary mt-3 mb-3 w-75 rounded">Zaloguj się</button>
-                                    <hr class="">
-                                    <button type="submit" class="btn btn-primary mt-3 mb-3 w-75 rounded">Utwórz konto</button>
+                                    <button type="submit" class="btn btn-primary mt-3 mb-3 w-75 border-radius-20">Zaloguj się</button>
+                                    <p class="myHr"> Nie masz konta? </p>
+                                    <button type="submit" class="btn btn-primary mt-2 mb-3 w-75 border-radius-20">Utwórz konto</button>
                                 </li>
-                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack"><span class="fas fa-user mr-3 font-menu-color"></span>Twoje konto</li>
-                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack"><span class="fas fa-comments-dollar mr-3 font-menu-color"></span>Twoje ogłoszenia</li>
-                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack"><span class="fas fa-cog mr-3 font-menu-color"></span>Ustawienia konta</li>
-                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack"><span class="fas fa-info-circle mr-3 font-menu-color"></span>Więcej</li>
-                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack"><span class="fas fa-id-card mr-3 font-menu-color"></span>Kontakt</li>
+                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack"><span class="fas fa-user mr-3 font-menu-color navbar-icon"></span>Twoje konto</li>
+                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack"><span class="fas fa-comments-dollar mr-3 font-menu-color navbar-icon"></span>Twoje ogłoszenia</li>
+                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack"><span class="fas fa-cog mr-3 font-menu-color navbar-icon"></span>Ustawienia konta</li>
+                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack"><span class="fas fa-info-circle mr-3 font-menu-color navbar-icon"></span>Więcej</li>
+                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack"><span class="fas fa-id-card mr-3 font-menu-color navbar-icon"></span>Kontakt</li>
                             </ul>
                         </div>
                     </div>
@@ -50,26 +47,35 @@
             <div id="hidden-nav-menu" class="hidden-nav-menu main-content-color-reverse text-black-50">
                 <div class="modal-dialog m-0" role="document">
                     <div class="modal-content">
-                        <div class=" pt-3 pb-4 pl-1 pr-1 h5 text-center title-hidden-nav gray">
+                        <div class=" pt-3 pb-4 pl-4 h5 text-center title-hidden-nav f-lightblack">
                             Menu
                             <span class="fas fa-times float-right pr-3 font-menu-color" data-dismiss="modal" aria-label="Close"></span>
                         </div>
                         <div>
-                            <ul class="list-group main-content-color-revers">
-                                <li class="list-group-item pb-3 li-hidden-nav">Strona Główna</li>
-                                <li class="list-group-item pb-3 li-hidden-nav dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Dropdown button
+                            <ul class="list-group main-content-color-revers navbar-font-ul">
+                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack">Strona Główna</li>
+                                <li class="list-group-item pb-3 li-hidden-nav dropdown f-lightblack">
+                                    <button class="btn btn-secondary dropdown-toggle main-content-color w-100" type="button" id="dropdownMenuButtonCategory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Kategorie
                                     </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonCategory">
                                         <a class="dropdown-item" href="#">Action</a>
                                         <a class="dropdown-item" href="#">Another action</a>
                                         <a class="dropdown-item" href="#">Something else here</a>
                                     </div>
                                 </li>
-                                <li class="list-group-item pb-3 li-hidden-nav">Strony</li>
-                                <li class="list-group-item pb-3 li-hidden-nav">Więcej</li>
-                                <li class="list-group-item pb-3 li-hidden-nav">Kontakt</li>
+                                <li class="list-group-item pb-3 li-hidden-nav dropdown f-lightblack">
+                                    <button class="btn btn-secondary dropdown-toggle main-content-color w-100" type="button" id="dropdownMenuButtonSites" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Strony
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonSites">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack">Więcej</li>
+                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack">Kontakt</li>
                             </ul>
                         </div>
                     </div>
@@ -87,10 +93,10 @@
                 TUTAJ BĘDZIE KOD POD WIEKSZE ROZDZIELCZOSCI-->
             </div>
 
-            <div class="w-100">
+            <div class="w-100 mobile-menu">
                 <div class=" pt-1">
                     <div class="navbar-brand">
-                        <img src="images/logo_jdsg.svg" width="120" height="50" class="d-inline-block align-top" alt="Our Logo">
+                        <img src="images/logo_jdsg.svg" width="110" height="50" class="d-inline-block align-top" alt="Our Logo">
                     </div>
 
                     <ul class="d-inline-block  float-right mobile-menu-ul">
