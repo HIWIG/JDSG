@@ -29,7 +29,7 @@ body
 }
 
 
-/* COLOURS */
+/*BG COLOURS */
 
 .gray
 {
@@ -67,7 +67,6 @@ body
 {
     color:#333;
 }
-
 /* BORDER RADIUS: */
 
 .br-10
@@ -102,6 +101,19 @@ body
 .border-radius-20
 {
     border-radius:20px;
+}
+
+.border-color-blue
+{
+    border:2px solid #3498db;
+}
+
+/* BOX SHADOWS */
+
+.box-shadow-black
+{
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(2,2,2,0.7);
+    box-shadow: 1px 1px 5px 0px rgba(2,2,2,0.7);
 }
 
 /* HR BEFORE AFTER*/
