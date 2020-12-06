@@ -2,19 +2,386 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawsome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="main-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--Test Jakuba-->
+    <link rel="stylesheet" type="text/css" href="css/main-style.css">
+    <!--TODO -->
+    <!--Trzeba ogarnąć problem z sekcją z img background. Magiczny margines tam fruwa. Obstawiam że row może mieć cos z tym wspólnego.-->
 </head>
 <body>
 
-    <header></header>
+    <header id="header-wrapper">
+
+        <!-- Modal -->
+        <div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div id="hidden-nav-user" class="hidden-nav-user main-content-color-reverse text-black-50">
+                <div class="modal-dialog m-0" role="document">
+                    <div class="modal-content">
+                        <div class=" pt-3 pb-4 pl-1 pr-1 h5 text-center title-hidden-nav f-lightblack">
+                            Twoje konto
+                            <span class="fas fa-times float-right pr-3 font-menu-color" data-dismiss="modal" aria-label="Close"></span>
+                                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>-->
+                        </div>
+                        <div class="">
+                            <ul class="list-group main-content-color-revers">
+                                <li class="list-group-item text-white text-center">
+                                    <button type="submit" class="btn btn-primary mt-3 mb-3 w-75 rounded">Zaloguj się</button>
+                                    <hr class="">
+                                    <button type="submit" class="btn btn-primary mt-3 mb-3 w-75 rounded">Utwórz konto</button>
+                                </li>
+                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack"><span class="fas fa-user mr-3 font-menu-color"></span>Twoje konto</li>
+                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack"><span class="fas fa-comments-dollar mr-3 font-menu-color"></span>Twoje ogłoszenia</li>
+                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack"><span class="fas fa-cog mr-3 font-menu-color"></span>Ustawienia konta</li>
+                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack"><span class="fas fa-info-circle mr-3 font-menu-color"></span>Więcej</li>
+                                <li class="list-group-item pb-3 li-hidden-nav f-lightblack"><span class="fas fa-id-card mr-3 font-menu-color"></span>Kontakt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div id="hidden-nav-menu" class="hidden-nav-menu main-content-color-reverse text-black-50">
+                <div class="modal-dialog m-0" role="document">
+                    <div class="modal-content">
+                        <div class=" pt-3 pb-4 pl-1 pr-1 h5 text-center title-hidden-nav gray">
+                            Menu
+                            <span class="fas fa-times float-right pr-3 font-menu-color" data-dismiss="modal" aria-label="Close"></span>
+                        </div>
+                        <div>
+                            <ul class="list-group main-content-color-revers">
+                                <li class="list-group-item pb-3 li-hidden-nav">Strona Główna</li>
+                                <li class="list-group-item pb-3 li-hidden-nav dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown button
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="list-group-item pb-3 li-hidden-nav">Strony</li>
+                                <li class="list-group-item pb-3 li-hidden-nav">Więcej</li>
+                                <li class="list-group-item pb-3 li-hidden-nav">Kontakt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light font-menu-color menu-container">
+
+
+
+
+                <!--menu-container font-menu-color
+                TUTAJ BĘDZIE KOD POD WIEKSZE ROZDZIELCZOSCI-->
+            </div>
+
+            <div class="w-100">
+                <div class=" pt-1">
+                    <div class="navbar-brand">
+                        <img src="images/logo_jdsg.svg" width="120" height="50" class="d-inline-block align-top" alt="Our Logo">
+                    </div>
+
+                    <ul class="d-inline-block  float-right mobile-menu-ul">
+                        <li class="list-inline-item pl-1 pr-2">
+                            <div class="text-center icon-container">
+                                <span class="fas fa-comments-dollar"></span>
+                            </div>
+                            <p class="icon-title">Moje ogłoszenia</p>
+                        </li>
+                        <li class="list-inline-item pl-1 pr-2">
+                            <div class="text-center icon-container" data-toggle="modal" data-target="#userModal">
+                                <span class="fas fa-user "></span>
+                            </div>
+                            <p class="icon-title" >Konto</p>
+                        </li>
+                        <li class="list-inline-item pl-1 pr-1">
+                            <div class="text-center icon-container" data-toggle="modal" data-target="#menuModal">
+                                <span class="fas fa-bars menuIcon"></span>
+                            </div>
+                            <p class="icon-title">Menu</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--<div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown link
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>-->
+        </nav>
+
+    </header>
+    <section class="intro-section">
+        <div id="intro-bg">
+            <div class="overlay"></div>
+            <div class="container pb-3">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 col-lg-9 col-12 text-center">
+                        <div class="contents">
+                            <div class="intro-title pt-5 pb-5">
+                                <h4>Witaj w [TUTAJ WPROWADZ WYMYSLONA NAZWE]</h4>
+                            </div>
+                            <p class="pb-5">Wyszukaj potrzebne ci rzeczy poprzez naszą przeglądarkę ogłoszeń. Jeżeli masz przedmiot, którego chciałbyś się pozbyć załóż swoje własne ogłoszenie. [NAZWA] to miejsce gdzie w prosty sposób znajdziesz to czego szukasz. </p>
+                            <form>
+                                <div class="form-group p-2 bg-light rounded">
+                                    <input type="text" class="form-control mb-1" id="exampleFormControlInput1" placeholder="Szukaj ogłoszeń">
+                                    <div class="form-group">
+                                        <div class="select">
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>Wybierz kategorię</option>
+                                                <option>Kategoria 1</option>
+                                                <option>Kategoria 2</option>
+                                                <option>Kategoria 3</option>
+                                                <option>Kategoria 4</option>
+                                                <option>Kategoria 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary btn-lg btn-block">Szukaj</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="categories" class="bg-light section-padding ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="heading mb-5">
+                        <h3 class="section-title">Kategorie Ogłoszeń</h3>
+                        <h5 class="sub-title">Znajdź swoją kategorię</h5>
+                    </div>
+                    <div class="categoryContainer">
+                        <div class="categoryBox" >
+                            <i class="fas fa-laptop fa-3x"></i>
+                            <div class="categoryName">Laptopy</div>
+                        </div>
+                        <div class="categoryBox">
+                            <i class="fas fa-desktop fa-3x"></i>
+                            <div class="categoryName">Monitory</div>
+                        </div>
+                        <div class="categoryBox">
+                            <i class="far fa-keyboard  fa-3x"></i>
+                            <div class="categoryName">Klawiatury</div>
+                        </div>
+                        <div class="categoryBox">
+                            <i class="fas fa-headphones fa-3x"></i>
+                            <div class="categoryName">Słuchawki</div>
+                        </div>
+                        <div class="categoryBox">
+                            <i class="fas fa-mouse fa-3x"></i>
+                            <div class="categoryName">Myszki</div>
+
+                        </div>
+                        <div class="categoryBox">
+                            <i class="fas fa-mobile-alt fa-3x"></i>
+                            <div class="categoryName">Telefony</div>
+                        </div>
+                        <div class="categoryBox">
+                            <i class="fas fa-hdd fa-3x"></i>
+                            <div class="categoryName">Dyski</div>
+                        </div>
+                        <div class="categoryBox">
+                            <i class="fas fa-memory fa-3x"></i>
+                            <div class="categoryName">Podzespoły komputerowe</div>
+                        </div>
+                        <div class="categoryBox">
+                            <i class="fas fa-gamepad fa-3x"></i>
+                            <div class="categoryName">Konsole</div>
+                        </div>
+                        <div class="categoryBox">
+                            <i class="fas fa-microchip fa-3x"></i>
+                            <div class="categoryName">Placeholder</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="lastAdvertisements" class="bg-light section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="heading mb-5">
+                        <h3 class="section-title">Ostatnie Ogłoszenia</h3>
+                        <h5 class="sub-title">Znajdź to co Cię interesuje</h5>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+                    <div class="AdvertContentBox">
+                        <figure class="figure mb-0">
+                            <img src="images/example.jpeg" class="img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
+                        </figure>
+                        <div class="advertContentDesciption p-1">
+                            <h5 class="pt-1 pb-1 f-16"><a href="#">Acer Nitro XF252QXBMIIPRZX czarny </a></h5>
+                            <!--<a href="#" class="float-left">25 listopada 2020</a>-->
+                            <!--<p> &lt;!&ndash; OPCJONALNY OPIS&ndash;&gt;</p>-->
+                            <!--<ul clas="list-group">
+                                <li class="list-inline-item border border-primary rounded p-1">Tag1</li>
+                                <li class="list-inline-item border border-primary rounded p-1">Tag2</li>
+                                <li class="list-inline-item border border-primary rounded p-1">Tag3</li>
+                                <li class="list-inline-item border border-primary rounded p-1">Tag4</li>
+                                <li class="list-inline-item border border-primary rounded p-1">Tag5</li>
+                            </ul>-->
+
+                            <div class="listing-bottom clearfix pt-3 pb-2 border-top f-12">
+                                <a href="#" class="float-left w-50 border-right">Lokalizacja: Katowice</a>
+                                <a href="#" class="float-right w-50 pl-2">Zobacz więcej</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+                    <div class="AdvertContentBox">
+                        <figure class="figure mb-0">
+                            <img src="images/example.jpeg" class="img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
+                        </figure>
+                        <div class="advertContentDesciption">
+                            <h5 class="pt-1 pb-2 f-16"><a href="#">Acer Nitro XF252QXBMIIPRZX czarny </a></h5>
+                            <p> <!-- OPCJONALNY OPIS--></p>
+                            <!--<ul clas="list-group">
+                                <li class="list-inline-item border border-primary rounded p-1">Tag1</li>
+                                <li class="list-inline-item border border-primary rounded p-1">Tag2</li>
+                                <li class="list-inline-item border border-primary rounded p-1">Tag3</li>
+                                <li class="list-inline-item border border-primary rounded p-1">Tag4</li>
+                                <li class="list-inline-item border border-primary rounded p-1">Tag5</li>
+                            </ul>-->
+                            <div class="listing-bottom clearfix pt-3 pb-2 border-top f-12">
+                                <a href="#" class="float-left">Lokalizacja: Katowice</a>
+                                <a href="#" class="float-left">25 listopada 2020</a>
+                                <a href="#" class="float-right mt-2">Zobacz więcej</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="AdvertContentBox">
+                        <figure class="figure mb-0">
+                            <img src="images/example.jpeg" class="img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
+                        </figure>
+                        <div class="advertContentDesciption p-3">
+                            <h5 class="pt-1 pb-2 advertTitle"><a href="#">Acer Nitro XF252QXBMIIPRZX czarny </a></h5>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis quis sapien non lobortis.</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item p-1">
+                                    <span class="far fa-calendar-alt pr-1 font-menu-color"></span>
+                                    20-11-2020
+                                </li>
+                                <li class="list-inline-item p-1">
+                                    <span class="fas fa-user pr-1 font-menu-color"></span>
+                                    Jhoczi
+                                </li>
+                                <li class="list-inline-item p-1">
+                                    <span class="fas fa-desktop pr-1 font-menu-color"></span>
+                                    Monitory
+                                </li>
+                            </ul>
+                            <div class="listing-bottom clearfix pt-3 pb-2 border-top">
+                                <a href="#" class="float-left w-50"><span class="fas fa-map-marker-alt font-menu-color pr-1"></span> Katowice</a>
+                                <a href="#" class="float-right w-50 text-right">Zobacz więcej</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="AdvertContentBox">
+                        <figure class="figure mb-0">
+                            <img src="images/example.jpeg" class="img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
+                        </figure>
+                        <div class="advertContentDesciption p-3">
+                            <h5 class="pt-1 pb-2"><a href="#">Acer Nitro XF252QXBMIIPRZX czarny </a></h5>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis quis sapien non lobortis.</p>
+                            <ul class="list-group">
+                                <li class="list-inline-item border border-primary rounded p-1 f-12">Tag1</li>
+                                <li class="list-inline-item border border-primary rounded p-1 f-12">Tag2</li>
+                                <li class="list-inline-item border border-primary rounded p-1 f-12">Tag3</li>
+                                <li class="list-inline-item border border-primary rounded p-1 f-12">Tag4</li>
+                                <li class="list-inline-item border border-primary rounded p-1 f-12">Tag5</li>
+                            </ul>
+                            <div class="listing-bottom clearfix pt-3 pb-2 border-top">
+                                <a href="#" class="float-left w-50">Lokalizacja: Katowice</a>
+                                <a href="#" class="float-right w-50 text-right">Zobacz więcej</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="AdvertContentBox">
+                        <div class="row">
+                            <div class="col-6 mr-0 pr-0">
+                                <figure class="figure mb-0 ">
+                                    <img src="images/example.jpeg" class="img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                </figure>
+                            </div>
+                            <div class="col-6 ml-0 pl-0">
+                                <div class="advertContentDesciption p-3 f-10 AdvertBorderRadius">
+                                    <h5 class="pt-1 pb-2 f-14"><a href="#">Acer Nitro XF252QXBMIIPRZX</a></h5>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    <div class="listing-bottom clearfix pt-3 pb-2 border-top">
+                                        <a href="#" class="float-left w-50"><span class="fas fa-map-marker-alt font-menu-color pr-1"></span> Katowice</a>
+                                        <!--<a href="#" class="float-right w-50 text-right">Zobacz więcej</a>-->
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--<div class="advertContentDesciption p-3">
+                                <h5 class="pt-1 pb-2"><a href="#">Acer Nitro XF252QXBMIIPRZX czarny </a></h5>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis quis sapien non lobortis.</p>
+                            </div>-->
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <section id="newsletter" class="section-padding">
+        <div class="container">
+            <div>
+                <h2 class="w-100"><span class="fas fa-location-arrow mr-3 font-menu-color"></span>Bądź na bieżąco</h2>
+                <h6 class="pl-5 mb-4">Otrzymuj powiadomienia o nowych najciekawszych powiadomieniach</h6>
+                <form class="form-inline">
+                    <input type="text" class="form-control mb-1 mr-3 p-4 w-60 myCircle" id="newsletterInput" placeholder="Podaj swój adres email">
+                    <button class="btn btn-primary btn-lg w-35 myCircle f-16">Zapisz mnie</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
 
     <footer>
@@ -23,32 +390,32 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-12">
 
-                     <div class="footerLogo">
-                         <img src="img/logojdsg.svg" height="40%" width="40%">
-                     </div>
-                     <div class="footerDescription">
+                        <div class="footerLogo">
+                            <img src="img/logojdsg.svg" height="40%" width="40%">
+                        </div>
+                        <div class="footerDescription">
                             Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                     </div>
+                        </div>
                         <ul class="mt-3 footer-socials">
                             <li>
-                             <a class="fa fa-facebook" href="#">
-<!--                                <i class="fab fa-facebook-f"></i>-->
-                             </a>
-                            </li>
-                            <li>
-                             <a class="fa fa-youtube" href="#" >
-<!--                                <i class="fab fa-youtube"></i>-->
-                             </a>
-                            </li>
-                            <li>
-                             <a class="fa fa-twitter" href="#"></a>
-<!--                                <i class="fab fa-twitter"></i>-->
+                                <a class="fa fa-facebook" href="#">
+                                    <!--                                <i class="fab fa-facebook-f"></i>-->
                                 </a>
                             </li>
                             <li>
-                             <a class="fa fa-instagram" href="#">
-<!--                                <i class="fab fa-instagram"></i>-->
-                             </a>
+                                <a class="fa fa-youtube" href="#" >
+                                    <!--                                <i class="fab fa-youtube"></i>-->
+                                </a>
+                            </li>
+                            <li>
+                                <a class="fa fa-twitter" href="#"></a>
+                                <!--                                <i class="fab fa-twitter"></i>-->
+                                </a>
+                            </li>
+                            <li>
+                                <a class="fa fa-instagram" href="#">
+                                    <!--                                <i class="fab fa-instagram"></i>-->
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -88,31 +455,31 @@
                         </ul>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12">
-                     <div class="widget">
-                        <h2 class="block-title">
-                            Contact
-                        </h2>
-                        <ul class="footer-contact">
-                            <li>
-                                <strong>
-                                    <i class="fas fa-phone"></i>
-                                </strong>
-                                <span>+48 123 456 789
+                        <div class="widget">
+                            <h2 class="block-title">
+                                Contact
+                            </h2>
+                            <ul class="footer-contact">
+                                <li>
+                                    <strong>
+                                        <i class="fas fa-phone"></i>
+                                    </strong>
+                                    <span>+48 123 456 789
                                 <br>
                                 +48 987 654 321
                                 </span>
-                            </li>
-                            <li>
-                                <strong>
-                                    <i class="far fa-envelope"></i>
-                                </strong>
-                                <span>email@email.com
+                                </li>
+                                <li>
+                                    <strong>
+                                        <i class="far fa-envelope"></i>
+                                    </strong>
+                                    <span>email@email.com
                                 <br>
                                 email2@email.com
                                 </span>
-                            </li>
-                        </ul>
-                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -134,5 +501,13 @@
     </footer>
 
 <!-- JS -->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <!--<script src="js/popper.min.js" type="text/javascript"></script>-->
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    --><!-- NASZ JS -->
+    <script defer src="js/EventFunctions.js" type="text/javascript"></script>
 </body>
 </html>
