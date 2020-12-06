@@ -329,16 +329,19 @@ body
     border-radius:60px;
 }
 .vl{
-    border: 1px solid dodgerblue;
+    border: 2px solid dodgerblue;
     padding-top: 0;
     margin-bottom: 0.35rem;
     margin-top: 0.35rem;
+    border-radius: 2px;
 }
 .vl2{
-    border: 1px solid #83c6ff;
+    border: 2px solid #83c6ff;
     padding-top: 0;
     margin-bottom: 0.35rem;
     margin-top: 0.35rem;
+    border-radius: 2px;
+
 }
 .pull-left {
     float: left!important;
