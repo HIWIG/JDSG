@@ -334,6 +334,12 @@ body
     margin-bottom: 0.35rem;
     margin-top: 0.35rem;
 }
+.vl2{
+    border: 1px solid #83c6ff;
+    padding-top: 0;
+    margin-bottom: 0.35rem;
+    margin-top: 0.35rem;
+}
 .pull-left {
     float: left!important;
 }
