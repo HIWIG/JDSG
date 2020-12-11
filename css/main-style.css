@@ -419,3 +419,16 @@ footer .links-menu li a {
 }
 
 
+/*ADVERT*/
+.height-600{
+    height: 600px;
+}
+.height-auto{
+    height: auto;
+}
+.margin-auto{
+    margin: auto;
+}
+.cyan{
+    color: cyan !important;
+}
