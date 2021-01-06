@@ -329,13 +329,18 @@ body
     border-radius:60px;
 }
 /* FAQ*/
-#FAQ {
 
-}
-.center-txt {
+#panel, #flip {
+    padding: 5px;
     text-align: center;
-}
+    background-color: white;
+    margin-left: 0px;
 
+}
+#panel {
+    padding: 50px;
+    display: none;
+}
 
 /* FOOTER SELECTION*/
 
