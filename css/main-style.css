@@ -307,7 +307,7 @@ body
 
 .advertUl
 {
-    color:red;
+    color: #ff0000;
 }
 
 .AdvertBorderRadius
@@ -328,9 +328,13 @@ body
 {
     border-radius:60px;
 }
+/* FAQ*/
+#FAQ {
 
-
-
+}
+.center-txt {
+    text-align: center;
+}
 
 
 /* FOOTER SELECTION*/
