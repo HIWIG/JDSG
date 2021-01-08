@@ -432,3 +432,7 @@ footer .links-menu li a {
 .cyan{
     color: cyan !important;
 }
+.other-photo{
+    height: 7vh;
+    width: auto;
+}
