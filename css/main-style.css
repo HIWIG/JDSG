@@ -330,17 +330,16 @@ body
 }
 /* FAQ*/
 
-#panel, #flip {
+.panel {
     padding: 5px;
     text-align: center;
-    background-color: white;
-    margin-left: 0px;
 
+    margin-left: 0px;
 }
-#panel {
-    padding: 50px;
-    display: none;
+.black-link{
+    color: black;
 }
+#collapseTwo
 
 /* FOOTER SELECTION*/
 
