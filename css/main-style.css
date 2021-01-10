@@ -476,3 +476,36 @@ footer .links-menu li a {
     color: #787adb;
     text-decoration: none
 }
+.advert-tag{
+    left: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 4px 16px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 20px;
+    bottom: 0;
+    position: absolute;
+
+}
+.img-adv{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    border-radius: 10px;
+}
+.cena{
+    z-index: 9;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #03A9F4;
+    color: #fff;
+    padding: 4px 18px;
+}
