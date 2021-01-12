@@ -231,9 +231,9 @@ a:hover
     position: absolute;
     content: '';
     height: 3px;
-    width: 50px;
-    margin-left: -60px;
-    bottom: 16px;
+    width: 6%;
+    margin-left: -10%;
+    bottom: 11px;
     background-color: #03A9F4;
 }
 
@@ -241,9 +241,9 @@ a:hover
     position: absolute;
     content: '';
     height: 3px;
-    width: 50px;
-    margin-left: 10px;
-    bottom: 16px;
+    width: 6%;
+    margin-left: 3%;
+    bottom: 11px;
     background-color: #03A9F4;
 }
 
@@ -374,6 +374,10 @@ a:hover
     border-radius:0 30px 30px 0;
 }
 
+.img-h-our1
+{
+    height:240px !important;
+}
 
 /* Newsletter */
 
