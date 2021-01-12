@@ -14,250 +14,233 @@
 <body>
 
     <header id="header-wrapper">
-
-        <!-- Modal -->
-        <div class="modal fade bg-ourcolor1" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div id="hidden-nav-menu" class="hidden-nav-user main-content-color-reverse text-black-50">
-                <div class="modal-dialog m-0 mw-100" role="document">
-                    <div class="modal-content">
-                        <div class=" pt-3 pb-4 pl-4 h5 text-center title-hidden-nav f-lightblack">
-                            Menu
-                            <span class="fas fa-times float-right pr-3 font-menu-color" data-dismiss="modal" aria-label="Close"></span>
-                                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>-->
+    <!-- Modal -->
+    <div class="modal fade bg-ourcolor1" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div id="hidden-nav-menu" class="hidden-nav-user main-content-color-reverse text-black-50">
+            <div class="modal-dialog m-0 mw-100" role="document">
+                <div class="modal-content">
+                    <div class=" pt-3 pb-4 pl-4 h5 text-center title-hidden-nav f-lightblack">
+                        Menu
+                        <span class="fas fa-times float-right pr-3 font-menu-color" data-dismiss="modal" aria-label="Close"></span>
+                    </div>
+                    <div class="">
+                        <ul class="list-group main-content-color-revers navbar-font-ul ">
+                            <li class="list-group-item text-white text-center">
+                                <p class="myHr mt-3">Twoje konto</p>
+                                <button type="submit" class="btn btn-primary mt-2 mb-3 w-75 border-radius-20 box-shadow-black">Zaloguj się</button>
+                                <p class="myHr"> Nie masz konta? </p>
+                                <button type="submit" class="btn btn-primary mt-2 mb-3 w-75 border-radius-20 box-shadow-black">Utwórz konto</button>
+                            </li>
+                            <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="#" class="f-lightblack"><span class="fas fa-home mr-3 navbar-icon font-menu-color"></span>Strona Główna</a></li>
+                            <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack" data-toggle="collapse" data-target="#collapseSites" aria-expanded="false" aria-controls="collapseSites"><span class="fas fa-columns mr-3 font-menu-color navbar-icon"></span>Strony</a></li>
+                            <div class="collapse" id="collapseSites">
+                                <div class="card card-body">
+                                    <li class="list-group-item pb-2 li-hidden-nav border-top-0"><a href="#" class="f-lightblack">Konto</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Szukaj</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kontakt</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">FAQ</a></li>
+                                </div>
+                            </div>
+                            <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack" data-toggle="collapse" data-target="#collapseCategories" aria-expanded="false" aria-controls="collapseCategories"><span class="fas fa-list mr-3 font-menu-color navbar-icon"></span>Kategorie</a></li>
+                            <div class="collapse" id="collapseCategories">
+                                <div class="card card-body">
+                                    <li class="list-group-item pb-2 li-hidden-nav border-top-0 "><a href="#" class="f-lightblack">Kateogira 1</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 2</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 3</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 4</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 5</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 6</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 7</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 8</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 9</a></li>
+                                </div>
+                            </div>
+                            <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="#" class="f-lightblack"><span class="fas fa-user mr-3 font-menu-color navbar-icon"></span>Twoje konto</a></li>
+                            <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="#" class="f-lightblack"><span class="fas fa-comments-dollar mr-3 font-menu-color navbar-icon"></span>Moje ogłoszenia</a></li>
+                            <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="#" class="f-lightblack"><span class="fas fa-cog mr-3 font-menu-color navbar-icon"></span>Ustawienia konta</a></li>
+                            <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="#" class="f-lightblack"><span class="fas fa-info-circle mr-3 font-menu-color navbar-icon"></span>Więcej</a></li>
+                            <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="#" class="f-lightblack"><span class="fas fa-id-card mr-3 font-menu-color navbar-icon"></span>Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light font-menu-color menu-container">
+        <div class="container border-bottom main-header-tablet">
+            <div class="clearfix">
+                <ul class="nav nav-fill">
+                    <li class="nav-item mr-0">
+                        <div class="navbar-brand">
+                            <a href="#"><img src="img/logojdsg.svg" width="110" height="50" class="d-inline-block align-top" alt="Our Logo"></a>
                         </div>
-                        <div class="">
-                            <ul class="list-group main-content-color-revers navbar-font-ul ">
-                                <li class="list-group-item text-white text-center">
-                                    <p class="myHr mt-3">Twoje konto</p>
-                                    <button type="submit" class="btn btn-primary mt-2 mb-3 w-75 border-radius-20 box-shadow-black">Zaloguj się</button>
-                                    <p class="myHr"> Nie masz konta? </p>
-                                    <button type="submit" class="btn btn-primary mt-2 mb-3 w-75 border-radius-20 box-shadow-black">Utwórz konto</button>
+                    </li>
+                    <li class="nav-item mr-0 pt-2">
+                        <a href="#" class="nav-link">Strona Główna</a>
+                    </li>
+                    <li class="nav-item mr-0 pt-2">
+                        <a href="#" class="nav-link dropdown-toggle ">Kategorie
+                        </a>
+                    </li>
+                    <li class="nav-item mr-0 pt-2">
+                        <a href="#" class="nav-link dropdown-toggle">Strony
+                        </a>
+                    </li>
+                    <li class="nav-item mr-0 pt-2">
+                        <a href="#" class="nav-link">Kontakt</a>
+                    </li>
+                    <li class="nav-item mr-0 pt-2">
+                        <a href="#" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item mr-0 pt-2">
+                        <a href="#" class="nav-link d-inline-block">
+                            <i class="far fa-user"></i>
+                            Logowanie
+                        </a>
+                        |
+                        <a href="#" class="nav-link d-inline-block">
+                            <i class="far fa-edit"></i>
+                            Rejestracja
+                        </a>
+                    <li class="nav-item mr-1 pt-2">
+                        <a href="#" class="btn btn-primary border-radius-20"><i class="fas fa-pen-square mr-1"></i>Dodaj Ogłoszenie</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w-100 mobile-menu">
+            <div class=" pt-1">
+                <div class="navbar-brand">
+                    <img src="img/logojdsg.svg" width="110" height="50" class="d-inline-block align-top" alt="Our Logo">
+                </div>
+
+                <ul class="d-inline-block  float-right mobile-menu-ul">
+                    <li class="list-inline-item pl-1 pr-2">
+                        <div class="text-center icon-container">
+                            <span class="fas fa-comments-dollar"></span>
+                        </div>
+                        <p class="icon-title">Moje ogłoszenia</p>
+                    </li>
+                    <li class="list-inline-item pl-1 pr-1">
+                        <div class="text-center icon-container" data-toggle="modal" data-target="#menuModal">
+                            <span class="fas fa-bars menuIcon"></span>
+                        </div>
+                        <p class="icon-title">Menu</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <section class="intro-section">
+    <div id="intro-bg">
+        <div class="overlay"></div>
+        <div class="container pb-5">
+            <div class="row justify-content-center">
+                <!-- BEGIN THE HEADER SECTION -->
+                <div class="col-md-12 pt-4  mb-5 text-white">
+                    <div class="container border-bottom main-header">
+                        <div class="clearfix">
+                            <ul class="nav nav-fill">
+                                <li class="nav-item mr-2 ">
+                                    <div class="navbar-brand">
+                                        <a href="#"><img src="img/logojdsg.svg" width="110" height="50" class="d-inline-block align-top" alt="Our Logo"></a>
+                                    </div>
                                 </li>
-                                <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="#" class="f-lightblack"><span class="fas fa-home mr-3 navbar-icon font-menu-color"></span>Strona Główna</a></li>
-                                <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack" data-toggle="collapse" data-target="#collapseSites" aria-expanded="false" aria-controls="collapseSites"><span class="fas fa-columns mr-3 font-menu-color navbar-icon"></span>Strony</a></li>
-                                    <div class="collapse" id="collapseSites">
-                                        <div class="card card-body">
-                                            <li class="list-group-item pb-2 li-hidden-nav border-top-0"><a href="#" class="f-lightblack">Konto</a></li>
-                                            <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Szukaj</a></li>
-                                            <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kontakt</a></li>
-                                            <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">FAQ</a></li>
-                                        </div>
+                                <li class="nav-item mr-0 pt-2 ">
+                                    <a href="#" class="nav-link f-white font-weight-bolder">Strona Główna</a>
+                                </li>
+                                <li class="nav-item mr-0 pt-2">
+                                    <a href="#" class="nav-link dropdown-toggle f-white font-weight-bolder" id="dropdownCategories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie
+                                    </a>
+                                    <div class="dropdown-menu dropdown-margin" aria-labelledby="dropdownCategories">
+                                        <a class="dropdown-item" href="#">Kategoria 1</a>
+                                        <a class="dropdown-item" href="#">Kategoria 2</a>
+                                        <a class="dropdown-item" href="#">Kategoria 3</a>
+                                        <a class="dropdown-item" href="#">Kategoria 4</a>
+                                        <a class="dropdown-item" href="#">Kategoria 5</a>
+                                        <a class="dropdown-item" href="#">Kategoria 6</a>
+                                        <a class="dropdown-item" href="#">Kategoria 7</a>
+                                        <a class="dropdown-item" href="#">Kategoria 8</a>
+                                        <a class="dropdown-item" href="#">Kategoria 9</a>
+                                        <a class="dropdown-item" href="#">Kategoria 10</a>
+                                        <a class="dropdown-item" href="#">Kategoria 11</a>
                                     </div>
-                                <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack" data-toggle="collapse" data-target="#collapseCategories" aria-expanded="false" aria-controls="collapseCategories"><span class="fas fa-list mr-3 font-menu-color navbar-icon"></span>Kategorie</a></li>
-                                    <div class="collapse" id="collapseCategories">
-                                        <div class="card card-body">
-                                            <li class="list-group-item pb-2 li-hidden-nav border-top-0 "><a href="#" class="f-lightblack">Kateogira 1</a></li>
-                                            <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 2</a></li>
-                                            <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 3</a></li>
-                                            <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 4</a></li>
-                                            <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 5</a></li>
-                                            <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 6</a></li>
-                                            <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 7</a></li>
-                                            <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 8</a></li>
-                                            <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Kategoria 9</a></li>
-                                        </div>
+                                </li>
+
+                                <li class="nav-item mr-0 pt-2">
+                                    <a href="#" class="nav-link dropdown-toggle f-white font-weight-bolder" id="dropdownSites" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Strony
+                                    </a>
+                                    <div class="dropdown-menu dropdown-margin" aria-labelledby="dropdownSites">
+                                        <a class="dropdown-item" href="#">Konto</a>
+                                        <a class="dropdown-item" href="#">Szukaj</a>
+                                        <a class="dropdown-item" href="#">Kontakt</a>
+                                        <a class="dropdown-item" href="#">FAQ</a>
                                     </div>
-                                <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="#" class="f-lightblack"><span class="fas fa-user mr-3 font-menu-color navbar-icon"></span>Twoje konto</a></li>
-                                <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="#" class="f-lightblack"><span class="fas fa-comments-dollar mr-3 font-menu-color navbar-icon"></span>Moje ogłoszenia</a></li>
-                                <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="#" class="f-lightblack"><span class="fas fa-cog mr-3 font-menu-color navbar-icon"></span>Ustawienia konta</a></li>
-                                <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="#" class="f-lightblack"><span class="fas fa-info-circle mr-3 font-menu-color navbar-icon"></span>Więcej</a></li>
-                                <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="#" class="f-lightblack"><span class="fas fa-id-card mr-3 font-menu-color navbar-icon"></span>Kontakt</a></li>
+                                </li>
+                                <li class="nav-item mr-0 pt-2">
+                                    <a href="#" class="nav-link f-white font-weight-bolder">Kontakt</a>
+                                </li>
+                                <li class="nav-item mr-0 pt-2">
+                                    <a href="#" class="nav-link f-white font-weight-bolder">FAQ</a>
+                                </li>
+                                <li class="nav-item mr-0 pt-2">
+                                    <a href="#" class="nav-link d-inline-block f-white font-weight-bolder">
+                                        <i class="far fa-user"></i>
+                                        Logowanie
+                                    </a>
+                                    |
+                                    <a href="#" class="nav-link d-inline-block f-white font-weight-bolder">
+                                        <i class="far fa-edit"></i>
+                                        Rejestracja
+                                    </a>
+                                <li class="nav-item mr-0 pt-2">
+                                    <a href="#" class="btn btn-primary border-radius-20"><i class="fas fa-pen-square mr-1"></i>Dodaj Ogłoszenie</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light font-menu-color menu-container">
-            <div class="container border-bottom main-header-tablet">
-                <div class="clearfix">
-                    <ul class="nav nav-fill">
-                        <li class="nav-item mr-0">
-                            <div class="navbar-brand">
-                                <a href="#"><img src="img/logojdsg.svg" width="110" height="50" class="d-inline-block align-top" alt="Our Logo"></a>
-                            </div>
-                        </li>
-                        <li class="nav-item mr-0 pt-2">
-                            <a href="#" class="nav-link">Strona Główna</a>
-                        </li>
-                        <li class="nav-item mr-0 pt-2">
-                            <a href="#" class="nav-link dropdown-toggle ">Kategorie
-                            </a>
-                        </li>
-                        <li class="nav-item mr-0 pt-2">
-                            <a href="#" class="nav-link dropdown-toggle">Strony
-                            </a>
-                        </li>
-                        <li class="nav-item mr-0 pt-2">
-                            <a href="#" class="nav-link">Kontakt</a>
-                        </li>
-                        <li class="nav-item mr-0 pt-2">
-                            <a href="#" class="nav-link">FAQ</a>
-                        </li>
-                        <li class="nav-item mr-0 pt-2">
-                            <a href="#" class="nav-link d-inline-block">
-                                <i class="far fa-user"></i>
-                                Logowanie
-                            </a>
-                            |
-                            <a href="#" class="nav-link d-inline-block">
-                                <i class="far fa-edit"></i>
-                                Rejestracja
-                            </a>
-                        <li class="nav-item mr-1 pt-2">
-                            <a href="#" class="btn btn-primary border-radius-20"><i class="fas fa-pen-square mr-1"></i>Dodaj Ogłoszenie</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="w-100 mobile-menu">
-                <div class=" pt-1">
-                    <div class="navbar-brand">
-                        <img src="img/logojdsg.svg" width="110" height="50" class="d-inline-block align-top" alt="Our Logo">
-                    </div>
-
-                    <ul class="d-inline-block  float-right mobile-menu-ul">
-                        <li class="list-inline-item pl-1 pr-2">
-                            <div class="text-center icon-container">
-                                <span class="fas fa-comments-dollar"></span>
-                            </div>
-                            <p class="icon-title">Moje ogłoszenia</p>
-                        </li>
-                        <li class="list-inline-item pl-1 pr-1">
-                            <div class="text-center icon-container" data-toggle="modal" data-target="#menuModal">
-                                <span class="fas fa-bars menuIcon"></span>
-                            </div>
-                            <p class="icon-title">Menu</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!--<div class="dropdown show">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                </a>
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </div>-->
-        </nav>
-
-    </header>
-    <section class="intro-section">
-        <div id="intro-bg">
-            <div class="overlay"></div>
-            <div class="container pb-5">
-                <div class="row justify-content-center">
-                    <!-- BEGIN THE HEADER SECTION -->
-                    <div class="col-md-12 pt-4  mb-5 text-white">
-                        <div class="container border-bottom main-header">
-                            <div class="clearfix">
-                                <ul class="nav nav-fill">
-                                    <li class="nav-item mr-2 ">
-                                        <div class="navbar-brand">
-                                            <a href="#"><img src="img/logojdsg.svg" width="110" height="50" class="d-inline-block align-top" alt="Our Logo"></a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item mr-0 pt-2 ">
-                                        <a href="#" class="nav-link f-white font-weight-bolder">Strona Główna</a>
-                                    </li>
-                                    <li class="nav-item mr-0 pt-2">
-                                        <a href="#" class="nav-link dropdown-toggle f-white font-weight-bolder" id="dropdownCategories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie
-                                        </a>
-                                        <div class="dropdown-menu dropdown-margin" aria-labelledby="dropdownCategories">
-                                            <a class="dropdown-item" href="#">Kategoria 1</a>
-                                            <a class="dropdown-item" href="#">Kategoria 2</a>
-                                            <a class="dropdown-item" href="#">Kategoria 3</a>
-                                            <a class="dropdown-item" href="#">Kategoria 4</a>
-                                            <a class="dropdown-item" href="#">Kategoria 5</a>
-                                            <a class="dropdown-item" href="#">Kategoria 6</a>
-                                            <a class="dropdown-item" href="#">Kategoria 7</a>
-                                            <a class="dropdown-item" href="#">Kategoria 8</a>
-                                            <a class="dropdown-item" href="#">Kategoria 9</a>
-                                            <a class="dropdown-item" href="#">Kategoria 10</a>
-                                            <a class="dropdown-item" href="#">Kategoria 11</a>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item mr-0 pt-2">
-                                        <a href="#" class="nav-link dropdown-toggle f-white font-weight-bolder" id="dropdownSites" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Strony
-                                        </a>
-                                        <div class="dropdown-menu dropdown-margin" aria-labelledby="dropdownSites">
-                                            <a class="dropdown-item" href="#">Konto</a>
-                                            <a class="dropdown-item" href="#">Szukaj</a>
-                                            <a class="dropdown-item" href="#">Kontakt</a>
-                                            <a class="dropdown-item" href="#">FAQ</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item mr-0 pt-2">
-                                        <a href="#" class="nav-link f-white font-weight-bolder">Kontakt</a>
-                                    </li>
-                                    <li class="nav-item mr-0 pt-2">
-                                        <a href="#" class="nav-link f-white font-weight-bolder">FAQ</a>
-                                    </li>
-                                    <li class="nav-item mr-0 pt-2">
-                                        <a href="#" class="nav-link d-inline-block f-white font-weight-bolder">
-                                            <i class="far fa-user"></i>
-                                            Logowanie
-                                        </a>
-                                        |
-                                        <a href="#" class="nav-link d-inline-block f-white font-weight-bolder">
-                                            <i class="far fa-edit"></i>
-                                            Rejestracja
-                                        </a>
-                                    <li class="nav-item mr-0 pt-2">
-                                        <a href="#" class="btn btn-primary border-radius-20"><i class="fas fa-pen-square mr-1"></i>Dodaj Ogłoszenie</a>
-                                    </li>
-                                </ul>
-                            </div>
+                <div class="col-md-12 col-lg-9 col-12 text-center">
+                    <div class="contents">
+                        <div class="intro-title pt-1 pb-5">
+                            <h1>Witaj na tablicy ogłoszeniowej <b class="f-ourcolor1">JDSG</b></h1>
+                            <img class="pt-5 pb-3" src="img/logo_kwadrat.svg">
                         </div>
-                    </div>
-                    <div class="col-md-12 col-lg-9 col-12 text-center">
-                        <div class="contents">
-                            <div class="intro-title pt-1 pb-5">
-                                <h1>Witaj na tablicy ogłoszeniowej <b class="f-ourcolor1">JDSG</b></h1>
-                                <img class="pt-5 pb-3" src="img/logo_kwadrat.svg">
-                            </div>
-                            <form class="mb-5">
-                                <div class=" p-2 bg-light border-radius-40">
-                                    <div class="row justify-content-center">
-                                        <div class="col-11 col-md-4">
-                                            <input type="text" class="form-control mb-3 mt-2" id="exampleFormControlInput1" placeholder="Szukaj ogłoszeń">
-                                        </div>
-                                        <div class="col-6 col-md-4">
-                                            <div class="select mb-3 mt-2">
-                                                <select class="form-control " id="exampleFormControlSelect1">
-                                                    <option>Wybierz kategorię</option>
-                                                    <option>Kategoria 1</option>
-                                                    <option>Kategoria 2</option>
-                                                    <option>Kategoria 3</option>
-                                                    <option>Kategoria 4</option>
-                                                    <option>Kategoria 5</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-5 col-md-3 mt-2">
-                                            <button class="btn btn-primary btn-block border-radius-20 mb-2"><i class="fas fa-search pr-3"></i>Szukaj</button>
+                        <form class="mb-5">
+                            <div class=" p-2 bg-light border-radius-40">
+                                <div class="row justify-content-center">
+                                    <div class="col-11 col-md-4">
+                                        <input type="text" class="form-control mb-3 mt-2" id="exampleFormControlInput1" placeholder="Szukaj ogłoszeń">
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="select mb-3 mt-2">
+                                            <select class="form-control " id="exampleFormControlSelect1">
+                                                <option>Wybierz kategorię</option>
+                                                <option>Kategoria 1</option>
+                                                <option>Kategoria 2</option>
+                                                <option>Kategoria 3</option>
+                                                <option>Kategoria 4</option>
+                                                <option>Kategoria 5</option>
+                                            </select>
                                         </div>
                                     </div>
-
+                                    <div class="col-5 col-md-3 mt-2">
+                                        <button class="btn btn-primary btn-block border-radius-20 mb-2"><i class="fas fa-search pr-3"></i>Szukaj</button>
+                                    </div>
                                 </div>
-                            </form>
-                            <h5 class="pb-5 lh-35">Wyszukaj potrzebne ci rzeczy poprzez naszą <a class="" href="#">przeglądarkę ogłoszeń</a>.<br> Jeżeli masz przedmiot, którego chciałbyś się pozbyć załóż swoje własne <a class="" href="#">ogłoszenie</a>.<br><br>Tablica ogłoszeniowa <b class="f-ourcolor1">JDSG</b> to miejsce gdzie w prosty sposób znajdziesz to czego szukasz. </h5>
 
-                        </div>
+                            </div>
+                        </form>
+                        <h5 class="pb-5 lh-35">Wyszukaj potrzebne ci rzeczy poprzez naszą <a class="" href="#">przeglądarkę ogłoszeń</a>.<br> Jeżeli masz przedmiot, którego chciałbyś się pozbyć załóż swoje własne <a class="" href="#">ogłoszenie</a>.<br><br>Tablica ogłoszeniowa <b class="f-ourcolor1">JDSG</b> to miejsce gdzie w prosty sposób znajdziesz to czego szukasz. </h5>
+
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <section id="categories" class="bg-light section-padding ">
         <div class="container">
             <div class="row justify-content-center">
@@ -670,7 +653,7 @@
 
 
     <script src="js/jquery.js" type="text/javascript"></script>
-    <script src="js/popper.min.js" type="text/javascript"></script>-->
+    <script src="js/popper.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
 
     <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
