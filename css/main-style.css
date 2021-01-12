@@ -436,3 +436,15 @@ footer .links-menu li a {
     height: 7vh;
     width: auto;
 }
+.ad-font-color {
+    color: #03A9F4;
+}
+.img-center{
+    display: flex;
+    align-items: center;
+}
+.link
+{
+    color: #000000;
+    text-decoration: none;
+}
