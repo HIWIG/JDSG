@@ -563,6 +563,11 @@ footer .links-menu li a {
     list-style-type: none;
 }
 
+@media (min-width: 950px)
+{
+
+}
+
 @media (min-width: 1200px)
 {
     /* MOBILE MENU */
@@ -570,19 +575,6 @@ footer .links-menu li a {
     {
         display:none;
     }
-}
-.catList li{
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    border-top: 1px solid #dbdbdb;
-    padding-left: 4px;
-    padding-right: 4px;
-}
-.catList a {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    color: #919191;
-}
 
     .navbar
     {
@@ -597,7 +589,20 @@ footer .links-menu li a {
     {
         display:block !important;
     }
+}
 
+.catList li{
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-top: 1px solid #dbdbdb;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.catList a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #919191;
+}
 
 .catList a:hover{
     font-family: 'Roboto', sans-serif;
