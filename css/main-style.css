@@ -657,6 +657,6 @@ footer .links-menu li a {
     display: block;
 }
 
-.content-ads>.content-ads-none{
+#listview{
     display: none;
 }
