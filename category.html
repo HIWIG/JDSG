@@ -267,27 +267,24 @@
                 </div>
 
             </div>
-            <div class="col-9 row justify-content-center">
+            <div class="col-9 row justify-content-center content-ads">
 
 
                 <div class="product-filter">
                     <ul class="nav nav-tabs pull-right">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#grid-view"><i class="fas fa-th-large"></i>
+                            <a class="nav-link active" data-toggle="tab" href="#grid-view" onclick="gridview()"><i class="fas fa-th-large"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#list-view"><i class="fas fa-list"></i>
+                            <a class="nav-link" data-toggle="tab" href="#list-view" onclick="listview()"><i class="fas fa-list"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
 
 
-
-
-
-
+<div id="gridview" class="col-12  row justify-content-center">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                     <div class="AdvertContentBox">
                         <figure class="figure mb-0">
@@ -348,8 +345,6 @@
                     </div>
                 </div>
 
-
-
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                     <div class="AdvertContentBox">
                         <figure class="figure mb-0">
@@ -380,8 +375,6 @@
                     </div>
                 </div>
 
-
-
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                     <div class="AdvertContentBox">
                         <figure class="figure mb-0">
@@ -411,6 +404,31 @@
                         </div>
                     </div>
                 </div>
+</div>
+<div id="listview" class="col-12  row justify-content-center">
+    siema teset se tu jest
+</div>
+
+
+
+
+
+                <script>
+                    function gridview(){
+                        var view=document.getElementById("gridview");
+                        var notview=document.getElementById("listview");
+                        notview.style.display="none";
+                        view.style.display="flex";
+                    }
+                    function listview(){
+                        var notview=document.getElementById("gridview");
+                        var view=document.getElementById("listview");
+                        notview.style.display="none";
+                        view.style.display="flex";
+                    }
+                </script>
+
+
 
 
 

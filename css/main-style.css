@@ -653,3 +653,10 @@ footer .links-menu li a {
     line-height: 20px;
     border-radius: 4px;
 }
+.content-ads>.active {
+    display: block;
+}
+
+.content-ads>.content-ads-none{
+    display: none;
+}
