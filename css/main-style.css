@@ -462,6 +462,17 @@ a:hover
     margin-bottom: 0.35rem;
 }
 
+/* Login &* Register SECTION */
+
+#userPassword, #userLogin, #logIn
+{
+    margin-top:0%;
+}
+
+#registerHelp
+{
+    display:block;
+}
 
 
 /* FOOTER SELECTION*/
@@ -588,6 +599,16 @@ footer .links-menu li a {
     .main-header
     {
         display:block !important;
+    }
+
+    #registerHelp
+    {
+        display:none !important;
+    }
+
+    #userPassword, #userLogin, #logIn
+    {
+        margin-top:10%;
     }
 }
 
