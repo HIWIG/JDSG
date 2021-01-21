@@ -45,15 +45,23 @@
                     <a href="#" class="nav-link f-white font-weight-bolder">FAQ</a>
                 </li>
                 <li class="nav-item mr-0 pt-2">
-                    <a href="{{ route('loginRegister')}}" class="nav-link d-inline-block f-white font-weight-bolder">
-                        <i class="far fa-user"></i>
-                        Logowanie
-                    </a>
-                    |
-                    <a href="{{ route('loginRegister')}}" class="nav-link d-inline-block f-white font-weight-bolder">
-                        <i class="far fa-edit"></i>
-                        Rejestracja
-                    </a>
+                    @auth
+                        <a href="{{ route('register')}}" class="nav-link d-inline-block f-white font-weight-bolder">
+                            <i class="far fa-user"></i>
+                            [NAZWA UZYTKOWNIKA]
+                        </a>
+                    @endauth
+                    @guest
+                        <a href="{{ route('register')}}" class="nav-link d-inline-block f-white font-weight-bolder">
+                            <i class="far fa-user"></i>
+                            Logowanie
+                        </a>
+                        |
+                        <a href="{{ route('register')}}" class="nav-link d-inline-block f-white font-weight-bolder">
+                            <i class="far fa-edit"></i>
+                            Rejestracja
+                        </a>
+                    @endguest
                 <li class="nav-item mr-0 pt-2">
                     <a href="#" class="btn btn-primary border-radius-20"><i class="fas fa-pen-square mr-1"></i>Dodaj Ogłoszenie</a>
                 </li>

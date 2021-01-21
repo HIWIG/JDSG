@@ -11,9 +11,8 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js/app.js')
-    /*.postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);*/
-
-mix.styles('resources/css/**/*.css', 'public/css/app.css') // dowolny folder z dowolna nazwa (GLOBE)
+mix.js('resources/js/app.js', 'public/js').postCss('resources/css/app.css', 'public/css', [
+    require('postcss-import'),
+    require('tailwindcss'),
+    require('autoprefixer'),
+]);
