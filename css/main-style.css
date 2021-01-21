@@ -572,10 +572,11 @@ footer .links-menu li a {
     display: flex;
     align-items: center;
 }
-.link
-{
+.link {
     color: #000000;
     text-decoration: none;
+}
+
 @media (min-width: 950px)
 {
 
@@ -689,4 +690,3 @@ footer .links-menu li a {
     display: none;
 }
 
-}
