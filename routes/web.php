@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyAuth\RegisterController;
+use App\Http\Controllers\MyAuth\DashboardController;
 
 Route::get('/', function () {
     return view('index');
@@ -12,6 +13,9 @@ Route::get('/account', function () {
 })->name('account');
 
 /*LEARNING SECTION*/
+
+Route::get('/dashboard',[DashboardController::clas,'index'])->name('dashboard');
+
 Route::get('/register',[RegisterController::class, 'index'])->name('register');
 Route::post('/register',[RegisterController::class, 'store']);
 
@@ -20,9 +24,9 @@ Route::get('/login', function () {
     return view('loginRegister');
 })->name('loginRegister');*/
 
-Route::get('/dashboard', function () {
+/*Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+})->middleware(['auth'])->name('dashboard');*/
 
 
 /*require __DIR__.'/auth.php';*/
