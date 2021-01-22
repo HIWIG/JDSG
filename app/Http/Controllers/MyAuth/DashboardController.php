@@ -1,13 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\MyAuth;
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Models\User;
 
 class DashboardController extends Controller
 {
     public function index()
     {
-        return view('dashboard');
+        //dd(auth()->user());
+        return view('index');
     }
 }

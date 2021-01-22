@@ -28,7 +28,7 @@
                     </div>
                 </li>
 
-                <li class="nav-item mr-0 pt-2">
+                {{--<li class="nav-item mr-0 pt-2">
                     <a href="#" class="nav-link dropdown-toggle f-white font-weight-bolder" id="dropdownSites" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Strony
                     </a>
                     <div class="dropdown-menu dropdown-margin" aria-labelledby="dropdownSites">
@@ -37,7 +37,7 @@
                         <a class="dropdown-item" href="#">Kontakt</a>
                         <a class="dropdown-item" href="#">FAQ</a>
                     </div>
-                </li>
+                </li>--}}
                 <li class="nav-item mr-0 pt-2">
                     <a href="#" class="nav-link f-white font-weight-bolder">Kontakt</a>
                 </li>
@@ -46,13 +46,17 @@
                 </li>
                 <li class="nav-item mr-0 pt-2">
                     @auth
-                        <a href="{{ route('register')}}" class="nav-link d-inline-block f-white font-weight-bolder">
+                        <a href="{{ route('index')}}" class="nav-link d-inline-block f-white font-weight-bolder">
                             <i class="far fa-user"></i>
                             [NAZWA UZYTKOWNIKA]
                         </a>
+                        <a href="{{ route('index')}}" class="nav-link d-inline-block f-white font-weight-bolder">
+                            <i class="far fa-user"></i>
+                            Wyloguj się
+                        </a>
                     @endauth
                     @guest
-                        <a href="{{ route('register')}}" class="nav-link d-inline-block f-white font-weight-bolder">
+                        <a href="{{ route('login')}}" class="nav-link d-inline-block f-white font-weight-bolder">
                             <i class="far fa-user"></i>
                             Logowanie
                         </a>

@@ -42,10 +42,15 @@ class RegisterController extends Controller
 
         // sign in
 
-        return redirect()->route('dashboard');
-
+        //auth()->user(); //null
+        auth()->attempt([
+            'email'=>$request->email,
+            'password'=>$request->password
+        ]);
         // sign the user in
 
         // redirect
+
+        return redirect()->route('dashboard');
     }
 }
