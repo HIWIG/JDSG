@@ -560,60 +560,35 @@ footer .links-menu li a {
     opacity: 0.7;
 }
 
-
-@media (min-width: 950px)
-{
-
+/*ADVERT*/
+.height-600{
+    height: 600px;
 }
-/*category.html css*/
-.catTable{
-    padding-top: 5px;
-    box-shadow: 0px 0px 10px rgb(175 175 175 / 23%);
+.height-auto{
+    height: auto;
 }
-.catList {
-    padding: 4px 0px 0px 1px;
-    color: #011000;
-    list-style-type: none;
+.margin-auto{
+    margin: auto;
+}
+.cyan{
+    color: cyan !important;
+}
+.other-photo{
+    height: 7vh;
+    width: auto;
+}
+.ad-font-color {
+    color: #03A9F4;
+}
+.img-center{
+    display: flex;
+    align-items: center;
+}
+.link {
+    color: #000000;
+    text-decoration: none;
 }
 
-
-@media (min-width: 950px)
-{
-
-}
-
-@media (min-width: 1200px)
-{
-    /* MOBILE MENU */
-    .mobile-menu
-    {
-        display:none;
-    }
-
-    .navbar
-    {
-        display:none !important;
-    }
-
-    .main-header-tablet
-    {
-        display:none !important;
-    }
-    .main-header
-    {
-        display:block !important;
-    }
-
-    #registerHelp
-    {
-        display:none !important;
-    }
-
-    #userPassword, #userLogin, #logIn
-    {
-        margin-top:10%;
-    }
-}
 
 .catList li{
     padding-top: 0.3rem;
@@ -667,3 +642,59 @@ footer .links-menu li a {
     color: #fff;
     padding: 4px 18px;
 }
+
+@media (min-width: 950px)
+{
+
+}
+/*category.html css*/
+.catTable{
+    padding-top: 5px;
+    box-shadow: 0px 0px 10px rgb(175 175 175 / 23%);
+}
+.catList {
+    padding: 4px 0px 0px 1px;
+    color: #011000;
+    list-style-type: none;
+}
+
+
+
+@media (min-width: 950px)
+{
+
+}
+
+@media (min-width: 1200px)
+{
+    /* MOBILE MENU */
+    .mobile-menu
+    {
+        display:none;
+    }
+
+    .navbar
+    {
+        display:none !important;
+    }
+
+    .main-header-tablet
+    {
+        display:none !important;
+    }
+    .main-header
+    {
+        display:block !important;
+    }
+
+    #registerHelp
+    {
+        display:none !important;
+    }
+
+    #userPassword, #userLogin, #logIn
+    {
+        margin-top:10%;
+    }
+}
+

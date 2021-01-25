@@ -19,12 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="Added first version of RegisterController">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MyAuth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/myauth/register.blade.php" afterDir="false" />
+    <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="Added LoginController">
+      <change afterPath="$PROJECT_DIR$/resources/views/advertisement.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/faq.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/main-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/main-style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,12 +156,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1nL0qvCASZ9h1UCqeR1kGNhhpnd" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -171,6 +175,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Programowanie\projectJDSG\resources\views" />
+      <recent name="E:\Programowanie\projectJDSG\app\Http\Controllers\MyAuth" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Programowanie\projectJDSG" />
@@ -192,7 +197,10 @@
       <updated>1611154257224</updated>
       <workItem from="1611154258630" duration="2581000" />
       <workItem from="1611228513123" duration="4760000" />
-      <workItem from="1611245745564" duration="12961000" />
+      <workItem from="1611245745564" duration="13128000" />
+      <workItem from="1611341032928" duration="5134000" />
+      <workItem from="1611567843894" duration="969000" />
+      <workItem from="1611599575895" duration="1063000" />
     </task>
     <task id="LOCAL-00001" summary="Added first version of RegisterController">
       <created>1611268176118</created>
@@ -201,7 +209,28 @@
       <option name="project" value="LOCAL" />
       <updated>1611268176118</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added first working with DB MVC Registration">
+      <created>1611272638688</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611272638688</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Db Registration Working">
+      <created>1611355846999</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611355846999</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added LoginController">
+      <created>1611358583341</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611358583341</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,26 +249,38 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="'Remove bugs from blade templates.'" />
     <MESSAGE value="Added first version of RegisterController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added first version of RegisterController" />
+    <MESSAGE value="Added first working with DB MVC Registration" />
+    <MESSAGE value="Db Registration Working" />
+    <MESSAGE value="Added LoginController" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added LoginController" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611154727610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="734" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1611154727610" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1611268188425">
+    <state x="766" y="243" key="NewPhpClassDialog" timestamp="1611357115616">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1611268188425" />
+    <state x="766" y="243" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1611357115616" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1611599997397">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1611599997397" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1611358587751">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1611358587751" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1611263995014">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1611263995014" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611271547550">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611354941519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1611271547550" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1611354941519" />
   </component>
 </project>
