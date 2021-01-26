@@ -3,7 +3,7 @@
     <div class="container border-bottom main-header">
         <div class="clearfix">
             <ul class="nav nav-fill">
-                <li class="nav-item mr-2 ">
+                <li class="nav-item mr-0 ">
                     <div class="navbar-brand">
                         <a href="#"><img src="img/logojdsg.svg" width="110" height="50" class="d-inline-block align-top" alt="Our Logo"></a>
                     </div>
@@ -50,10 +50,18 @@
                             <i class="far fa-user"></i>
                             [NAZWA UZYTKOWNIKA]
                         </a>
-                        <a href="{{ route('logout')}}" class="nav-link d-inline-block f-white font-weight-bolder">
-                            <i class="far fa-user"></i>
-                            Wyloguj się
-                        </a>
+                        <form action="{{route('logout')}}" method="post">
+                            {{--<a href="#" class="nav-link d-inline-block f-white font-weight-bolder">
+                                <i class="far fa-user"></i>
+                                Wyloguj się
+                            </a>--}}
+                            @csrf
+                            <button type="submit" id="logoutButton" class="bg-transparent border-0 nav-link d-inline-block f-white font-weight-bolder">
+                                <i class="far fa-user"></i>
+                                Wyloguj się
+                            </button>
+                        </form>
+
                     @endauth
                     @guest
                         <a href="{{ route('login')}}" class="nav-link d-inline-block f-white font-weight-bolder">

@@ -12,7 +12,9 @@ Route::get('/account', function () {
 
 /*LEARNING SECTION*/
 
-Route::get('/dashboard',[DashboardController::class, 'index'])->name('dashboard');
+Route::get('/dashboard',[DashboardController::class, 'index'])
+    ->name('dashboard')
+    ->middleware('auth');
 
 Route::get('/register',[RegisterController::class, 'index'])->name('register');
 Route::post('/register',[RegisterController::class, 'store']);
@@ -20,7 +22,7 @@ Route::post('/register',[RegisterController::class, 'store']);
 Route::get('/login',[LoginController::class, 'index'])->name('login');
 Route::post('/login',[LoginController::class, 'store']);
 
-Route::get('/logout',[\App\Http\Controllers\Auth\AuthenticatedSessionController::class,'destroy'])->name('logout');
+Route::post('/logout',[\App\Http\Controllers\Auth\AuthenticatedSessionController::class,'destroy'])->name('logout');
 
 Route::get('/', function () {
     return view('index');

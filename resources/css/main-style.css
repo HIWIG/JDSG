@@ -60,6 +60,14 @@ a:hover
     text-decoration: none;
 }
 
+
+
+#logoutButton:hover
+{
+    color:#3498db;
+    text-decoration: none;
+}
+
 /* WIDTH */
 
 
