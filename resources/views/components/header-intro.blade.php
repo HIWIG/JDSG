@@ -50,7 +50,7 @@
                             <i class="far fa-user"></i>
                             [NAZWA UZYTKOWNIKA]
                         </a>
-                        <a href="{{ route('index')}}" class="nav-link d-inline-block f-white font-weight-bolder">
+                        <a href="{{ route('logout')}}" class="nav-link d-inline-block f-white font-weight-bolder">
                             <i class="far fa-user"></i>
                             Wyloguj się
                         </a>
