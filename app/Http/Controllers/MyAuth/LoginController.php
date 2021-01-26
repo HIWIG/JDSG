@@ -27,9 +27,9 @@ class LoginController extends Controller
                 'password'=>'required' // confirmed work with [name]_confirmation
             ]);
 
-        if (!auth()->attempt($request->only('email','password')))
+        if (!auth()->attempt($request->only('email','password'),$request->remember))
         {
-            return back()->with('status','Invalid login details');
+            return back()->with('status','Nieprawidłowe dane logowania.');
         }
        /* auth()->attempt([
             'email'=>$request->email,

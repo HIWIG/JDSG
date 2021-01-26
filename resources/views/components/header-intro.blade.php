@@ -9,10 +9,10 @@
                     </div>
                 </li>
                 <li class="nav-item mr-0 pt-2 ">
-                    <a href="{{ route('index')}}" class="nav-link f-white font-weight-bolder">Strona Główna</a>
+                    <a href="{{ route('index')}}" class="nav-link f-white font-weight-bolder pl-0 pr-0">Strona Główna</a>
                 </li>
                 <li class="nav-item mr-0 pt-2">
-                    <a href="#" class="nav-link dropdown-toggle f-white font-weight-bolder" id="dropdownCategories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie
+                    <a href="#" class="nav-link dropdown-toggle f-white font-weight-bolder pl-0 pr-0" id="dropdownCategories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie
                     </a>
                     <div class="dropdown-menu dropdown-margin" aria-labelledby="dropdownCategories">
                         <a class="dropdown-item" href="#">Laptopty</a>
@@ -27,53 +27,41 @@
                         <a class="dropdown-item" href="#">Układy Scalone</a>
                     </div>
                 </li>
-
-                {{--<li class="nav-item mr-0 pt-2">
-                    <a href="#" class="nav-link dropdown-toggle f-white font-weight-bolder" id="dropdownSites" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Strony
-                    </a>
-                    <div class="dropdown-menu dropdown-margin" aria-labelledby="dropdownSites">
-                        <a class="dropdown-item" href="#">Konto</a>
-                        <a class="dropdown-item" href="#">Szukaj</a>
-                        <a class="dropdown-item" href="#">Kontakt</a>
-                        <a class="dropdown-item" href="#">FAQ</a>
-                    </div>
-                </li>--}}
                 <li class="nav-item mr-0 pt-2">
-                    <a href="#" class="nav-link f-white font-weight-bolder">Kontakt</a>
+                    <a href="#" class="nav-link f-white font-weight-bolder pl-0 pr-0">Kontakt</a>
                 </li>
                 <li class="nav-item mr-0 pt-2">
-                    <a href="#" class="nav-link f-white font-weight-bolder">FAQ</a>
+                    <a href="#" class="nav-link f-white font-weight-bolder pl-0 pr-0">FAQ</a>
                 </li>
                 <li class="nav-item mr-0 pt-2">
                     @auth
-                        <a href="{{ route('index')}}" class="nav-link d-inline-block f-white font-weight-bolder">
-                            <i class="far fa-user"></i>
-                            [NAZWA UZYTKOWNIKA]
+                        <a href="{{ route('index')}}" class="nav-link d-inline-block f-white font-weight-bolder pl-0 pr-0">
+                            <i class="far fa-user mr-1"></i>
+                            {{auth()->user()->username }}
                         </a>
+                </li>
+                <li class="nav-item mr-0 pt-2">
+
                         <form action="{{route('logout')}}" method="post">
-                            {{--<a href="#" class="nav-link d-inline-block f-white font-weight-bolder">
-                                <i class="far fa-user"></i>
-                                Wyloguj się
-                            </a>--}}
                             @csrf
-                            <button type="submit" id="logoutButton" class="bg-transparent border-0 nav-link d-inline-block f-white font-weight-bolder">
-                                <i class="far fa-user"></i>
-                                Wyloguj się
+                            <button type="submit" id="logoutButton" class="bg-transparent border-0 nav-link d-inline-block f-white font-weight-bolder pl-0 pr-0">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Wyloguj
                             </button>
                         </form>
-
                     @endauth
                     @guest
-                        <a href="{{ route('login')}}" class="nav-link d-inline-block f-white font-weight-bolder">
+                        <a href="{{ route('login')}}" class="nav-link d-inline-block f-white font-weight-bolder pl-0 pr-0">
                             <i class="far fa-user"></i>
                             Logowanie
                         </a>
                         |
-                        <a href="{{ route('register')}}" class="nav-link d-inline-block f-white font-weight-bolder">
+                        <a href="{{ route('register')}}" class="nav-link d-inline-block f-white font-weight-bolder pl-0 pr-0">
                             <i class="far fa-edit"></i>
                             Rejestracja
                         </a>
                     @endguest
+                </li>
                 <li class="nav-item mr-0 pt-2">
                     <a href="#" class="btn btn-primary border-radius-20"><i class="fas fa-pen-square mr-1"></i>Dodaj Ogłoszenie</a>
                 </li>
