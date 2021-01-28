@@ -167,6 +167,11 @@ a:hover
     border-radius:30px;
 }
 
+.br-circle
+{
+    border-radius:50%;
+}
+
 .main-content-color
 {
     background-color: #3498db;

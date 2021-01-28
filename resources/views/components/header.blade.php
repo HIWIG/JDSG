@@ -16,7 +16,14 @@
                                     {{--<form action="{{ route('login')}}">
                                         <button type="submit" class="btn btn-primary mt-2 mb-3 w-75 border-radius-20 box-shadow-black">Zaloguj się</button>
                                     </form>--}}
-                                    [SEKCJA W BUDOWIE ]
+                                    <div class="row text-dark">
+                                        <div class="col-12">
+                                            <img width="100" src="img/userimg.png" class="img-fluid  border border-primary br-circle" alt="User image">
+                                        </div>
+                                        <div class="col-12">
+                                            {{auth()->user()->username }}
+                                        </div>
+                                    </div>
                                     <p class="myHr"> Wyloguj sie</p>
                                     <form action="{{route('logout')}}" method="post">
                                         @csrf
