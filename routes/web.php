@@ -26,6 +26,13 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
+
+/* damian sobie testuje here*/
+
+Route::get('/category', function () {
+    return view('category');
+})->name('category');
+
 /*
 
 Route::get('/login', function () {
