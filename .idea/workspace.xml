@@ -26,9 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="Added LoginController">
-      <change afterPath="$PROJECT_DIR$/app/Models/Advert.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_29_114109_creates_adverts_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_114109_creates_adverts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_29_114109_creates_adverts_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +212,7 @@
       <workItem from="1611653409816" duration="759000" />
       <workItem from="1611875087541" duration="69000" />
       <workItem from="1611875159334" duration="4135000" />
-      <workItem from="1611918812244" duration="2358000" />
+      <workItem from="1611918812244" duration="5553000" />
     </task>
     <task id="LOCAL-00001" summary="Added first version of RegisterController">
       <created>1611268176118</created>
@@ -271,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611879107219</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="created migration file">
+      <created>1611923646238</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611923646238</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +318,8 @@
     <MESSAGE value="Filled category.blade.php" />
     <MESSAGE value="added css and linked navbar and searchbar into category.blade.php" />
     <MESSAGE value="added footer and deleted old js category.blade.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="added footer and deleted old js category.blade.php" />
+    <MESSAGE value="created migration file" />
+    <option name="LAST_COMMIT_MESSAGE" value="created migration file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611154727610">

@@ -13,10 +13,19 @@ class CreatesAdvertsTable extends Migration
      */
     public function up()
     {
-        Schema::create('adverts', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+        Schema::create('adverts',
+            function (Blueprint $table) {
+                $table->id('idAdvertisement');
+                $table->integer('idCategory');
+                $table->bigInteger('userId')->unsigned();
+                $table->foreign('userId')->references('id')->on('users');
+                $table->string('title');
+                $table->string('description');
+                $table->decimal('cost', 9, 2);
+                $table->timestamps();
+
+
+            });
     }
 
     /**
