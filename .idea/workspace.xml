@@ -26,7 +26,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="Added LoginController">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_29_141322_creates_categorys_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_114109_creates_adverts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_29_114109_creates_adverts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_134708_creates_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_29_134708_creates_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_134749_creates_tags_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_29_134749_creates_tags_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_134853_creates_tagconnections_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_29_134853_creates_tagconnections_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +217,7 @@
       <workItem from="1611653409816" duration="759000" />
       <workItem from="1611875087541" duration="69000" />
       <workItem from="1611875159334" duration="4135000" />
-      <workItem from="1611918812244" duration="6340000" />
+      <workItem from="1611918812244" duration="9576000" />
     </task>
     <task id="LOCAL-00001" summary="Added first version of RegisterController">
       <created>1611268176118</created>
@@ -283,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611926409005</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="created rest of migrations">
+      <created>1611928447534</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611928447534</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +339,8 @@
     <MESSAGE value="added footer and deleted old js category.blade.php" />
     <MESSAGE value="created migration file" />
     <MESSAGE value="edited adverts migration file with foreign key to user" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited adverts migration file with foreign key to user" />
+    <MESSAGE value="created rest of migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="created rest of migrations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611154727610">

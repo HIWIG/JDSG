@@ -15,10 +15,14 @@ class CreatesAdvertsTable extends Migration
     {
         Schema::create('adverts',
             function (Blueprint $table) {
-                $table->id('idAdvertisement');
-                $table->integer('idCategory');
+                $table->id();
+
+                $table->bigInteger('categoryId')->unsigned();
+               $table->foreign('categoryId')->references('id')->on('categories');
+
                 $table->bigInteger('userId')->unsigned();
                 $table->foreign('userId')->references('id')->on('users');
+
                 $table->string('title');
                 $table->string('description');
                 $table->decimal('cost', 9, 2);

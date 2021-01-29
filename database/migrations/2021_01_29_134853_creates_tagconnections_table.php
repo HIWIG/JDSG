@@ -14,8 +14,12 @@ class CreatesTagconnectionsTable extends Migration
     public function up()
     {
         Schema::create('tagconnections', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id('id');
+            $table->bigInteger('advertisementId')->unsigned();
+            $table->foreign('advertisementId')->references('id')->on('adverts');
+
+            $table->bigInteger('tagId')->unsigned();
+            $table->foreign('tagId')->references('id')->on('tags');
         });
     }
 
