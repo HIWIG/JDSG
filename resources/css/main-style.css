@@ -643,6 +643,35 @@ footer .links-menu li a {
     padding: 4px 18px;
 }
 
+/*ADVERT*/
+.height-600{
+    height: 600px;
+}
+.height-auto{
+    height: auto;
+}
+.margin-auto{
+    margin: auto;
+}
+.cyan{
+    color: cyan !important;
+}
+.other-photo{
+    height: 7vh;
+    width: auto;
+}
+.ad-font-color {
+    color: #03A9F4;
+}
+.img-center{
+    display: flex;
+    align-items: center;
+}
+.link {
+    color: #000000;
+    text-decoration: none;
+}
+
 @media (min-width: 950px)
 {
 

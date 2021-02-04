@@ -33,7 +33,15 @@ Route::get('/category', function () {
     return view('category');
 })->name('category');
 
+
+/*ogłoszenie*/
+Route::get('/advertisement', function () {
+    return view('advertisement');
+})->name('advertisement');
+
 /*
+
+
 
 Route::get('/login', function () {
     return view('loginRegister');
