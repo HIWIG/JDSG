@@ -54,7 +54,14 @@
                                 <img src="img/example.jpeg" class="img-fluid img-h-our1" alt="A generic square placeholder image with rounded corners in a figure.">
                             </figure>
                             <div class="advertContentDesciption p-3">
-                                <h5 class="pt-1 pb-2 advertTitle"><a href="#">Acer Nitro XF252QXBMIIPRZX</a></h5>
+
+                                <h5 class="pt-1 pb-2 advertTitle"><a href="#">
+
+                                        @foreach($ad as $advert)
+                                            {{$advert->title}}
+                                        @endforeach
+
+                                        </a></h5>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis quis sapien non lobortis.</p>
                                 <ul class="list-inline">
                                     <li class="list-inline-item p-1">

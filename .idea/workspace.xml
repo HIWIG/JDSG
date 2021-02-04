@@ -20,19 +20,18 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:AdvertMigration" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:SearchEngineImplementation" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="Added LoginController">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_29_141322_creates_categorys_table.php" afterDir="false" />
+    <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="c">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_114109_creates_adverts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_29_114109_creates_adverts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_134708_creates_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_29_134708_creates_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_134749_creates_tags_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_29_134749_creates_tags_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_134853_creates_tagconnections_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_29_134853_creates_tagconnections_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Advert.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Advert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/intro-search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/intro-search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
@@ -196,7 +195,7 @@
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
+      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="XML" />
       <method v="2" />
     </configuration>
   </component>
@@ -218,6 +217,7 @@
       <workItem from="1611875087541" duration="69000" />
       <workItem from="1611875159334" duration="4135000" />
       <workItem from="1611918812244" duration="9576000" />
+      <workItem from="1612450739512" duration="17532000" />
     </task>
     <task id="LOCAL-00001" summary="Added first version of RegisterController">
       <created>1611268176118</created>
@@ -313,7 +313,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="AdvertMigration" />
+                        <option value="SearchEngineImplementation" />
                       </list>
                     </value>
                   </entry>
@@ -343,10 +343,54 @@
     <option name="LAST_COMMIT_MESSAGE" value="created rest of migrations" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2467" y="179" key="#CLI_Interpreters" timestamp="1612470687222">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2467" y="179" key="#CLI_Interpreters/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612470687222" />
+    <state x="2472" y="183" key="#Intentions" timestamp="1612474945023">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2472" y="183" key="#Intentions/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612474945023" />
+    <state x="2594" y="167" key="#PHP" timestamp="1612470691790">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2594" y="167" key="#PHP/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612470691790" />
     <state x="734" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611154727610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="734" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1611154727610" />
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1612472370332">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612472370332" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1612472370332">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612472370332" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1612472370332">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612472370332" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1612472370332">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612472370332" />
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom" timestamp="1612472370332">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612472370332" />
+    <state width="1877" height="352" key="GridCell.Tab.1.center" timestamp="1612472370332">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612472370332" />
+    <state width="1877" height="352" key="GridCell.Tab.1.left" timestamp="1612472370332">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612472370332" />
+    <state width="1877" height="352" key="GridCell.Tab.1.right" timestamp="1612472370332">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="352" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612472370332" />
     <state x="184" y="86" key="MergeDialog" timestamp="1611601027221">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -367,10 +411,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1611601049245" />
-    <state x="740" y="233" key="git4idea.branch.GitSmartOperationDialog" timestamp="1611600931017">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="740" y="235" key="git4idea.branch.GitSmartOperationDialog" timestamp="1611937890022">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="233" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1611600931017" />
+    <state x="740" y="235" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1611937890022" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1611263995014">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
