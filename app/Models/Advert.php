@@ -10,5 +10,5 @@ class Advert extends Model
     use HasFactory;
 
  protected $table='adverts';
- protected  $fillable=['title'];
+ protected  $fillable=['title','description','cost'];
 }
