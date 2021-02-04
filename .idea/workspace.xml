@@ -25,13 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="c">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+    <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Advert.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Advert.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/intro-search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/intro-search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +213,7 @@
       <workItem from="1611875087541" duration="69000" />
       <workItem from="1611875159334" duration="4135000" />
       <workItem from="1611918812244" duration="9576000" />
-      <workItem from="1612450739512" duration="17532000" />
+      <workItem from="1612450739512" duration="20142000" />
     </task>
     <task id="LOCAL-00001" summary="Added first version of RegisterController">
       <created>1611268176118</created>
@@ -296,7 +292,35 @@
       <option name="project" value="LOCAL" />
       <updated>1611928447534</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="implemented changes into category.blade.php and intro-search.blade.php to make search engine work">
+      <created>1612479899768</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1612479899768</updated>
+    </task>
+    <task id="LOCAL-00013" summary="made query working">
+      <created>1612479926311</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1612479926311</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added things to fill in Advert.php">
+      <created>1612481923733</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1612481923733</updated>
+    </task>
+    <task id="LOCAL-00015" summary="created foreach for displaying adverts in category.blade.php">
+      <created>1612482087948</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1612482087948</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +364,11 @@
     <MESSAGE value="created migration file" />
     <MESSAGE value="edited adverts migration file with foreign key to user" />
     <MESSAGE value="created rest of migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="created rest of migrations" />
+    <MESSAGE value="implemented changes into category.blade.php and intro-search.blade.php to make search engine work" />
+    <MESSAGE value="made query working" />
+    <MESSAGE value="added things to fill in Advert.php" />
+    <MESSAGE value="created foreach for displaying adverts in category.blade.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2467" y="179" key="#CLI_Interpreters" timestamp="1612470687222">

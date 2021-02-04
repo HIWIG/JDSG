@@ -213,7 +213,11 @@
                         </div>
                     </div>
                     @endforeach
-                    {{$ad->links()}}
+
+
+
+                   {{$ad->links("pagination::bootstrap-4")}}
+
 
 
 
