@@ -240,7 +240,7 @@
       <workItem from="1612457374469" duration="38000" />
       <workItem from="1612457424992" duration="1785000" />
       <workItem from="1612509687336" duration="108000" />
-      <workItem from="1612509896292" duration="5940000" />
+      <workItem from="1612509896292" duration="6287000" />
     </task>
     <task id="LOCAL-00001" summary="Added first version of RegisterController">
       <created>1611268176118</created>
@@ -370,6 +370,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="674" y="162" key="#PHP/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612512114905" />
+    <state width="1877" height="247" key="GridCell.Tab.0.bottom" timestamp="1612516493765">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="247" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612516493765" />
+    <state width="1877" height="247" key="GridCell.Tab.0.center" timestamp="1612516493765">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="247" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612516493765" />
+    <state width="1877" height="247" key="GridCell.Tab.0.left" timestamp="1612516493764">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="247" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612516493764" />
+    <state width="1877" height="247" key="GridCell.Tab.0.right" timestamp="1612516493765">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="247" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612516493765" />
     <state x="184" y="86" key="MergeDialog" timestamp="1612465355851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
