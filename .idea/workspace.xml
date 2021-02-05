@@ -20,19 +20,14 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:ListingsFixes" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="Added LoginController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Advert.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Advert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_134749_creates_tags_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_134853_creates_tagconnections_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="DatabaseRedo" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -320,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612515807889</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Displaying proper categories and count of items in category.blade.php">
+      <created>1612520422087</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1612520422087</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +339,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="ListingsFixes" />
                       </list>
                     </value>
                   </entry>
@@ -365,7 +367,8 @@
     <MESSAGE value="edited adverts migration file with foreign key to user" />
     <MESSAGE value="created rest of migrations" />
     <MESSAGE value="Fixed issue with databasecontroller after merging" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue with databasecontroller after merging" />
+    <MESSAGE value="Displaying proper categories and count of items in category.blade.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Displaying proper categories and count of items in category.blade.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2594" y="167" key="#PHP" timestamp="1612517166917">

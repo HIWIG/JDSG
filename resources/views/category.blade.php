@@ -20,7 +20,7 @@
         <div class="container pb-5">
             <div class="row justify-content-center">
                 <x-header-intro/>
-                <x-intro-search/>
+                <x-search-bar/>
             </div>
         </div>
     </div>
@@ -47,7 +47,17 @@
 
 
 
-              <!--  <div id="gridview" class="col-12  row justify-content-center">
+
+
+                <div id="gridview" class="col-12  row justify-content-center">
+                    @if($categoriesCount->isEmpty())
+                        <div class="col-12 row justify-content-center">
+                            <h4 style="margin-bottom: 3em; margin-top: 3em;">Niestety szukana fraza nie znajduje się w naszej bazie ofert</h4>
+                        </div>
+
+                    @endif
+
+                @foreach($ad as $advert)
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="AdvertContentBox">
                             <figure class="figure mb-0">
@@ -55,10 +65,10 @@
                             </figure>
                             <div class="advertContentDesciption p-3">
 
-                                <h5 class="pt-1 pb-2 advertTitle"><a href="#">
+                                <h5 class="pt-1 pb-2 advertTitle"><a href="#">{{$advert->title}}
 
                                         </a></h5>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis quis sapien non lobortis.</p>
+                                <p> {{$advert->description}}</p>
                                 <ul class="list-inline">
                                     <li class="list-inline-item p-1">
                                         <span class="far fa-calendar-alt pr-1 font-menu-color"></span>
@@ -66,11 +76,11 @@
                                     </li>
                                     <li class="list-inline-item p-1">
                                         <span class="fas fa-user pr-1 font-menu-color"></span>
-                                        Jhoczi
+                                        {{$advert->user->username}}
                                     </li>
                                     <li class="list-inline-item p-1">
                                         <span class="fas fa-desktop pr-1 font-menu-color"></span>
-                                        Monitory
+                                        {{$advert->category->title}}
                                     </li>
                                 </ul>
                                 <div class="listing-bottom clearfix pt-3 pb-2 border-top">
@@ -81,99 +91,18 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="AdvertContentBox">
-                            <figure class="figure mb-0">
-                                <img src="img/example.jpeg" class="img-fluid img-h-our1" alt="A generic square placeholder image with rounded corners in a figure.">
-                            </figure>
-                            <div class="advertContentDesciption p-3">
-                                <h5 class="pt-1 pb-2 advertTitle"><a href="#">Acer Nitro XF252QXBMIIPRZX</a></h5>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis quis sapien non lobortis.</p>
-                                <ul class="list-inline">
-                                    <li class="list-inline-item p-1">
-                                        <span class="far fa-calendar-alt pr-1 font-menu-color"></span>
-                                        20-11-2020
-                                    </li>
-                                    <li class="list-inline-item p-1">
-                                        <span class="fas fa-user pr-1 font-menu-color"></span>
-                                        Jhoczi
-                                    </li>
-                                    <li class="list-inline-item p-1">
-                                        <span class="fas fa-desktop pr-1 font-menu-color"></span>
-                                        Monitory
-                                    </li>
-                                </ul>
-                                <div class="listing-bottom clearfix pt-3 pb-2 border-top">
-                                    <a href="#" class="float-left w-50"><span class="fas fa-map-marker-alt font-menu-color pr-1"></span> Katowice</a>
-                                    <a href="#" class="float-right w-50 text-right">Zobacz więcej</a>
-                                </div>
-                            </div>
+                    @endforeach
+
+                </div>
+
+                <div id="listview" class="col-12  row justify-content-center" style="display: none;">
+
+                    @if($categoriesCount->isEmpty())
+                        <div class="col-12 row justify-content-center">
+                        <h4 style="margin-bottom: 3em; margin-top: 3em;">Niestety szukana fraza nie znajduje się w naszej bazie ofert</h4>
                         </div>
-                    </div>
 
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="AdvertContentBox">
-                            <figure class="figure mb-0">
-                                <img src="img/example.jpeg" class="img-fluid img-h-our1" alt="A generic square placeholder image with rounded corners in a figure.">
-                            </figure>
-                            <div class="advertContentDesciption p-3">
-                                <h5 class="pt-1 pb-2 advertTitle"><a href="#">Acer Nitro XF252QXBMIIPRZX</a></h5>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis quis sapien non lobortis.</p>
-                                <ul class="list-inline">
-                                    <li class="list-inline-item p-1">
-                                        <span class="far fa-calendar-alt pr-1 font-menu-color"></span>
-                                        20-11-2020
-                                    </li>
-                                    <li class="list-inline-item p-1">
-                                        <span class="fas fa-user pr-1 font-menu-color"></span>
-                                        Jhoczi
-                                    </li>
-                                    <li class="list-inline-item p-1">
-                                        <span class="fas fa-desktop pr-1 font-menu-color"></span>
-                                        Monitory
-                                    </li>
-                                </ul>
-                                <div class="listing-bottom clearfix pt-3 pb-2 border-top">
-                                    <a href="#" class="float-left w-50"><span class="fas fa-map-marker-alt font-menu-color pr-1"></span> Katowice</a>
-                                    <a href="#" class="float-right w-50 text-right">Zobacz więcej</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                        <div class="AdvertContentBox">
-                            <figure class="figure mb-0">
-                                <img src="img/example.jpeg" class="img-fluid img-h-our1" alt="A generic square placeholder image with rounded corners in a figure.">
-                            </figure>
-                            <div class="advertContentDesciption p-3">
-                                <h5 class="pt-1 pb-2 advertTitle"><a href="#">Acer Nitro XF252QXBMIIPRZX</a></h5>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis quis sapien non lobortis.</p>
-                                <ul class="list-inline">
-                                    <li class="list-inline-item p-1">
-                                        <span class="far fa-calendar-alt pr-1 font-menu-color"></span>
-                                        20-11-2020
-                                    </li>
-                                    <li class="list-inline-item p-1">
-                                        <span class="fas fa-user pr-1 font-menu-color"></span>
-                                        Jhoczi
-                                    </li>
-                                    <li class="list-inline-item p-1">
-                                        <span class="fas fa-desktop pr-1 font-menu-color"></span>
-                                        Monitory
-                                    </li>
-                                </ul>
-                                <div class="listing-bottom clearfix pt-3 pb-2 border-top">
-                                    <a href="#" class="float-left w-50"><span class="fas fa-map-marker-alt font-menu-color pr-1"></span> Katowice</a>
-                                    <a href="#" class="float-right w-50 text-right">Zobacz więcej</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-                <div id="listview" class="col-12  row justify-content-center">
-
-
+                    @endif
                     @foreach($ad as $advert)
                     <div class="col-12 row justify-content-center">
                         <div class="AdvertContentBox row justify-content-center">
@@ -210,12 +139,7 @@
                     </div>
                     @endforeach
 
-
-
                    {{$ad->links("pagination::bootstrap-4")}}
-
-
-
 
 
                 </div>
@@ -238,9 +162,6 @@
                         view.style.display="flex";
                     }
                 </script>
-
-
-
 
 
             </div>
