@@ -43,6 +43,7 @@
                             </a>
                         </li>
                     </ul>
+
                 </div>
 
 
@@ -92,7 +93,7 @@
                     </div>
 
                     @endforeach
-
+                        {{$ad->links("pagination::bootstrap-4")}}
                 </div>
 
                 <div id="listview" class="col-12  row justify-content-center" style="display: none;">
