@@ -6,7 +6,6 @@ use App\Http\Controllers\MyAuth\RegisterController;
 use App\Http\Controllers\MyAuth\DashboardController;
 use App\Http\Controllers\MyAuth\LoginController;
 use Symfony\Component\Console\Input\Input;
-use app\Http\Controllers\MyAuth\DashboardController;
 //use app\Http\Controllers\MyAuth\LoginController;
 //use app\Http\Controllers\MyAuth\RegisterController;
 
