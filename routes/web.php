@@ -38,12 +38,6 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('/category',[ProductController::class, 'search']);
-/* damian sobie testuje here*/
-/*
-Route::get('/category', function () {
-    return view('category');
-})->name('category');
-
 
 /*ogłoszenie*/
 Route::get('/advertisement', function () {

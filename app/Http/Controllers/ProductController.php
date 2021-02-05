@@ -20,7 +20,14 @@ class ProductController extends Controller
 
         $ad=Advert::where('title','LIKE','%'.$querry.'%')
             ->paginate(6);
-            return view('category',compact('ad'));
+
+        $categoriesCount=Advert::where('title','LIKE','%'.$querry.'%')
+            ->select('categoryId',Advert::raw('count(*) as ct'))
+            ->groupBy('categoryId')
+            ->get();
+
+
+            return view('category',compact('ad'),compact('categoriesCount'));
 
     }
 }

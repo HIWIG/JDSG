@@ -27,6 +27,11 @@
   <component name="ChangeListManager">
     <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="Added LoginController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Advert.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Advert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_134749_creates_tags_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_134853_creates_tagconnections_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +46,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="SearchEngineImplementation" />
+        <entry key="$PROJECT_DIR$" value="DatabaseRedo" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -308,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611928447534</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fixed issue with databasecontroller after merging">
+      <created>1612515807889</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1612515807889</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,9 +364,14 @@
     <MESSAGE value="created migration file" />
     <MESSAGE value="edited adverts migration file with foreign key to user" />
     <MESSAGE value="created rest of migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="created rest of migrations" />
+    <MESSAGE value="Fixed issue with databasecontroller after merging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue with databasecontroller after merging" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2594" y="167" key="#PHP" timestamp="1612517166917">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2594" y="167" key="#PHP/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612517166917" />
     <state x="2104" y="87" key="MergeDialog" timestamp="1612515663744">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
@@ -365,5 +382,13 @@
     </state>
     <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612465366589" />
     <state x="2518" y="284" key="MultipleFileMergeDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612515663751" />
+    <state x="2472" y="258" key="Vcs.Push.Dialog.v2" timestamp="1612515819119">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612515819119" />
+    <state x="2660" y="238" key="git4idea.branch.GitSmartOperationDialog" timestamp="1612517325033">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2660" y="238" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612517325033" />
   </component>
 </project>

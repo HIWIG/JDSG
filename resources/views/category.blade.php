@@ -57,10 +57,6 @@
 
                                 <h5 class="pt-1 pb-2 advertTitle"><a href="#">
 
-                                        @foreach($ad as $advert)
-                                            {{$advert->title}}
-                                        @endforeach
-
                                         </a></h5>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis quis sapien non lobortis.</p>
                                 <ul class="list-inline">
@@ -252,16 +248,9 @@
                 <div class="catTable">
                     <h4>Kategorie:</h4>
                     <ul class="catList">
-                        <a href="#"><li>Laptopy<div class="pull-right">(5)</div> </li></a>
-                        <a href="#"><li>Monitory<div class="pull-right">(5)</div></li></a>
-                        <a href="#"><li>Klawiatury<div class="pull-right">(5)</div></li></a>
-                        <a href="#"><li>Słuchawki<div class="pull-right">(5)</div></li></a>
-                        <a href="#"><li>Myszki<div class="pull-right">(5)</div></li></a>
-                        <a href="#"><li>Telefony<div class="pull-right">(5)</div></li></a>
-                        <a href="#"><li>Dyski<div class="pull-right">(5)</div></li></a>
-                        <a href="#"><li>Podzespoły komputerowe<div class="pull-right">(5)</div></li></a>
-                        <a href="#"><li>Konsole<div class="pull-right">(5)</div></li></a>
-                        <a href="#"><li>Placeholder<div class="pull-right">(5)</div></li></a>
+                        @foreach($categoriesCount as $c)
+                            <a href="#"><li>{{$c->category->title}}<div class="pull-right">({{$c->ct}})</div> </li></a>
+                        @endforeach
                     </ul>
                 </div>
 
