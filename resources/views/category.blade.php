@@ -197,7 +197,7 @@
                                         </li>
                                         <li class="list-inline-item p-1">
                                             <span class="fas fa-user pr-1 font-menu-color"></span>
-                                            {{$advert->user_id}}
+                                            {{$advert->user->username}}
                                         </li>
                                         <li class="list-inline-item p-1">
                                             <span class="fas fa-desktop pr-1 font-menu-color"></span>

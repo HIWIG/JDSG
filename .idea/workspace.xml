@@ -26,9 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment=" styled pagination">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Advert.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Advert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +215,7 @@
       <workItem from="1611875159334" duration="4135000" />
       <workItem from="1611918812244" duration="9576000" />
       <workItem from="1612450739512" duration="20295000" />
-      <workItem from="1612508111460" duration="4415000" />
+      <workItem from="1612508111460" duration="5863000" />
     </task>
     <task id="LOCAL-00001" summary="Added first version of RegisterController">
       <created>1611268176118</created>
@@ -329,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612482443954</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Search valitaion">
+      <created>1612512584962</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1612512584962</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +385,8 @@
     <MESSAGE value="added things to fill in Advert.php" />
     <MESSAGE value="created foreach for displaying adverts in category.blade.php" />
     <MESSAGE value=" styled pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value=" styled pagination" />
+    <MESSAGE value="Search valitaion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search valitaion" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2467" y="179" key="#CLI_Interpreters" timestamp="1612470687222">
