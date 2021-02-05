@@ -20,19 +20,14 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:AdvertMigration" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:BackendImplementation" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="Added LoginController">
-      <change afterPath="$PROJECT_DIR$/public/img/1576204927_maxresdefault_9_story.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Komputer-do-Gier-Intel-i5-GTX-1050Ti-8GB-Win-10.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/main-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/main-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/advertisement.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/advertisement.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/account.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/account.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,13 +190,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Grzesiu\PhpstormProjects\JDSG" />
-      <recent name="E:\Programowanie\projectJDSG" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Programowanie\projectJDSG\resources\views" />
       <recent name="E:\Programowanie\projectJDSG\app\Http\Controllers\MyAuth" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Grzesiu\PhpstormProjects\JDSG" />
+      <recent name="E:\Programowanie\projectJDSG" />
     </key>
   </component>
   <component name="RunManager">
@@ -233,6 +228,8 @@
       <workItem from="1612445194394" duration="604000" />
       <workItem from="1612457374469" duration="38000" />
       <workItem from="1612457424992" duration="1785000" />
+      <workItem from="1612509687336" duration="108000" />
+      <workItem from="1612509896292" duration="974000" />
     </task>
     <task id="LOCAL-00001" summary="Added first version of RegisterController">
       <created>1611268176118</created>
@@ -328,7 +325,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="AdvertMigration" />
+                        <option value="BackendImplementation" />
                       </list>
                     </value>
                   </entry>
@@ -356,5 +353,15 @@
     <MESSAGE value="edited adverts migration file with foreign key to user" />
     <MESSAGE value="created rest of migrations" />
     <option name="LAST_COMMIT_MESSAGE" value="created rest of migrations" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="86" key="MergeDialog" timestamp="1612465355851">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612465355851" />
+    <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1612465366589">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612465366589" />
   </component>
 </project>
