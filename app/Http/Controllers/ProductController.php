@@ -11,32 +11,45 @@ use Illuminate\Support\Facades\Validator;
 class ProductController extends Controller
 {
 
-
     public function search(Request $request){
 
-       // $search_text = Validator::make($request->all(), [
-     //       'q' => 'required|min:3|max:255',
-     //   ])->validate();
-      //  $querry=$search_text['q'];
+     //   $search_text = Validator::make($request->all(), [
+     //      'q' => 'required|min:3|max:255',
+      // ])->validate();
+       //$querry=$search_text['q'];
+       //$search_text=$querry;
 
         $search_text = $request->get('q');
         $search_category=$request->get('k');
+if ($search_category=='Wszystkie kategorie'){
+            $ad=Advert::where('adverts.title','LIKE','%'.$search_text.'%')
+                ->paginate(6);
 
-        $ca=Category::where('title','LIKE','%'.$search_category.'%')
-            ->select('id')
-        ->value('id');
+            $categoriesCount=Advert::where('title','LIKE','%'.$search_text.'%')
+                ->select('categoryId',Advert::raw('count(*) as ct'))
+                ->groupBy('categoryId')
+                ->get();
+    return view('category',compact('ad'),compact('categoriesCount'));
 
-        $ad=Advert::where('adverts.title','LIKE','%'.$search_text.'%')
-            ->where('categoryId','LIKE','%'.$ca.'%')
-            ->paginate(6);
+        }
+        else{
+            $ca=Category::where('title','LIKE','%'.$search_category.'%')
+                ->select('id')
+                ->value('id');
 
-        $categoriesCount=Advert::where('title','LIKE','%'.$search_text.'%')
-            ->select('categoryId',Advert::raw('count(*) as ct'))
-            ->groupBy('categoryId')
-            ->get();
+            $ad=Advert::where('adverts.title','LIKE','%'.$search_text.'%')
+                ->where('categoryId','LIKE','%'.$ca.'%')
+                ->paginate(6);
+
+            $categoriesCount=Advert::where('title','LIKE','%'.$search_text.'%')
+                ->select('categoryId',Advert::raw('count(*) as ct'))
+                ->groupBy('categoryId')
+                ->get();
 //dd($ad);
 
             return view('category',compact('ad'),compact('categoriesCount'));
+        }
+
 
     }
 }

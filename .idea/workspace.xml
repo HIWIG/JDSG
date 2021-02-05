@@ -28,8 +28,9 @@
     <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="Added LoginController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/intro-search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/intro-search.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/search-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/search-bar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612520422087</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Integrated searching by categories">
+      <created>1612563493903</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1612563493903</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,13 +378,18 @@
     <MESSAGE value="created rest of migrations" />
     <MESSAGE value="Fixed issue with databasecontroller after merging" />
     <MESSAGE value="Displaying proper categories and count of items in category.blade.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Displaying proper categories and count of items in category.blade.php" />
+    <MESSAGE value="Integrated searching by categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="Integrated searching by categories" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2594" y="167" key="#PHP" timestamp="1612517166917">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2594" y="167" key="#PHP/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612517166917" />
+    <state x="2012" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1612565729749">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2012" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612565729749" />
     <state x="2104" y="87" key="MergeDialog" timestamp="1612515663744">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
