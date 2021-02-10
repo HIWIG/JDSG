@@ -108,7 +108,13 @@
                     </div>
 
                     @endforeach
-                        {{$ad->appends(['q'=>$search_text,'k'=>$search_category])->links("pagination::bootstrap-4")}}
+
+                        @if(!isset($x))
+                            {{$ad->appends(['q'=>$search_text,'k'=>$search_category])->links("pagination::bootstrap-4")}}
+                        @elseif(isset($x))
+                            {{$ad->appends(['x'=>$x,'k'=>$search_category])->links("pagination::bootstrap-4")}}
+                            @endif
+
                 </div>
 
                 <div id="listview" class="col-12  row justify-content-center" style="display: none;">
@@ -155,7 +161,11 @@
                     </div>
                     @endforeach
 
-                   {{$ad->appends(['q'=>$search_text,'k'=>$search_category])->links("pagination::bootstrap-4")}}
+                        @if(!isset($x))
+                            {{$ad->appends(['q'=>$search_text,'k'=>$search_category])->links("pagination::bootstrap-4")}}
+                        @elseif(isset($x))
+                            {{$ad->appends(['x'=>$x,'k'=>$search_category])->links("pagination::bootstrap-4")}}
+                        @endif
 
 
                 </div>

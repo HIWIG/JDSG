@@ -37,7 +37,8 @@ Route::get('/dashboard', function () {
     return view('index');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/category',[ProductController::class, 'search']);
+Route::any('/category',[ProductController::class, 'search'])->name('category');
+
 
 /*ogłoszenie*/
 Route::get('/advertisement', function () {

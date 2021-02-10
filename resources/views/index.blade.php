@@ -34,10 +34,11 @@
                     <h5 class="sub-title">Znajdź swoją kategorię</h5>
                 </div>
                 <div class="categoryContainer">
-                   <div class="categoryBox">
+                  <a href="{{route('category',['x'=>'1','k'=>'Laptop'])}}"> <div class="categoryBox">
                         <i class="fas fa-laptop fa-3x"></i>
                         <div class="categoryName">Laptopy</div>
                     </div>
+                  </a>
                     <div class="categoryBox">
                         <i class="fas fa-desktop fa-3x"></i>
                         <div class="categoryName">Monitory</div>

@@ -12,6 +12,25 @@ class ProductController extends Controller
 {
 
     public function search(Request $request){
+        $search_category=$request->get('k');
+        $x=$request->get('x');
+        if($x==1){
+            $ca=Category::where('title','LIKE','%'.$search_category.'%')
+                ->select('id')
+                ->value('id');
+
+            $ad=Advert::where('categoryId','LIKE','%'.$ca.'%')
+                ->paginate(6);
+
+            $categoriesCount=Advert::
+                select('categoryId',Advert::raw('count(*) as ct'))
+                ->groupBy('categoryId')
+                ->get();
+//dd($ad);
+
+            return view('category',compact('ad','categoriesCount','search_category','x'));
+
+        }
 
         $search_text = Validator::make($request->all(), [
            'q' => 'required|min:3|max:255',
@@ -20,7 +39,7 @@ class ProductController extends Controller
        $search_text=$querry;
 
         //$search_text = $request->get('q');
-        $search_category=$request->get('k');
+
 if ($search_category=='Wszystkie kategorie'){
             $ad=Advert::where('adverts.title','LIKE','%'.$search_text.'%')
                 ->paginate(6);
@@ -47,7 +66,7 @@ if ($search_category=='Wszystkie kategorie'){
                 ->get();
 //dd($ad);
 
-            return view('category',compact('ad','categoriesCount','search_text'));
+            return view('category',compact('ad','categoriesCount','search_text','search_category'));
         }
 
 
