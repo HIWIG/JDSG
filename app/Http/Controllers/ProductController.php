@@ -13,13 +13,13 @@ class ProductController extends Controller
 
     public function search(Request $request){
 
-     //   $search_text = Validator::make($request->all(), [
-     //      'q' => 'required|min:3|max:255',
-      // ])->validate();
-       //$querry=$search_text['q'];
-       //$search_text=$querry;
+        $search_text = Validator::make($request->all(), [
+           'q' => 'required|min:3|max:255',
+       ])->validate();
+       $querry=$search_text['q'];
+       $search_text=$querry;
 
-        $search_text = $request->get('q');
+        //$search_text = $request->get('q');
         $search_category=$request->get('k');
 if ($search_category=='Wszystkie kategorie'){
             $ad=Advert::where('adverts.title','LIKE','%'.$search_text.'%')
@@ -29,7 +29,7 @@ if ($search_category=='Wszystkie kategorie'){
                 ->select('categoryId',Advert::raw('count(*) as ct'))
                 ->groupBy('categoryId')
                 ->get();
-    return view('category',compact('ad'),compact('categoriesCount'));
+    return view('category',compact('ad','search_text','search_category','categoriesCount'));
 
         }
         else{
@@ -47,7 +47,7 @@ if ($search_category=='Wszystkie kategorie'){
                 ->get();
 //dd($ad);
 
-            return view('category',compact('ad'),compact('categoriesCount'));
+            return view('category',compact('ad','categoriesCount','search_text'));
         }
 
 
