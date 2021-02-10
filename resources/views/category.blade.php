@@ -24,9 +24,24 @@
             </div>
         </div>
     </div>
+    @if ($errors->any())
+        <script>
+                alert("Wprowadzono błędne wyszukanie");
+        </script>
+    @endif
 </section>
 
 <section id="categoryColumns">
+    <script>
+        let x=document.cookie;
+        console.log(x);
+        if(x==='grid'){
+            gridview();
+        }
+        if(x==='list'){
+            listview();
+        }
+    </script>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-9 col-sm-12 row justify-content-center">
@@ -93,7 +108,7 @@
                     </div>
 
                     @endforeach
-                        {{$ad->links("pagination::bootstrap-4")}}
+                        {{$ad->appends(['q'=>$search_text,'k'=>$search_category])->links("pagination::bootstrap-4")}}
                 </div>
 
                 <div id="listview" class="col-12  row justify-content-center" style="display: none;">
@@ -140,7 +155,7 @@
                     </div>
                     @endforeach
 
-                   {{$ad->links("pagination::bootstrap-4")}}
+                   {{$ad->appends(['q'=>$search_text,'k'=>$search_category])->links("pagination::bootstrap-4")}}
 
 
                 </div>
@@ -150,17 +165,24 @@
 
 
                 <script>
+
                     function gridview(){
-                        var view=document.getElementById("gridview");
-                        var notview=document.getElementById("listview");
+                        let view=document.getElementById("gridview");
+                        let notview=document.getElementById("listview");
                         notview.style.display="none";
                         view.style.display="flex";
+                        console.log('xxx');
+                        setCookie('grid');
                     }
                     function listview(){
-                        var notview=document.getElementById("gridview");
-                        var view=document.getElementById("listview");
+                        let notview=document.getElementById("gridview");
+                        let view=document.getElementById("listview");
                         notview.style.display="none";
                         view.style.display="flex";
+                        setCookie('list');
+                    }
+                    function setCookie(name){
+                        document.cookie=name;
                     }
                 </script>
 
