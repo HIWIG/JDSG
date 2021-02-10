@@ -43,8 +43,16 @@ Route::get('/category',[ProductController::class, 'search']);
 Route::get('/advertisement', function () {
     return view('advertisement');
 })->name('advertisement');
+/*FAQ*/
+Route::get('/faq',function ()
+{
+ return view('faq');
+})->name('faq');
 
-
+Route::get('/contact',function ()
+{
+    return view('contact');
+})->name('contact');
 /*
 
 Route::any ( '/category', function () {

@@ -28,10 +28,10 @@
                     </div>
                 </li>
                 <li class="nav-item mr-0 pt-2">
-                    <a href="#" class="nav-link f-white font-weight-bolder pl-0 pr-0">Kontakt</a>
+                    <a href="{{route('contact')}}" class="nav-link f-white font-weight-bolder pl-0 pr-0">Kontakt</a>
                 </li>
                 <li class="nav-item mr-0 pt-2">
-                    <a href="#" class="nav-link f-white font-weight-bolder pl-0 pr-0">FAQ</a>
+                    <a href="{{route('faq')}}" class="nav-link f-white font-weight-bolder pl-0 pr-0">FAQ</a>
                 </li>
                 <li class="nav-item mr-0 pt-2">
                     @auth
