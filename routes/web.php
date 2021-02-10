@@ -50,7 +50,10 @@ Route::get('/advertisement', function () {
     return view('advertisement');
 })->name('advertisement');
 
-
+Route::get('/faq',function ()
+{
+ return view('faq');
+})->name('faq');
 /*
 
 Route::any ( '/category', function () {
