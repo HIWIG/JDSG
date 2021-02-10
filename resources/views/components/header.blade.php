@@ -85,7 +85,7 @@
                         <a href="{{ route('index')}}" class="nav-link">Strona Główna</a>
                     </li>
                     <li class="nav-item mr-0 pt-2">
-                        <a href="{{route('category')}}" class="nav-link dropdown-toggle ">Kategorie
+                        <a href="." class="nav-link dropdown-toggle ">Kategorie
                         </a>
                     </li>
                     <li class="nav-item mr-0 pt-2">
