@@ -5,21 +5,27 @@
         </div>
 
     </div>
-    <form class="mb-5">
+    <form class="mb-5 " type="get" action="{{url('/category')}}">
+
         <div class=" p-2 bg-light border-radius-40">
             <div class="row justify-content-center">
                 <div class="col-11 col-md-4">
-                    <input type="text" class="form-control mb-3 mt-2" id="exampleFormControlInput1" placeholder="Szukaj ogłoszeń">
+                    <input type="text" class="form-control mb-3 mt-2" id="exampleFormControlInput1"  name="q" placeholder="Szukaj ogłoszeń">
                 </div>
                 <div class="col-6 col-md-4">
                     <div class="select mb-3 mt-2">
-                        <select class="form-control " id="exampleFormControlSelect1">
-                            <option>Wybierz kategorię</option>
-                            <option>Kategoria 1</option>
-                            <option>Kategoria 2</option>
-                            <option>Kategoria 3</option>
-                            <option>Kategoria 4</option>
-                            <option>Kategoria 5</option>
+                        <select class="form-control " id="exampleFormControlSelect1" name="k">
+                            <option>Wszystkie kategorie</option>
+                            <option>Laptopy</option>
+                            <option>Monitory</option>
+                            <option>Klawiatury</option>
+                            <option>Słuchawki</option>
+                            <option>Myszki</option>
+                            <option>Telefony</option>
+                            <option>Dyski</option>
+                            <option>Podzespoły</option>
+                            <option>Konsole</option>
+                            <option>Układy Scalone</option>
                         </select>
                     </div>
                 </div>

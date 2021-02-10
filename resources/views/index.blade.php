@@ -34,7 +34,7 @@
                     <h5 class="sub-title">Znajdź swoją kategorię</h5>
                 </div>
                 <div class="categoryContainer">
-                    <div class="categoryBox" >
+                   <div class="categoryBox">
                         <i class="fas fa-laptop fa-3x"></i>
                         <div class="categoryName">Laptopy</div>
                     </div>

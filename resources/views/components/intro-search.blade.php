@@ -12,13 +12,18 @@
                     </div>
                     <div class="col-6 col-md-4">
                         <div class="select mb-3 mt-2">
-                            <select class="form-control " id="exampleFormControlSelect1">
-                                <option>Wybierz kategorię</option>
-                                <option>Kategoria 1</option>
-                                <option>Kategoria 2</option>
-                                <option>Kategoria 3</option>
-                                <option>Kategoria 4</option>
-                                <option>Kategoria 5</option>
+                            <select class="form-control " id="exampleFormControlSelect1" name="k">
+                                <option>Wszystkie kategorie</option>
+                                <option>Laptopy</option>
+                                <option>Monitory</option>
+                                <option>Klawiatury</option>
+                                <option>Słuchawki</option>
+                                <option>Myszki</option>
+                                <option>Telefony</option>
+                                <option>Dyski</option>
+                                <option>Podzespoły</option>
+                                <option>Konsole</option>
+                                <option>Układy Scalone</option>
                             </select>
                         </div>
                     </div>
