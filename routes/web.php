@@ -39,21 +39,24 @@ Route::get('/dashboard', function () {
 
 Route::get('/category',[ProductController::class, 'search']);
 /* damian sobie testuje here*/
-/*
+
 Route::get('/category', function () {
     return view('category');
 })->name('category');
-
-
 /*ogłoszenie*/
 Route::get('/advertisement', function () {
     return view('advertisement');
 })->name('advertisement');
-
+/*FAQ*/
 Route::get('/faq',function ()
 {
  return view('faq');
 })->name('faq');
+
+Route::get('/contact',function ()
+{
+    return view('contact');
+})->name('contact');
 /*
 
 Route::any ( '/category', function () {

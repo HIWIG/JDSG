@@ -85,7 +85,7 @@
                         <a href="{{ route('index')}}" class="nav-link">Strona Główna</a>
                     </li>
                     <li class="nav-item mr-0 pt-2">
-                        <a href="category.html" class="nav-link dropdown-toggle ">Kategorie
+                        <a href="{{route('category')}}" class="nav-link dropdown-toggle ">Kategorie
                         </a>
                     </li>
                     <li class="nav-item mr-0 pt-2">
@@ -93,10 +93,10 @@
                         </a>
                     </li>
                     <li class="nav-item mr-0 pt-2">
-                        <a href="contact.html" class="nav-link">Kontakt</a>
+                        <a href="{{route('contact')}}" class="nav-link">Kontakt</a>
                     </li>
                     <li class="nav-item mr-0 pt-2">
-                        <a href="faq.html" class="nav-link">FAQ</a>
+                        <a href="{{route('faq')}}" class="nav-link">FAQ</a>
                     </li>
                     <li class="nav-item mr-0 pt-2">
                         <a href="#" class="nav-link d-inline-block">
