@@ -61,11 +61,11 @@
                             </div>
                                 @auth
                                     <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="user.html" class="f-lightblack"><span class="fas fa-user mr-3 font-menu-color navbar-icon"></span>Twoje konto</a></li>
-                                    <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="myAdvertisment.html" class="f-lightblack"><span class="fas fa-comments-dollar mr-3 font-menu-color navbar-icon"></span>Moje ogłoszenia</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="{{route('advertisement')}}" class="f-lightblack"><span class="fas fa-comments-dollar mr-3 font-menu-color navbar-icon"></span>Moje ogłoszenia</a></li>
                                     <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="settings.html" class="f-lightblack"><span class="fas fa-cog mr-3 font-menu-color navbar-icon"></span>Ustawienia konta</a></li>
                                 @endauth
                             <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="more.html" class="f-lightblack"><span class="fas fa-info-circle mr-3 font-menu-color navbar-icon"></span>Więcej</a></li>
-                            <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="contact.html" class="f-lightblack"><span class="fas fa-id-card mr-3 font-menu-color navbar-icon"></span>Kontakt</a></li>
+                            <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="{{route('contact')}}" class="f-lightblack"><span class="fas fa-id-card mr-3 font-menu-color navbar-icon"></span>Kontakt</a></li>
                         </ul>
                     </div>
                 </div>
