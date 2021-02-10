@@ -34,47 +34,65 @@
                     <h5 class="sub-title">Znajdź swoją kategorię</h5>
                 </div>
                 <div class="categoryContainer">
-                  <a href="{{route('category',['x'=>'1','k'=>'Laptop'])}}"> <div class="categoryBox">
+                  <a href="{{route('category',['x'=>'1','k'=>'Laptopy'])}}"> <div class="categoryBox">
                         <i class="fas fa-laptop fa-3x"></i>
                         <div class="categoryName">Laptopy</div>
                     </div>
                   </a>
+                    <a href="{{route('category',['x'=>'1','k'=>'Monitory'])}}">
                     <div class="categoryBox">
                         <i class="fas fa-desktop fa-3x"></i>
                         <div class="categoryName">Monitory</div>
                     </div>
+                    </a>
+                    <a href="{{route('category',['x'=>'1','k'=>'Klawiatury'])}}">
                     <div class="categoryBox">
                         <i class="far fa-keyboard  fa-3x"></i>
                         <div class="categoryName">Klawiatury</div>
                     </div>
+                    </a>
+                    <a href="{{route('category',['x'=>'1','k'=>'Słuchawki'])}}">
                     <div class="categoryBox">
                         <i class="fas fa-headphones fa-3x"></i>
                         <div class="categoryName">Słuchawki</div>
                     </div>
+                    </a>
+                    <a href="{{route('category',['x'=>'1','k'=>'Myszki'])}}">
                     <div class="categoryBox">
                         <i class="fas fa-mouse fa-3x"></i>
                         <div class="categoryName">Myszki</div>
                     </div>
+                    </a>
+                    <a href="{{route('category',['x'=>'1','k'=>'Telefony'])}}">
                     <div class="categoryBox">
                         <i class="fas fa-mobile-alt fa-3x"></i>
                         <div class="categoryName">Telefony</div>
                     </div>
+                    </a>
+                    <a href="{{route('category',['x'=>'1','k'=>'Dyski'])}}">
                     <div class="categoryBox">
                         <i class="fas fa-hdd fa-3x"></i>
                         <div class="categoryName">Dyski</div>
                     </div>
+                    </a>
+                    <a href="{{route('category',['x'=>'1','k'=>'Podzespoły komputerowe'])}}">
                     <div class="categoryBox">
                         <i class="fas fa-memory fa-3x"></i>
                         <div class="categoryName">Podzespoły komputerowe</div>
                     </div>
+                    </a>
+                    <a href="{{route('category',['x'=>'1','k'=>'Konsole'])}}">
                     <div class="categoryBox">
                         <i class="fas fa-gamepad fa-3x"></i>
                         <div class="categoryName">Konsole</div>
                     </div>
+                    </a>
+                    <a href="{{route('category',['x'=>'1','k'=>'Układy scalone'])}}">
                     <div class="categoryBox">
                         <i class="fas fa-microchip fa-3x"></i>
                         <div class="categoryName">Układy Scalone</div>
                     </div>
+                    </a>
                 </div>
             </div>
         </div>
