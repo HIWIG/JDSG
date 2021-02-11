@@ -20,16 +20,15 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:ListingsFixes" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:AccountBackendImplementation" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="Added LoginController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/intro-search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/intro-search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/search-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/search-bar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/header-intro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/header-intro.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="siema2" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -386,6 +385,10 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2594" y="167" key="#PHP/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612517166917" />
+    <state x="733" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613057794935">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="733" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1613057794935" />
     <state x="2012" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1612565729749">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
