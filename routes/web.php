@@ -61,6 +61,7 @@ Route::get('/contact',function ()
 Route::get('/addproduct',[ProductController::class,'add'])->name('addproduct');
 Route::post('/addproduct',[ProductController::class,'store']);
 
+
 /*
 
 Route::any ( '/category', function () {

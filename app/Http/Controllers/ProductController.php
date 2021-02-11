@@ -19,7 +19,6 @@ class ProductController extends Controller
             ->orderBy('created_at','desc')
             ->take(6)
             ->get();
-
         return view('index',compact('ads'));
 
     }
@@ -39,8 +38,6 @@ class ProductController extends Controller
                 select('categoryId',Advert::raw('count(*) as ct'))
                 ->groupBy('categoryId')
                 ->get();
-//dd($ad);
-
             return view('category',compact('ad','categoriesCount','search_category','x'));
 
         }
@@ -51,9 +48,7 @@ class ProductController extends Controller
        $querry=$search_text['q'];
        $search_text=$querry;
 
-        //$search_text = $request->get('q');
-
-if ($search_category=='Wszystkie kategorie'){
+        if ($search_category=='Wszystkie kategorie'){
             $ad=Advert::where('adverts.title','LIKE','%'.$search_text.'%')
                 ->paginate(6);
 
@@ -77,7 +72,6 @@ if ($search_category=='Wszystkie kategorie'){
                 ->select('categoryId',Advert::raw('count(*) as ct'))
                 ->groupBy('categoryId')
                 ->get();
-//dd($ad);
 
             return view('category',compact('ad','categoriesCount','search_text','search_category'));
         }
