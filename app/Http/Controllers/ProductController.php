@@ -88,7 +88,7 @@ if ($search_category=='Wszystkie kategorie'){
             'description'=>'required|min:3|max:3000',
             'cost'=>'required',
             'categoryId'=>'required',
-            'image'=>'image|mimes:jpeg,png|max:3096'
+            'image'=>'image|mimes:jpeg,png,jpg|max:3096'
         ])->validate();
         $id=Auth::id();
         if($request->hasFile('image')){
@@ -99,7 +99,7 @@ if ($search_category=='Wszystkie kategorie'){
             $input['image']=$image_name;
         }
         else{
-            $input['image']='brak_zdjęcia';
+            $input['image']='brak_zdjęcia.png';
         }
 
        Advert::create(['userId'=>$id,'categoryId'=>$input['categoryId'],'title'=>$input['title'],'description'=>$input['description'],'cost'=>$input['cost'],'image'=>$input['image']]);

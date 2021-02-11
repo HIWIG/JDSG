@@ -77,7 +77,7 @@
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                         <div class="AdvertContentBox">
                             <figure class="figure mb-0">
-                                <img src="img/example.jpeg" class="img-fluid img-h-our1" alt="A generic square placeholder image with rounded corners in a figure.">
+                                <img src="{{asset('/storage/img/products/'.$advert->image)}}" class="img-fluid img-h-our1"  style="object-fit: contain" alt="A generic square placeholder image with rounded corners in a figure.">
                             </figure>
                             <div class="advertContentDesciption p-3">
 
@@ -130,7 +130,7 @@
                         <div class="AdvertContentBox row justify-content-center">
                             <div class="col-4">
                                 <figure class="figure mb-0">
-                                    <img src="img/example.jpeg" class="img-fluid img-h-our1" alt="A generic square placeholder image with rounded corners in a figure.">
+                                    <img src="{{asset('/storage/img/products/'.$advert->image)}}" class="img-fluid img-h-our1" alt="A generic square placeholder image with rounded corners in a figure."/>
                                 </figure>
                             </div>
                             <div class="col-8">
