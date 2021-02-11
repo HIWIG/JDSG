@@ -83,10 +83,8 @@ if ($search_category=='Wszystkie kategorie'){
 
     public function store(Request $request){
         $input=$request->all();
-        $catid=$input['categoryId'];
         $id=Auth::id();
-        Advert::create($input);
-        Advert::create([$id=>'userId', $catid=>'categoryId',$input['title']=>'title',$input['description']=>'description',$input['cost']=>'cost']);
+        Advert::create(['userId'=>$id,'categoryId'=>$input['categoryId'],'title'=>$input['title'],'description'=>$input['description'],'cost'=>$input['cost']]);
         return redirect('/');
     }
 }
