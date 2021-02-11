@@ -13,7 +13,7 @@ use Symfony\Component\Console\Input\Input;
 
 Route::get('/account', function () {
     return view('account');
-})->name('account');
+})->middleware(['auth'])->name('account');
 
 /*LEARNING SECTION*/
 

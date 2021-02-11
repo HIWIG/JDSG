@@ -20,7 +20,7 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:AccountBackendImplementation" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -41,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="SearchEngineImplementation" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -190,13 +190,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Programowanie\projectJDSG\resources\views" />
-      <recent name="E:\Programowanie\projectJDSG\app\Http\Controllers\MyAuth" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Grzesiu\PhpstormProjects\JDSG" />
       <recent name="E:\Programowanie\projectJDSG" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Programowanie\projectJDSG\resources\views" />
+      <recent name="E:\Programowanie\projectJDSG\app\Http\Controllers\MyAuth" />
     </key>
   </component>
   <component name="RunManager">
