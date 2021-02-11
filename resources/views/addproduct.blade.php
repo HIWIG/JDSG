@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
 
 <div class="container">
-<form method="post" action="{{url('/addproduct')}}">
+<form method="post" action="{{url('/addproduct')}}" enctype="multipart/form-data">
     {{csrf_field()}}
 
     <div class="form-group">
@@ -18,6 +18,10 @@
         </select>
 </div>
 
+    <div class="form-group">
+        <label>zdjęcie</label>
+        <input type="file" class="form-control-file" name="image">
+    </div>
     <div class="form-group">
         <label >opis</label>
         <textarea class="form-control" rows="3" name="description"></textarea>

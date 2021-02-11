@@ -84,7 +84,14 @@ if ($search_category=='Wszystkie kategorie'){
     public function store(Request $request){
         $input=$request->all();
         $id=Auth::id();
-        Advert::create(['userId'=>$id,'categoryId'=>$input['categoryId'],'title'=>$input['title'],'description'=>$input['description'],'cost'=>$input['cost']]);
+        if($request->hasFile('image')){
+            $destination_path='public/images/products';
+            $image=$request->file('image');
+            $image_name=$image->getClientOriginalName();
+            $path=$request->file('image')->storeAs($destination_path,$image_name);
+            $input['image']=$image_name;
+        }
+        Advert::create(['userId'=>$id,'categoryId'=>$input['categoryId'],'title'=>$input['title'],'description'=>$input['description'],'cost'=>$input['cost'],'image'=>$input['image']]);
         return redirect('/');
     }
 }

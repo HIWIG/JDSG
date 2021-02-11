@@ -23,6 +23,7 @@ class CreatesAdvertsTable extends Migration
                 $table->bigInteger('userId')->unsigned();
                 $table->foreign('userId')->references('id')->on('users');
 
+                $table->string('image');
                 $table->string('title');
                 $table->string('description');
                 $table->decimal('cost', 9, 2);
