@@ -24,6 +24,11 @@
                                             {{auth()->user()->username }}
                                         </div>
                                     </div>
+                                    <p class="myHr"> Ogłoszenia</p>
+                                    <form action="{{route('addproduct')}}" method="post">
+                                        @csrf
+                                        <button type="submit" class="btn btn-primary mt-2 mb-3 w-75 border-radius-20 box-shadow-black">Dodaj ogłoszenie</button>
+                                    </form>
                                     <p class="myHr"> Wyloguj sie</p>
                                     <form action="{{route('logout')}}" method="post">
                                         @csrf
@@ -47,24 +52,24 @@
                             <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack" data-toggle="collapse" data-target="#collapseCategories" aria-expanded="false" aria-controls="collapseCategories"><span class="fas fa-list mr-3 font-menu-color navbar-icon"></span>Kategorie</a></li>
                             <div class="collapse" id="collapseCategories">
                                 <div class="card card-body">
-                                    <li class="list-group-item pb-2 li-hidden-nav border-top-0 "><a href="#" class="f-lightblack">Laptopy</a></li>
-                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Monitory</a></li>
-                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Klawiatury</a></li>
-                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Słuchawki</a></li>
-                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Myszki</a></li>
-                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Telefony</a></li>
-                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Dyski</a></li>
-                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Podzespoły komputerowe</a></li>
-                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Konsole</a></li>
-                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="#" class="f-lightblack">Układy Scalone</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav border-top-0 "><a href="{{route('category',['x'=>'1','k'=>'Laptopy'])}}" class="f-lightblack">Laptopy</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="{{route('category',['x'=>'1','k'=>'Monitory'])}}" class="f-lightblack">Monitory</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="{{route('category',['x'=>'1','k'=>'Klawiatury'])}}" class="f-lightblack">Klawiatury</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="{{route('category',['x'=>'1','k'=>'Słuchawki'])}}" class="f-lightblack">Słuchawki</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="{{route('category',['x'=>'1','k'=>'Myszki'])}}" class="f-lightblack">Myszki</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="{{route('category',['x'=>'1','k'=>'Telefony'])}}" class="f-lightblack">Telefony</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="{{route('category',['x'=>'1','k'=>'Dyski'])}}" class="f-lightblack">Dyski</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="{{route('category',['x'=>'1','k'=>'Podzespoły komputerowe'])}}" class="f-lightblack">Podzespoły komputerowe</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="{{route('category',['x'=>'1','k'=>'Konsole'])}}" class="f-lightblack">Konsole</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav "><a href="{{route('category',['x'=>'1','k'=>'Układy scalone'])}}" class="f-lightblack">Układy Scalone</a></li>
                                 </div>
                             </div>
                                 @auth
-                                    <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="user.html" class="f-lightblack"><span class="fas fa-user mr-3 font-menu-color navbar-icon"></span>Twoje konto</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="{{route('account')}}" class="f-lightblack"><span class="fas fa-user mr-3 font-menu-color navbar-icon"></span>Twoje konto</a></li>
                                     <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="{{route('advertisement')}}" class="f-lightblack"><span class="fas fa-comments-dollar mr-3 font-menu-color navbar-icon"></span>Moje ogłoszenia</a></li>
-                                    <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="settings.html" class="f-lightblack"><span class="fas fa-cog mr-3 font-menu-color navbar-icon"></span>Ustawienia konta</a></li>
+                                    <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="{{route('account')}}" class="f-lightblack"><span class="fas fa-cog mr-3 font-menu-color navbar-icon"></span>Ustawienia konta</a></li>
                                 @endauth
-                            <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="more.html" class="f-lightblack"><span class="fas fa-info-circle mr-3 font-menu-color navbar-icon"></span>Więcej</a></li>
+                            <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="{{route('faq')}}" class="f-lightblack"><span class="fas fa-info-circle mr-3 font-menu-color navbar-icon"></span>Więcej</a></li>
                             <li class="list-group-item pb-2 li-hidden-nav border-bottom"><a href="{{route('contact')}}" class="f-lightblack"><span class="fas fa-id-card mr-3 font-menu-color navbar-icon"></span>Kontakt</a></li>
                         </ul>
                     </div>
@@ -73,12 +78,12 @@
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light font-menu-color menu-container">
-        <div class="container border-bottom main-header-tablet">
+        {{--<div class="container border-bottom main-header-tablet">
             <div class="clearfix">
-                <ul class="nav nav-fill">
+                <ul class="nav nav-fill bg-danger">
                     <li class="nav-item mr-0">
                         <div class="navbar-brand">
-                            <a href="#"><img src="img/logojdsg.svg" width="110" height="50" class="d-inline-block align-top" alt="Our Logo"></a>
+                            <a href="{{route('index')}}"><img src="img/logojdsg.svg" width="110" height="50" class="d-inline-block align-top" alt="Our Logo"></a>
                         </div>
                     </li>
                     <li class="nav-item mr-0 pt-2">
@@ -113,8 +118,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
-
+        </div>--}} <!-- CO TO JEST?!!?! -->
         <div class="w-100 mobile-menu">
             <div class=" pt-1">
                 <div class="navbar-brand">

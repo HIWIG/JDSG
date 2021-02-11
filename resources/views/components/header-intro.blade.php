@@ -15,16 +15,16 @@
                     <a href="#" class="nav-link dropdown-toggle f-white font-weight-bolder pl-0 pr-0" id="dropdownCategories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategorie
                     </a>
                     <div class="dropdown-menu dropdown-margin" aria-labelledby="dropdownCategories">
-                        <a class="dropdown-item" href="#">Laptopty</a>
-                        <a class="dropdown-item" href="#">Monitory</a>
-                        <a class="dropdown-item" href="#">Klawiatury</a>
-                        <a class="dropdown-item" href="#">Słuchawki</a>
-                        <a class="dropdown-item" href="#">Myszki</a>
-                        <a class="dropdown-item" href="#">Telefony</a>
-                        <a class="dropdown-item" href="#">Dyski</a>
-                        <a class="dropdown-item" href="#">Podzespoły komputerowe</a>
-                        <a class="dropdown-item" href="#">Konsole</a>
-                        <a class="dropdown-item" href="#">Układy Scalone</a>
+                        <a class="dropdown-item" href="{{route('category',['x'=>'1','k'=>'Laptopy'])}}">Laptopty</a>
+                        <a class="dropdown-item" href="{{route('category',['x'=>'1','k'=>'Monitory'])}}">Monitory</a>
+                        <a class="dropdown-item" href="{{route('category',['x'=>'1','k'=>'Klawiatury'])}}">Klawiatury</a>
+                        <a class="dropdown-item" href="{{route('category',['x'=>'1','k'=>'Słuchawki'])}}">Słuchawki</a>
+                        <a class="dropdown-item" href="{{route('category',['x'=>'1','k'=>'Myszki'])}}">Myszki</a>
+                        <a class="dropdown-item" href="{{route('category',['x'=>'1','k'=>'Telefony'])}}">Telefony</a>
+                        <a class="dropdown-item" href="{{route('category',['x'=>'1','k'=>'Dyski'])}}">Dyski</a>
+                        <a class="dropdown-item" href="{{route('category',['x'=>'1','k'=>'Podzespoły komputerowe'])}}">Podzespoły komputerowe</a>
+                        <a class="dropdown-item" href="{{route('category',['x'=>'1','k'=>'Konsole'])}}">Konsole</a>
+                        <a class="dropdown-item" href="{{route('category',['x'=>'1','k'=>'Układy scalone'])}}">Układy Scalone</a>
                     </div>
                 </li>
                 <li class="nav-item mr-0 pt-2">
@@ -35,7 +35,7 @@
                 </li>
                 <li class="nav-item mr-0 pt-2">
                     @auth
-                        <a href="{{ route('index')}}" class="nav-link d-inline-block f-white font-weight-bolder pl-0 pr-0">
+                        <a href="{{ route('account')}}" class="nav-link d-inline-block f-white font-weight-bolder pl-0 pr-0">
                             <i class="far fa-user mr-1"></i>
                             {{auth()->user()->username }}
                         </a>
@@ -63,7 +63,7 @@
                     @endguest
                 </li>
                 <li class="nav-item mr-0 pt-2">
-                    <a href="#" class="btn btn-primary border-radius-20"><i class="fas fa-pen-square mr-1"></i>Dodaj Ogłoszenie</a>
+                    <a href="{{route('addproduct')}}" class="btn btn-primary border-radius-20"><i class="fas fa-pen-square mr-1"></i>Dodaj Ogłoszenie</a>
                 </li>
             </ul>
         </div>
