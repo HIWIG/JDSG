@@ -82,16 +82,27 @@ if ($search_category=='Wszystkie kategorie'){
     }
 
     public function store(Request $request){
-        $input=$request->all();
+       // $input=$request->all();
+        $input = Validator::make($request->all(), [
+            'title' => 'required|min:3|max:255',
+            'description'=>'required|min:3|max:3000',
+            'cost'=>'required',
+            'categoryId'=>'required',
+            'image'=>'image|mimes:jpeg,png|max:3096'
+        ])->validate();
         $id=Auth::id();
         if($request->hasFile('image')){
-            $destination_path='public/images/products';
+            $destination_path='public/img/products';
             $image=$request->file('image');
-            $image_name=$image->getClientOriginalName();
+            $image_name=uniqid().'.'.$image->getClientOriginalExtension();
             $path=$request->file('image')->storeAs($destination_path,$image_name);
             $input['image']=$image_name;
         }
-        Advert::create(['userId'=>$id,'categoryId'=>$input['categoryId'],'title'=>$input['title'],'description'=>$input['description'],'cost'=>$input['cost'],'image'=>$input['image']]);
+        else{
+            $input['image']='brak_zdjęcia';
+        }
+
+       Advert::create(['userId'=>$id,'categoryId'=>$input['categoryId'],'title'=>$input['title'],'description'=>$input['description'],'cost'=>$input['cost'],'image'=>$input['image']]);
         return redirect('/');
     }
 }

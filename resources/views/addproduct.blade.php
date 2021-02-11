@@ -1,6 +1,11 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
 
 <div class="container">
+    @if($errors->any())
+        @foreach($errors->all() as $error)
+            <div class="alert alert-danger" role="alert">{{$error}}</div>
+        @endforeach
+    @endif
 <form method="post" action="{{url('/addproduct')}}" enctype="multipart/form-data">
     {{csrf_field()}}
 
