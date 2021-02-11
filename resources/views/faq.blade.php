@@ -36,13 +36,13 @@
                         <div class="card-header" >
                             <h5 class="mb-0">
                                 <button class="btn btn-link black-link " data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    Zapytanie 1
+                                    W jaki sposób dodać ogłoszenie ?
                                 </button>
                             </h5>
                         </div>
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
-                                Odpowiedz 1
+                                Ogłoszenie może dodać tylko zarejestrowany użytkownik. Ogłoszenie dodawane jest za pomocą przycisku znajdującego się koło rejestracji, a następnie postępując zgodnie z instrukcją.
                             </div>
 
                         </div>
@@ -52,13 +52,13 @@
                         <div class="card-header" >
                             <h5 class="mb-0">
                                 <button class="btn btn-link black-link " data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Zapytanie 2
+                                    W jaki sposób założyć konto ?
                                 </button>
                             </h5>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                             <div class="card-body">
-                                Odpowiedz 2
+                                Konto zakłada się przez zakładkę rejestracji/logowania, gdzie należy podać imie,nazwisko,e-mail oraz hasło.
                             </div>
 
                         </div>
@@ -68,13 +68,14 @@
                         <div class="card-header" >
                             <h5 class="mb-0">
                                 <button class="btn btn-link black-link " data-toggle="collapse" data-target="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
-                                    Zapytanie 3
+
+                                    Czy będę otrzymywać powiadomienia o sprzedanych przedmiotach ?
                                 </button>
                             </h5>
                         </div>
                         <div id="collapseTree" class="collapse" aria-labelledby="headingTree" data-parent="#accordion">
                             <div class="card-body">
-                                Odpowiedz 3
+                                Tak, powiadomienia będą wysyłane na podany e-mail podczas rejestracji.
                             </div>
 
                         </div>
@@ -84,13 +85,13 @@
                         <div class="card-header" >
                             <h5 class="mb-0">
                                 <button class="btn btn-link black-link " data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Zapytanie 4
+                                    Czy założenie konta jest darmowe ?
                                 </button>
                             </h5>
                         </div>
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                             <div class="card-body">
-                                Odpowiedz 4
+                                Tak, rejestracja na naszej stronie jest 100% darmowa.
                             </div>
 
                         </div>
