@@ -14,6 +14,16 @@ use Illuminate\Support\Facades\Auth;
 class ProductController extends Controller
 {
 
+    public function mainlisting(){
+        $ads=Advert::select('*')
+            ->orderBy('created_at','desc')
+            ->take(6)
+            ->get();
+
+        return view('index',compact('ads'));
+
+    }
+
     public function search(Request $request){
         $search_category=$request->get('k');
         $x=$request->get('x');

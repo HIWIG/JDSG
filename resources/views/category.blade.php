@@ -88,7 +88,7 @@
                                 <ul class="list-inline">
                                     <li class="list-inline-item p-1">
                                         <span class="far fa-calendar-alt pr-1 font-menu-color"></span>
-                                        20-11-2020
+                                        {{substr($advert->created_at,0,strrpos($advert->created_at,' '))}}
                                     </li>
                                     <li class="list-inline-item p-1">
                                         <span class="fas fa-user pr-1 font-menu-color"></span>

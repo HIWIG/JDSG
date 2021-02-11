@@ -29,9 +29,11 @@ Route::get('/account', function () {
 
 //Route::post('/logout',[\App\Http\Controllers\Auth\AuthenticatedSessionController::class,'destroy'])->name('logout');
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('index');
-})->name('index');
+})->name('index');*/
+
+Route::get('/', [ProductController::class,'mainlisting'])->name('index');
 
 Route::get('/dashboard', function () {
     return view('index');
