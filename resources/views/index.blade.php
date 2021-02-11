@@ -96,6 +96,7 @@
                 </div>
             </div>
         </div>
+        <a href="{{'/addproduct'}}"> <button type="button" class="btn btn-primary">Primary</button></a>
     </div>
 </section>
 <section id="lastAdvertisements" class="bg-light section-padding">

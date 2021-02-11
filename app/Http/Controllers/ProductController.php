@@ -7,6 +7,9 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
+
+
 
 class ProductController extends Controller
 {
@@ -70,5 +73,20 @@ if ($search_category=='Wszystkie kategorie'){
         }
 
 
+    }
+
+    public function add(){
+        $categories=Category::all();
+
+        return view('addproduct',compact('categories'));
+    }
+
+    public function store(Request $request){
+        $input=$request->all();
+        $catid=$input['categoryId'];
+        $id=Auth::id();
+        Advert::create($input);
+        Advert::create([$id=>'userId', $catid=>'categoryId',$input['title']=>'title',$input['description']=>'description',$input['cost']=>'cost']);
+        return redirect('/');
     }
 }

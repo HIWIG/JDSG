@@ -54,6 +54,11 @@ Route::get('/contact',function ()
 {
     return view('contact');
 })->name('contact');
+
+
+Route::get('/addproduct',[ProductController::class,'add'])->name('addproduct');
+Route::post('/addproduct',[ProductController::class,'store']);
+
 /*
 
 Route::any ( '/category', function () {
