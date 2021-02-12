@@ -19,7 +19,6 @@
             <div class="row justify-content-center">
                 <x-header-intro/>
                 <x-search-bar/>
-
             </div>
         </div>
     </div>
@@ -67,6 +66,7 @@
                         <div class="card-header" >
                             <h5 class="mb-0">
                                 <button class="btn btn-link black-link " data-toggle="collapse" data-target="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
+
                                     Czy będę otrzymywać powiadomienia o sprzedanych przedmiotach ?
                                 </button>
                             </h5>
@@ -83,13 +83,13 @@
                         <div class="card-header" >
                             <h5 class="mb-0">
                                 <button class="btn btn-link black-link " data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Zapytanie 4
+                                    Czy założenie konta jest darmowe ?
                                 </button>
                             </h5>
                         </div>
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                             <div class="card-body">
-                                Odpowiedz 4
+                                Tak, rejestracja na naszej stronie jest 100% darmowa.
                             </div>
 
                         </div>

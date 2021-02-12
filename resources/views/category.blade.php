@@ -199,13 +199,17 @@
 
             </div>
             <div class="col-md-3 col-sm-12">
-                <div class="catTable">
+                <div class="catTable ">
+                    <div class="ml-2 mt-1 font-menu-color">
                     <h4>Kategorie:</h4>
+                    </div>
+                    <div  class="ml-1 font-menu-color">
                     <ul class="catList">
                         @foreach($categoriesCount as $c)
                             <a href="#"><li>{{$c->category->title}}<div class="pull-right">({{$c->ct}})</div> </li></a>
                         @endforeach
                     </ul>
+
                 </div>
 
             </div>

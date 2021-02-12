@@ -39,6 +39,18 @@
                                 <li class="list-group-item border-0">Email: {{auth()->user()->email }}</li>
                             </ul>
                         </div>
+                        <div>
+                            @foreach($ads as $ad)
+                                <li>{{$ad->title}}
+                                        <form action="{{url('/delete-product/'.$ad->id)}}" method="post" onSubmit="return confirm('Czy jesteś pewny ,że chcesz usunąć ogłoszenie?');">
+                                            {{method_field('DELETE')}}
+                                            {{csrf_field()}}
+                                        <button class="btn btn-danger" type="submit" >Usuń</button>
+                                    </form>
+                                    <p></p>
+                                      </li>
+                            @endforeach
+                        </div>
 
                         {{--<div class="tags">
 
