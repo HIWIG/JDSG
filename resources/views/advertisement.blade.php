@@ -15,20 +15,20 @@
 
 </head>
 <body>
-
+<x-header/>
 <section class="intro-section">
     <div id="intro-bg">
         <div class="overlay"></div>
         <div class="container pb-5">
             <div class="row justify-content-center">
                 <x-header-intro/>
-
+                <x-search-bar/>
             </div>
         </div>
     </div>
 </section>
 
-<x-header/>
+
 
 <div class="section-padding bg-light">
     <div class="container">
