@@ -25,13 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="Added LoginController">
+    <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="advertisement php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/advertisement.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/advertisement.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,13 +190,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Programowanie\projectJDSG\resources\views" />
-      <recent name="E:\Programowanie\projectJDSG\app\Http\Controllers\MyAuth" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Grzesiu\PhpstormProjects\JDSG" />
       <recent name="E:\Programowanie\projectJDSG" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Programowanie\projectJDSG\resources\views" />
+      <recent name="E:\Programowanie\projectJDSG\app\Http\Controllers\MyAuth" />
     </key>
   </component>
   <component name="RunManager">
@@ -333,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612563493903</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="advertisement php">
+      <created>1613145403084</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1613145403084</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,38 +383,7 @@
     <MESSAGE value="Fixed issue with databasecontroller after merging" />
     <MESSAGE value="Displaying proper categories and count of items in category.blade.php" />
     <MESSAGE value="Integrated searching by categories" />
-    <option name="LAST_COMMIT_MESSAGE" value="Integrated searching by categories" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2594" y="167" key="#PHP" timestamp="1612517166917">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2594" y="167" key="#PHP/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612517166917" />
-    <state x="733" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613057794935">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="733" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1613057794935" />
-    <state x="2012" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1612565729749">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2012" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612565729749" />
-    <state x="2104" y="87" key="MergeDialog" timestamp="1612515663744">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="184" y="86" key="MergeDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612465355851" />
-    <state x="2104" y="87" key="MergeDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612515663744" />
-    <state x="2518" y="284" key="MultipleFileMergeDialog" timestamp="1612515663751">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1612465366589" />
-    <state x="2518" y="284" key="MultipleFileMergeDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612515663751" />
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2" timestamp="1612515819119">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612515819119" />
-    <state x="2660" y="238" key="git4idea.branch.GitSmartOperationDialog" timestamp="1612517325033">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2660" y="238" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1050/1920.0.1920.1050@1920.0.1920.1050" timestamp="1612517325033" />
+    <MESSAGE value="advertisement php" />
+    <option name="LAST_COMMIT_MESSAGE" value="advertisement php" />
   </component>
 </project>

@@ -16,6 +16,18 @@
 </head>
 <body>
 
+<section class="intro-section">
+    <div id="intro-bg">
+        <div class="overlay"></div>
+        <div class="container pb-5">
+            <div class="row justify-content-center">
+                <x-header-intro/>
+
+            </div>
+        </div>
+    </div>
+</section>
+
 <x-header/>
 
 <div class="section-padding bg-light">
@@ -26,9 +38,6 @@
 
                 <div class="wrapper shadow-sm p-5 mt-3 bg-white rounded ">
                     <h4>
-{{--                        @foreach($ad as $a)--}}
-{{--                            {{$a->title}}--}}
-{{--                        @endforeach--}}
                     {{$adv->first()->title}}
                     </h4>
 
@@ -65,6 +74,8 @@
                         Opis
                         <br>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                         dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
                     </div>
                     <div class="tags">
 
@@ -91,12 +102,15 @@
                     <h4>Dane sprzedawcy</h4>
 
                     <!--                    <div class="photo"></div>-->
-                    <b>Name Surname</b>
+                    <b>{{$adv->first()->user->name}} {{$adv->first()->user->surname}}</b>
                     <br>
                     <i class="fas fa-phone"></i> 123 456 789
                     <br>
+                    <i class="far fa-envelope"></i> {{$adv->first()->user->email}}
+                    <br>
                     <i class="fas fa-map-marker-alt"></i> Bielsko-Biała
                     <br>
+
                     <a href="">Wszystkie produkty</a>
 
                 </div>
