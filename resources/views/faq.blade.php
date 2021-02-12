@@ -19,7 +19,6 @@
             <div class="row justify-content-center">
                 <x-header-intro/>
                 <x-search-bar/>
-
             </div>
         </div>
     </div>
