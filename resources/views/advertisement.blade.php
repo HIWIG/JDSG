@@ -68,14 +68,12 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    <div class="ad-title pb-5">
+                    <div class="pb-5">
 
-                        <p class="font-weight-bold ad-font-color">Price</p>
+                        <p class="font-weight-bold ad-font-color">{{$adv->first()->cost}}</p>
                         Opis
                         <br>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                         dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+                        {{$adv->first()->description}}
                     </div>
                     <div class="tags">
 
@@ -104,11 +102,11 @@
                     <!--                    <div class="photo"></div>-->
                     <b>{{$adv->first()->user->name}} {{$adv->first()->user->surname}}</b>
                     <br>
-                    <i class="fas fa-phone"></i> 123 456 789
+                    <i class="fas fa-phone"></i> {{$adv->first()->phone}}
                     <br>
                     <i class="far fa-envelope"></i> {{$adv->first()->user->email}}
                     <br>
-                    <i class="fas fa-map-marker-alt"></i> Bielsko-Biała
+                    <i class="fas fa-map-marker-alt"></i> {{$adv->first()->city}}
                     <br>
 
                     <a href="">Wszystkie produkty</a>
@@ -133,7 +131,7 @@
                                 <a href="" class="link">
 
                                     <p class="font-weight-bold">{{mb_strimwidth($a->title,0,20,"...")}}</p>
-                                    {{$a->price}}
+                                    {{$a->cost}}
                                 </a>
 
                             </div>

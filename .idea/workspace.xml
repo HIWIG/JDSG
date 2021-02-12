@@ -25,13 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="fix header on advertisement">
+    <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="add columns to advert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Advert.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Advert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_114109_creates_adverts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_29_114109_creates_adverts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/addproduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/addproduct.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/advertisement.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/advertisement.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/footer.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613149279815</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add columns to advert">
+      <created>1613151150082</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1613151150082</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,6 +408,7 @@
     <MESSAGE value="advertisement php" />
     <MESSAGE value="add header to advertisement" />
     <MESSAGE value="fix header on advertisement" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix header on advertisement" />
+    <MESSAGE value="add columns to advert" />
+    <option name="LAST_COMMIT_MESSAGE" value="add columns to advert" />
   </component>
 </project>
