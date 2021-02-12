@@ -101,18 +101,7 @@
         </div>
     </div>
 </section>
-<section id="newsletter" class="section-padding">
-    <div class="container">
-        <div>
-            <h2 class="w-100"><span class="fas fa-location-arrow mr-3 font-menu-color"></span>Bądź na bieżąco</h2>
-            <h6 class="ml-5">Otrzymuj powiadomienia o nowych najciekawszych powiadomieniach.</h6>
-            <form class="form-inline">
-                <input type="text" class="form-control mb-1 mr-3 p-4 w-60 myCircle" id="newsletterInput" placeholder="Podaj swój adres email">
-                <button class="btn btn-primary btn-lg w-35 myCircle f-16">Zapisz mnie</button>
-            </form>
-        </div>
-    </div>
-</section>
+
 
 
 <x-footer/>
