@@ -40,16 +40,24 @@
                             </ul>
                         </div>
                         <div>
+                            <ul style="list-style-type:none">
                             @foreach($ads as $ad)
-                                <li>{{$ad->title}}
+                                    <li> <div class="row ">
+                                            <div class="col-4">
+                                            {{$ad->title}}
+                                             </div>
+                                            <div class="col-8">
                                         <form action="{{url('/delete-product/'.$ad->id)}}" method="post" onSubmit="return confirm('Czy jesteś pewny ,że chcesz usunąć ogłoszenie?');">
                                             {{method_field('DELETE')}}
                                             {{csrf_field()}}
-                                        <button class="btn btn-danger" type="submit" >Usuń</button>
-                                    </form>
+                                        <button class="btn btn-danger" type="submit" >Usuń ogłoszenie</button>
+                                        </form>
                                     <p></p>
+                                            </div>
+                                        </div>
                                       </li>
                             @endforeach
+                            </ul>
                         </div>
 
                         {{--<div class="tags">
