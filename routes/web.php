@@ -11,9 +11,7 @@ use Symfony\Component\Console\Input\Input;
 
 
 
-Route::get('/account', function () {
-    return view('account');
-})->middleware(['auth'])->name('account');
+Route::get('/account',[ProductController::class,'accountlisting'])->middleware(['auth'])->name('account');
 
 /*LEARNING SECTION*/
 
@@ -35,14 +33,10 @@ Route::get('/account', function () {
 
 Route::get('/', [ProductController::class,'mainlisting'])->name('index');
 
-/*Route::get('/dashboard', function () {
-    return view('index');
-})->middleware(['auth'])->name('dashboard');*/
 
 Route::any('/category',[ProductController::class, 'search'])->name('category');
 
 
-/*ogłoszenie*/
 Route::get('/advertisement', function () {
     return view('advertisement');
 })->name('advertisement');

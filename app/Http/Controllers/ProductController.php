@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Auth;
 
 class ProductController extends Controller
 {
+    public function accountlisting(){
+        $id=Auth::id();
+        $ads=Advert::where('userId','='.$id)
+            ->get();
+        return view('account',compact('ads'));
+    }
 
     public function mainlisting(){
         $ads=Advert::select('*')
