@@ -29,6 +29,10 @@ class CreatesAdvertsTable extends Migration
                 $table->decimal('cost', 9, 2);
                 $table->timestamps();
 
+                $table->bigInteger('phone');
+                $table->string('city');
+
+
 
             });
     }

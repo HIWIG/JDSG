@@ -99,7 +99,9 @@ class ProductController extends Controller
             'description'=>'required|min:3|max:3000',
             'cost'=>'required',
             'categoryId'=>'required',
-            'image'=>'image|mimes:jpeg,png,jpg|max:3096'
+            'image'=>'image|mimes:jpeg,png,jpg|max:3096',
+            'phone'=>'required',
+            'city'=>'required'
         ])->validate();
         $id=Auth::id();
         if($request->hasFile('image')){
@@ -113,7 +115,7 @@ class ProductController extends Controller
             $input['image']='brak_zdjęcia.png';
         }
 
-       Advert::create(['userId'=>$id,'categoryId'=>$input['categoryId'],'title'=>$input['title'],'description'=>$input['description'],'cost'=>$input['cost'],'image'=>$input['image']]);
+       Advert::create(['userId'=>$id,'categoryId'=>$input['categoryId'],'title'=>$input['title'],'description'=>$input['description'],'cost'=>$input['cost'],'image'=>$input['image'],'phone'=>$input['phone'],'city'=>$input['city']]);
         return redirect('/');
     }
 

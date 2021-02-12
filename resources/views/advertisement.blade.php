@@ -132,7 +132,7 @@
                             <div class="col-6 pl-3">
                                 <a href="" class="link">
 
-                                    <p class="font-weight-bold">{{$a->title}}</p>
+                                    <p class="font-weight-bold">{{mb_strimwidth($a->title,0,20,"...")}}</p>
                                     {{$a->price}}
                                 </a>
 
