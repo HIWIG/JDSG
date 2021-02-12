@@ -5,7 +5,7 @@
             <ul class="nav nav-fill">
                 <li class="nav-item mr-0 ">
                     <div class="navbar-brand">
-                        <a href="#"><img src="img/logojdsg.svg" width="110" height="50" class="d-inline-block align-top" alt="Our Logo"></a>
+                        <a href="{{route('index')}}"><img src="img/logojdsg.svg" width="110" height="50" class="d-inline-block align-top" alt="Our Logo"></a>
                     </div>
                 </li>
                 <li class="nav-item mr-0 pt-2 ">

@@ -41,7 +41,7 @@
                         </div>
 
                         <div>
-                            <h2>Twoje ogłoszenia:</h2>
+                            <h5>Twoje ogłoszenia:</h5>
                             <ul style="list-style-type:none">
                             @foreach($ads as $ad)
                                     <div class="vl col-12"></div>
