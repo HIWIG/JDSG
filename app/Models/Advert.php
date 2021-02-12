@@ -11,7 +11,7 @@ class Advert extends Model
 
  protected $table='adverts';
 
- protected  $fillable=['title','description','cost','categoryId','userId','image'];
+ protected  $fillable=['title','description','cost','categoryId','userId','image','phone','city'];
  public function user(){
      return $this->belongsTo(User::class,'userId');
  }

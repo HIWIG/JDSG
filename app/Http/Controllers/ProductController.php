@@ -106,10 +106,12 @@ class ProductController extends Controller
         // $input=$request->all();
         $input = Validator::make($request->all(), [
             'title' => 'required|min:3|max:255',
-            'description' => 'required|min:3|max:3000',
-            'cost' => 'required',
-            'categoryId' => 'required',
-            'image' => 'image|mimes:jpeg,png,jpg|max:3096'
+            'description'=>'required|min:3|max:3000',
+            'cost'=>'required',
+            'categoryId'=>'required',
+            'image'=>'image|mimes:jpeg,png,jpg|max:3096',
+            'phone'=>'required',
+            'city'=>'required'
         ])->validate();
         $id = Auth::id();
         if ($request->hasFile('image')) {
@@ -122,7 +124,22 @@ class ProductController extends Controller
             $input['image'] = 'brak_zdjęcia.png';
         }
 
-        Advert::create(['userId' => $id, 'categoryId' => $input['categoryId'], 'title' => $input['title'], 'description' => $input['description'], 'cost' => $input['cost'], 'image' => $input['image']]);
+       Advert::create(['userId'=>$id,'categoryId'=>$input['categoryId'],'title'=>$input['title'],'description'=>$input['description'],'cost'=>$input['cost'],'image'=>$input['image'],'phone'=>$input['phone'],'city'=>$input['city']]);
         return redirect('/');
     }
+
+    public function showProduct(Request $request){
+        $id=$request->get('x');
+        $adv=Advert::whereRaw('id = '.$id)
+            ->take(1)
+            ->get();
+        //return view(dd($ad));
+        $adve=Advert::select('*')
+            ->orderBy('created_at','desc')
+            ->take(3)
+            ->get();
+
+        return view('advertisement', compact('adv', 'adve'));
+    }
+
 }

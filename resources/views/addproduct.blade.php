@@ -33,7 +33,7 @@
                                 <div class="alert alert-danger" role="alert">{{$error}}</div>
                             @endforeach
                         @endif
-                        <form method="post" action="{{url('/addproduct')}}" enctype="multipart/form-data">
+                        <form method="post" action="{{url('/addproduct')}}" enctype="multipart/form-data" onsubmit="return confirm('Czy jesteś pewien, że chcesz dodać ogłoszenie');">
                             {{csrf_field()}}
 
                             <div class="form-group">
@@ -61,7 +61,16 @@
                                 <h4>Cena</h4>
                                 <input type="number" class="form-control" placeholder="Wprowawdź swoją cene" name="cost" min="0" max="100000">
                             </div>
-                            <button class="btn btn-primary mt-2 mb-3 w-100 border-radius-20 box-shadow-black"><i class="fas fa-plus mr-2"></i>Dodaj</button>
+                            <div class="form-group">
+                                <h4>Numer telefonu</h4>
+                                <input type="number" class="form-control" placeholder="Wprowadź numer telefonu" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <h4>Miasto</h4>
+                                <input type="text" class="form-control" placeholder="Wprowadź miasto" name="city">
+                            </div>
+
+                            <button class="btn btn-primary mt-2 mb-3 w-100 border-radius-20 box-shadow-black" ><i class="fas fa-plus mr-2"></i>Dodaj</button>
                         </form>
                     </div>
             </div>
