@@ -116,4 +116,19 @@ class ProductController extends Controller
        Advert::create(['userId'=>$id,'categoryId'=>$input['categoryId'],'title'=>$input['title'],'description'=>$input['description'],'cost'=>$input['cost'],'image'=>$input['image']]);
         return redirect('/');
     }
+
+    public function showProduct(Request $request){
+        $id=$request->get('x');
+        $adv=Advert::whereRaw('id = '.$id)
+            ->take(1)
+            ->get();
+        //return view(dd($ad));
+        $adve=Advert::select('*')
+            ->orderBy('created_at','desc')
+            ->take(3)
+            ->get();
+
+        return view('advertisement', compact('adv', 'adve'));
+    }
+
 }

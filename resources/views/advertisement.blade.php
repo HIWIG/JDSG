@@ -25,7 +25,13 @@
             <div class="col-lg-8  col-12 ">
 
                 <div class="wrapper shadow-sm p-5 mt-3 bg-white rounded ">
-                    <h4>Tytuł ogłoszenia</h4>
+                    <h4>
+{{--                        @foreach($ad as $a)--}}
+{{--                            {{$a->title}}--}}
+{{--                        @endforeach--}}
+                    {{$adv->first()->title}}
+                    </h4>
+
 
                     <div id="carouselExampleIndicators" class="carousel slide"  data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -35,13 +41,13 @@
                         </ol>
                         <div class="carousel-inner height-600 img-center">
                             <div class="carousel-item active">
-                                <img src="img/example.jpeg" class="d-block w-100 height-auto  mx-auto"  alt="1">
+                                <img src="{{asset('/storage/img/products/'.$adv->first()->image)}}" class="d-block w-100 height-auto  mx-auto"  alt="1">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/1576204927_maxresdefault_9_story.jpg" class="d-block w-100 height-auto  mx-auto"  alt="2">
+                                <img src="{{asset('/storage/img/products/'.$adv->first()->image)}}" class="d-block w-100 height-auto  mx-auto"  alt="2">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/Komputer-do-Gier-Intel-i5-GTX-1050Ti-8GB-Win-10.jpg" class="d-block w-100 height-auto  mx-auto"  alt="3">
+                                <img src="{{asset('/storage/img/products/'.$adv->first()->image)}}" class="d-block w-100 height-auto  mx-auto"  alt="3">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -65,15 +71,15 @@
                         <ul class="list-inline">
                             <li class="list-inline-item p-1">
                                 <span class="far fa-calendar-alt pr-1 font-menu-color"></span>
-                                20-11-2020
+                                {{substr($adv->first()->created_at,0,strrpos($adv->first()->created_at,' '))}}
                             </li>
                             <li class="list-inline-item p-1">
                                 <span class="fas fa-user pr-1 font-menu-color"></span>
-                                Jhoczi
+                                {{$adv->first()->user->username}}
                             </li>
                             <li class="list-inline-item p-1">
                                 <span class="fas fa-desktop pr-1 font-menu-color"></span>
-                                Monitory
+                                {{$adv->first()->category->title}}
                             </li>
                         </ul>
                     </div>
@@ -102,52 +108,53 @@
                 <div class="bottom-info p-5 shadow-sm mt-3 bg-white rounded">
                     <h4>Podobne przedmioty</h4>
                     <div class="other-products row ">
+                        @foreach($adve as $a)
                         <div class="col-lg-4 col-12 shadow-sm rounded p-3 row">
                             <div class="col-6">
                                 <a href="" class="link">
-                                    <img src="img/1576204927_maxresdefault_9_story.jpg" class="other-photo" alt="">
+                                    <img src="{{asset('/storage/img/products/'.$a->image)}}" class="other-photo" alt="">
                                 </a>
                             </div>
                             <div class="col-6 pl-3">
                                 <a href="" class="link">
 
-                                    <p class="font-weight-bold">Title</p>
-                                    Price
+                                    <p class="font-weight-bold">{{$a->title}}</p>
+                                    {{$a->price}}
                                 </a>
 
                             </div>
                         </div>
+                        @endforeach
+{{--                        <div class="col-lg-4 col-12 shadow-sm rounded p-3 row">--}}
+{{--                            <div class="col-6">--}}
+{{--                                <a href="" class="link">--}}
+{{--                                    <img src="img/1576204927_maxresdefault_9_story.jpg" class="other-photo" alt="">--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-6 pl-3">--}}
+{{--                                <a href="" class="link">--}}
 
-                        <div class="col-lg-4 col-12 shadow-sm rounded p-3 row">
-                            <div class="col-6">
-                                <a href="" class="link">
-                                    <img src="img/1576204927_maxresdefault_9_story.jpg" class="other-photo" alt="">
-                                </a>
-                            </div>
-                            <div class="col-6 pl-3">
-                                <a href="" class="link">
+{{--                                    <p class="font-weight-bold">Title</p>--}}
+{{--                                    Price--}}
+{{--                                </a>--}}
 
-                                    <p class="font-weight-bold">Title</p>
-                                    Price
-                                </a>
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-lg-4 col-12 shadow-sm rounded p-3 row">--}}
+{{--                            <div class="col-6">--}}
+{{--                                <a href="" class="link">--}}
+{{--                                    <img src="img/1576204927_maxresdefault_9_story.jpg" class="other-photo" alt="">--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-6 pl-3">--}}
+{{--                                <a href="" class="link">--}}
 
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-12 shadow-sm rounded p-3 row">
-                            <div class="col-6">
-                                <a href="" class="link">
-                                    <img src="img/1576204927_maxresdefault_9_story.jpg" class="other-photo" alt="">
-                                </a>
-                            </div>
-                            <div class="col-6 pl-3">
-                                <a href="" class="link">
+{{--                                    <p class="font-weight-bold ">Title</p>--}}
+{{--                                    Price--}}
+{{--                                </a>--}}
 
-                                    <p class="font-weight-bold ">Title</p>
-                                    Price
-                                </a>
-
-                            </div>
-                        </div>
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
             </div>

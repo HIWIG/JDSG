@@ -37,9 +37,7 @@ Route::get('/', [ProductController::class,'mainlisting'])->name('index');
 Route::any('/category',[ProductController::class, 'search'])->name('category');
 
 
-Route::get('/advertisement', function () {
-    return view('advertisement');
-})->name('advertisement');
+Route::get('/advertisement',[ProductController::class, 'showProduct']) ->name('advertisement');
 /*FAQ*/
 Route::get('/faq',function ()
 {
