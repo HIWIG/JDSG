@@ -6,12 +6,12 @@ use App\Http\Controllers\MyAuth\RegisterController;
 use App\Http\Controllers\MyAuth\DashboardController;
 use App\Http\Controllers\MyAuth\LoginController;
 use Symfony\Component\Console\Input\Input;
+
 //use app\Http\Controllers\MyAuth\LoginController;
 //use app\Http\Controllers\MyAuth\RegisterController;
 
 
-
-Route::get('/account',[ProductController::class,'accountlisting'])->middleware(['auth'])->name('account');
+Route::get('/account', [ProductController::class, 'accountlisting'])->middleware(['auth'])->name('account');
 
 /*LEARNING SECTION*/
 
@@ -31,30 +31,26 @@ Route::get('/account',[ProductController::class,'accountlisting'])->middleware([
     return view('index');
 })->name('index');*/
 
-Route::get('/', [ProductController::class,'mainlisting'])->name('index');
+Route::get('/', [ProductController::class, 'mainlisting'])->name('index');
 
-
-Route::any('/category',[ProductController::class, 'search'])->name('category');
-
+Route::any('/category', [ProductController::class, 'search'])->name('category');
 
 Route::get('/advertisement', function () {
     return view('advertisement');
 })->name('advertisement');
 /*FAQ*/
-Route::get('/faq',function ()
-{
- return view('faq');
+Route::get('/faq', function () {
+    return view('faq');
 })->name('faq');
 
-Route::get('/contact',function ()
-{
+Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
 
-Route::get('/addproduct',[ProductController::class,'add'])->middleware('auth')->name('addproduct');
-Route::post('/addproduct',[ProductController::class,'store']);
-
+Route::get('/addproduct', [ProductController::class, 'add'])->middleware('auth')->name('addproduct');
+Route::post('/addproduct', [ProductController::class, 'store']);
+Route::delete('/delete-product/{product}', [ProductController::class, 'delete']);
 
 /*
 
@@ -80,4 +76,4 @@ Route::get('/login', function () {
 })->name('loginRegister');*/
 
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
