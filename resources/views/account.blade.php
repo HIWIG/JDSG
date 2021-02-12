@@ -39,6 +39,11 @@
                                 <li class="list-group-item border-0">Email: {{auth()->user()->email }}</li>
                             </ul>
                         </div>
+                        <div>
+                            @foreach($ads as $ad)
+                                <li><a href="">{{$ad->title}} </a>  </li>
+                            @endforeach
+                        </div>
 
                         {{--<div class="tags">
 
