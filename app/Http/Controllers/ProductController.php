@@ -15,8 +15,9 @@ class ProductController extends Controller
 {
     public function accountlisting(){
         $id=Auth::id();
-        $ads=Advert::where('userId','='.$id)
+        $ads=Advert::whereRaw('userId = '.$id)
             ->get();
+
         return view('account',compact('ads'));
     }
 
