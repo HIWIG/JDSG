@@ -137,7 +137,7 @@
                             </ul>
                             <div class="listing-bottom clearfix pt-3 pb-2 border-top">
                                 <a href="#" class="float-left w-50"><span class="fas fa-map-marker-alt font-menu-color pr-1"></span> Katowice</a>
-                                <a href="#" class="float-right w-50 text-right">Zobacz więcej</a>
+                                <button type="submit" class="btn btn-primary" name="x" value="{{$advert->id}}">  Zobacz </button>
                             </div>
                         </div>
                     </div>

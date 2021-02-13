@@ -104,7 +104,7 @@
 
                                     <form action="{{url('/advertisement')}}" type="get">
 {{--                                        <a href="{{url('/advertisement')}}" class="float-right w-50 text-right" name="x">--}}
-                                            <button type="submit" class="btn btn-primary" name="x" value="{{$advert->id}}">    </button>
+                                            <button type="submit" class="btn btn-primary" name="x" value="{{$advert->id}}">  Zobacz ogłoszenie  </button>
 {{--                                        </a>--}}
                                     </form>
                                 </div>

@@ -28,7 +28,8 @@
     <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="add columns to advert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/advertisement.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/advertisement.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,6 +232,7 @@
       <workItem from="1612457424992" duration="1785000" />
       <workItem from="1612509687336" duration="108000" />
       <workItem from="1612509896292" duration="974000" />
+      <workItem from="1613214620912" duration="2734000" />
     </task>
     <task id="LOCAL-00001" summary="Added first version of RegisterController">
       <created>1611268176118</created>
