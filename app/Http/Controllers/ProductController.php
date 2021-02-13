@@ -36,6 +36,12 @@ class ProductController extends Controller
     {
         $search_category = $request->get('k');
         $x = $request->get('x');
+        if($request->all()==NULL){
+
+            return redirect('');
+
+
+        }
         if ($x == 1) {
             $ca = Category::where('title', 'LIKE', '%' . $search_category . '%')
                 ->select('id')

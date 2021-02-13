@@ -39,17 +39,30 @@
                                 <li class="list-group-item border-0">Email: {{auth()->user()->email }}</li>
                             </ul>
                         </div>
+
                         <div>
+                            <h5>Twoje ogłoszenia:</h5>
+                            <ul style="list-style-type:none">
                             @foreach($ads as $ad)
-                                <li>{{$ad->title}}
-                                        <form action="{{url('/delete-product/'.$ad->id)}}" method="post" onSubmit="return confirm('Czy jesteś pewny ,że chcesz usunąć ogłoszenie?');">
-                                            {{method_field('DELETE')}}
-                                            {{csrf_field()}}
-                                        <button class="btn btn-danger" type="submit" >Usuń</button>
-                                    </form>
-                                    <p></p>
+                                    <div class="vl col-12"></div>
+                                    <li> <div class="row ">
+                                            <div class="col-12 col-md-8 ">
+
+{{--                                            {{$ad->title }}--}}
+                                                {{mb_strimwidth($ad->title,0,25,"...")}}
+                                             </div>
+                                            <div class="col-12 col-md-4">
+                                                    <form action="{{url('/delete-product/'.$ad->id)}}" method="post" onSubmit="return confirm('Czy jesteś pewny ,że chcesz usunąć ogłoszenie?');">
+                                                        {{method_field('DELETE')}}
+                                                        {{csrf_field()}}
+
+                                                            <button class="btn btn-danger mt-2 mb-3 w-100 border-radius-20 box-shadow-black pull-right" type="submit" >Usuń ogłoszenie</button>
+                                                    </form>
+                                            </div>
+                                        </div>
                                       </li>
                             @endforeach
+                            </ul>
                         </div>
 
                         {{--<div class="tags">
@@ -90,57 +103,57 @@
                     </div>
                 </div>
 
-                <div class="col-lg-12 col-md-6 col-12 ">
-                    <div class="bottom-info p-5 shadow-sm mt-3 bg-white rounded">
+{{--                <div class="col-lg-12 col-md-6 col-12 ">--}}
+{{--                    <div class="bottom-info p-5 shadow-sm mt-3 bg-white rounded">--}}
 
-                        <h4>Twoje ogłoszenia</h4>
-                        <div class="other-products row ">
-                            <div class="col-lg-4 col-12 shadow-sm rounded p-3 row">
-                                <div class="col-6">
-                                    <a href="" class="link">
-                                        <img src="img/1576204927_maxresdefault_9_story.jpg" class="other-photo" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-6 pl-3">
-                                    <a href="" class="link">
+{{--                        <h4>Twoje ogłoszenia</h4>--}}
+{{--                        <div class="other-products row ">--}}
+{{--                            <div class="col-lg-4 col-12 shadow-sm rounded p-3 row">--}}
+{{--                                <div class="col-6">--}}
+{{--                                    <a href="" class="link">--}}
+{{--                                        <img src="img/1576204927_maxresdefault_9_story.jpg" class="other-photo" alt="">--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-6 pl-3">--}}
+{{--                                    <a href="" class="link">--}}
 
-                                        <p class="font-weight-bold">Title</p>
-                                        Price
-                                    </a>
+{{--                                        <p class="font-weight-bold">Title</p>--}}
+{{--                                        Price--}}
+{{--                                    </a>--}}
 
-                                </div>
-                            </div>
+{{--                                </div>--}}
+{{--                            </div>--}}
 
-                            <div class="col-lg-4 col-12 shadow-sm rounded p-3 row">
-                                <div class="col-6">
-                                    <a href="" class="link">
-                                        <img src="img/1576204927_maxresdefault_9_story.jpg" class="other-photo" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-6 pl-3">
-                                    <a href="" class="link">
+{{--                            <div class="col-lg-4 col-12 shadow-sm rounded p-3 row">--}}
+{{--                                <div class="col-6">--}}
+{{--                                    <a href="" class="link">--}}
+{{--                                        <img src="img/1576204927_maxresdefault_9_story.jpg" class="other-photo" alt="">--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-6 pl-3">--}}
+{{--                                    <a href="" class="link">--}}
 
-                                        <p class="font-weight-bold">Title</p>
-                                        Price
-                                    </a>
+{{--                                        <p class="font-weight-bold">Title</p>--}}
+{{--                                        Price--}}
+{{--                                    </a>--}}
 
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-12 shadow-sm rounded p-3 row">
-                                <div class="col-6">
-                                    <a href="" class="link">
-                                        <img src="img/1576204927_maxresdefault_9_story.jpg" class="other-photo" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-6 pl-3">
-                                    <a href="" class="link">
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-lg-4 col-12 shadow-sm rounded p-3 row">--}}
+{{--                                <div class="col-6">--}}
+{{--                                    <a href="" class="link">--}}
+{{--                                        <img src="img/1576204927_maxresdefault_9_story.jpg" class="other-photo" alt="">--}}
+{{--                                    </a>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-6 pl-3">--}}
+{{--                                    <a href="" class="link">--}}
 
-                                        <p class="font-weight-bold ">Title</p>
-                                        Price
-                                    </a>
+{{--                                        <p class="font-weight-bold ">Title</p>--}}
+{{--                                        Price--}}
+{{--                                    </a>--}}
 
-                                </div>
-                            </div>
+{{--                                </div>--}}
+{{--                            </div>--}}
                         </div>
                         @endauth
                     </div>

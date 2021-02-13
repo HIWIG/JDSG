@@ -96,7 +96,7 @@
                 </div>
             </div>
         </div>
-        <a href="{{route('addproduct')}}"> <button type="button" class="btn btn-primary">Primary</button></a>
+
     </div>
 </section>
 <section id="lastAdvertisements" class="bg-light section-padding">
@@ -136,8 +136,10 @@
                                 </li>
                             </ul>
                             <div class="listing-bottom clearfix pt-3 pb-2 border-top">
-                                <a href="#" class="float-left w-50"><span class="fas fa-map-marker-alt font-menu-color pr-1"></span> Katowice</a>
-                                <a href="#" class="float-right w-50 text-right">Zobacz więcej</a>
+                                <a href="#" class="float-left w-50"><span class="fas fa-map-marker-alt font-menu-color pr-1"></span> {{$advert->city}}</a>
+                                <form action="{{url('/advertisement')}}" type="get">
+                                    <button type="submit" class="btn btn-primary border-radius-20" class="fas fa-pen-square mr-1" name="x" value="{{$advert->id}}">  Więcej  </button>
+                                </form>
                             </div>
                         </div>
                     </div>

@@ -84,7 +84,7 @@
                                 <h5 class="pt-1 pb-2 advertTitle"><a href="#">{{$advert->title}}
 
                                         </a></h5>
-                                <p> {{$advert->description}}</p>
+                                <p> {{mb_strimwidth($advert->description,0,30,"...")}}</p>
                                 <ul class="list-inline">
                                     <li class="list-inline-item p-1">
                                         <span class="far fa-calendar-alt pr-1 font-menu-color"></span>
@@ -100,12 +100,10 @@
                                     </li>
                                 </ul>
                                 <div class="listing-bottom clearfix pt-3 pb-2 border-top">
-                                    <a href="#" class="float-left w-50"><span class="fas fa-map-marker-alt font-menu-color pr-1"></span> Katowice</a>
+                                    <a href="#" class="float-left w-50"><span class="fas fa-map-marker-alt font-menu-color pr-1"></span> {{$advert->city}}</a>
 
                                     <form action="{{url('/advertisement')}}" type="get">
-{{--                                        <a href="{{url('/advertisement')}}" class="float-right w-50 text-right" name="x">--}}
-                                            <button type="submit" class="btn btn-primary" name="x" value="{{$advert->id}}">    </button>
-{{--                                        </a>--}}
+                                        <button type="submit" class="btn btn-primary border-radius-20" class="fas fa-pen-square mr-1" name="x" value="{{$advert->id}}">  Więcej  </button>
                                     </form>
                                 </div>
                             </div>
@@ -158,7 +156,9 @@
                                     </ul>
                                     <div class="listing-bottom clearfix pt-3 pb-2 border-top">
                                         <a href="#" class="float-left w-50"><span class="fas fa-map-marker-alt font-menu-color pr-1"></span> Katowice</a>
-                                        <a href="#" class="float-right w-50 text-right">Zobacz więcej</a>
+                                        <form action="{{url('/advertisement')}}" type="get">
+                                            <button type="submit" class="btn btn-primary border-radius-20" class="fas fa-pen-square mr-1" name="x" value="{{$advert->id}}">  Więcej  </button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
