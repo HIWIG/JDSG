@@ -122,7 +122,7 @@
         <div class="w-100 mobile-menu">
             <div class=" pt-1">
                 <div class="navbar-brand">
-                    <img src="img/logojdsg.svg" width="110" height="50" class="d-inline-block align-top" alt="Our Logo">
+                   <a href="{{route('index')}}"> <img src="img/logojdsg.svg" width="110" height="50" class="d-inline-block align-top" alt="Our Logo"></a>
                 </div>
 
                 <ul class="d-inline-block  float-right mobile-menu-ul">
@@ -131,7 +131,7 @@
                             <div class="text-center icon-container">
                                 <span class="fas fa-comments-dollar"></span>
                             </div>
-                            <p class="icon-title">Moje ogłoszenia</p>
+                            <a href="{{route('account')}}"> <p class="icon-title">Moje ogłoszenia</p></a>
                         </li>
                     @endauth
                     <li class="list-inline-item pl-1 pr-1">
@@ -140,6 +140,7 @@
                         </div>
                         <p class="icon-title">Menu</p>
                     </li>
+                </ul>
                 </ul>
             </div>
         </div>

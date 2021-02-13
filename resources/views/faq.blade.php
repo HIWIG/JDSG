@@ -19,7 +19,6 @@
             <div class="row justify-content-center">
                 <x-header-intro/>
                 <x-search-bar/>
-
             </div>
         </div>
     </div>
@@ -67,6 +66,7 @@
                         <div class="card-header" >
                             <h5 class="mb-0">
                                 <button class="btn btn-link black-link " data-toggle="collapse" data-target="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
+
                                     Czy będę otrzymywać powiadomienia o sprzedanych przedmiotach ?
                                 </button>
                             </h5>
@@ -83,13 +83,13 @@
                         <div class="card-header" >
                             <h5 class="mb-0">
                                 <button class="btn btn-link black-link " data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Zapytanie 4
+                                    Czy założenie konta jest darmowe ?
                                 </button>
                             </h5>
                         </div>
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                             <div class="card-body">
-                                Odpowiedz 4
+                                Tak, rejestracja na naszej stronie jest 100% darmowa.
                             </div>
 
                         </div>
@@ -101,18 +101,7 @@
         </div>
     </div>
 </section>
-<section id="newsletter" class="section-padding">
-    <div class="container">
-        <div>
-            <h2 class="w-100"><span class="fas fa-location-arrow mr-3 font-menu-color"></span>Bądź na bieżąco</h2>
-            <h6 class="ml-5">Otrzymuj powiadomienia o nowych najciekawszych powiadomieniach.</h6>
-            <form class="form-inline">
-                <input type="text" class="form-control mb-1 mr-3 p-4 w-60 myCircle" id="newsletterInput" placeholder="Podaj swój adres email">
-                <button class="btn btn-primary btn-lg w-35 myCircle f-16">Zapisz mnie</button>
-            </form>
-        </div>
-    </div>
-</section>
+
 
 
 <x-footer/>
