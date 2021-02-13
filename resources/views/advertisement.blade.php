@@ -70,8 +70,8 @@
                     </div>
                     <div class="pb-5">
 
-                        <p class="font-weight-bold ad-font-color">{{$adv->first()->cost}}</p>
-                        Opis
+                        <p class="font-weight-bold ad-font-color">{{$adv->first()->cost}} zł</p><br>
+                        <h4>Opis</h4>
                         <br>
                         {{$adv->first()->description}}
                     </div>
@@ -98,9 +98,11 @@
             <div class="col-lg-4 col-md-6 col-12 ">
                 <div class="seller-info shadow-sm p-5 mt-3  bg-white rounded">
                     <h4>Dane sprzedawcy</h4>
+                    <br>
 
                     <!--                    <div class="photo"></div>-->
                     <b>{{$adv->first()->user->name}} {{$adv->first()->user->surname}}</b>
+                    <br>
                     <br>
                     <i class="fas fa-phone"></i> {{$adv->first()->phone}}
                     <br>
@@ -108,13 +110,10 @@
                     <br>
                     <i class="fas fa-map-marker-alt"></i> {{$adv->first()->city}}
                     <br>
-
                     <a href="">Wszystkie produkty</a>
 
                 </div>
             </div>
-
-
 
             <div class="col-lg-12 col-md-6 col-12 ">
                 <div class="bottom-info p-5 shadow-sm mt-3 bg-white rounded">
@@ -123,53 +122,24 @@
                         @foreach($adve as $a)
                         <div class="col-lg-4 col-12 shadow-sm rounded p-3 row">
                             <div class="col-6">
-                                <a href="" class="link">
+{{--                                <a href="" class="link">--}}
                                     <img src="{{asset('/storage/img/products/'.$a->image)}}" class="other-photo" alt="">
-                                </a>
+{{--                                </a>--}}
                             </div>
                             <div class="col-6 pl-3">
-                                <a href="" class="link">
+{{--                                <a href="" class="link">--}}
 
                                     <p class="font-weight-bold">{{mb_strimwidth($a->title,0,20,"...")}}</p>
                                     <form action="{{url('/advertisement')}}" type="get">
                                         <button type="submit" class="btn btn-primary border-radius-20" class="fas fa-pen-square mr-1" name="x" value="{{$a->id}}">  Więcej  </button>
                                     </form>
 {{--                                    {{$a->cost}}--}}
-                                </a>
+{{--                                </a>--}}
 
                             </div>
                         </div>
                         @endforeach
-{{--                        <div class="col-lg-4 col-12 shadow-sm rounded p-3 row">--}}
-{{--                            <div class="col-6">--}}
-{{--                                <a href="" class="link">--}}
-{{--                                    <img src="img/1576204927_maxresdefault_9_story.jpg" class="other-photo" alt="">--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-6 pl-3">--}}
-{{--                                <a href="" class="link">--}}
 
-{{--                                    <p class="font-weight-bold">Title</p>--}}
-{{--                                    Price--}}
-{{--                                </a>--}}
-
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                        <div class="col-lg-4 col-12 shadow-sm rounded p-3 row">--}}
-{{--                            <div class="col-6">--}}
-{{--                                <a href="" class="link">--}}
-{{--                                    <img src="img/1576204927_maxresdefault_9_story.jpg" class="other-photo" alt="">--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-6 pl-3">--}}
-{{--                                <a href="" class="link">--}}
-
-{{--                                    <p class="font-weight-bold ">Title</p>--}}
-{{--                                    Price--}}
-{{--                                </a>--}}
-
-{{--                            </div>--}}
-{{--                        </div>--}}
                     </div>
                 </div>
             </div>
@@ -178,123 +148,6 @@
     </div>
 </div>
 
-{{--<footer>--}}
-{{--    <section class="footer-content">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row">--}}
-{{--                <div class="col-md-4 col-sm-6 col-12">--}}
-
-{{--                    <div class="footerLogo">--}}
-{{--                        <img src="img/logojdsg.svg" height="40%" width="40%">--}}
-{{--                    </div>--}}
-{{--                    <div class="footerDescription">--}}
-{{--                        Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.--}}
-{{--                    </div>--}}
-{{--                    <ul class="mt-3 footer-socials">--}}
-{{--                        <li>--}}
-{{--                            <a class="fab"><span class="fab fa-facebook-f p-2 rounded-icon"></span></a>--}}
-
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a class="fab" href="#" >--}}
-{{--                                <span class="fab fa-youtube p-2 rounded-icon"></span>--}}
-
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a class="fab" href="#">--}}
-{{--                                <span class="fab fa-twitter p-2 rounded-icon"></span>--}}
-
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a class="fab" href="#">--}}
-{{--                                <span class="fab fa-instagram p-2 rounded-icon"></span>--}}
-
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                    </ul>--}}
-{{--                </div>--}}
-{{--                <div class="col-md-4 col-12">--}}
-{{--                    <h2 class="block-title">Linki</h2>--}}
-{{--                    <ul class="links-menu ">--}}
-{{--                        <li>--}}
-{{--                            <a href="#">- Link 1</a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a href="#">- Link 2</a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a href="#">- Link 3</a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a href="#">- Link 4</a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a href="#">- Link 5</a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a href="#">- Link 6</a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a href="#">- Link 7</a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a href="#">- Link 8</a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a href="#">- Link 9</a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a href="#">- Link 10</a>--}}
-{{--                        </li>--}}
-{{--                    </ul>--}}
-{{--                </div>--}}
-{{--                <div class="col-md-4 col-sm-6 col-12">--}}
-{{--                    <div class="widget">--}}
-{{--                        <h2 class="block-title">--}}
-{{--                            Contact--}}
-{{--                        </h2>--}}
-{{--                        <ul class="footer-contact list-unstyled">--}}
-{{--                            <li>--}}
-{{--                                <strong>--}}
-{{--                                    <i class="fas fa-phone"></i>--}}
-{{--                                </strong>--}}
-{{--                                <span>+48 123 456 789--}}
-{{--                                <br>--}}
-{{--                                +48 987 654 321--}}
-{{--                                </span>--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <strong>--}}
-{{--                                    <i class="far fa-envelope"></i>--}}
-{{--                                </strong>--}}
-{{--                                <span>email@email.com--}}
-{{--                                <br>--}}
-{{--                                email2@email.com--}}
-{{--                                </span>--}}
-{{--                            </li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-
-{{--    </section>--}}
-{{--    <div id="footerCopyright">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row">--}}
-{{--                <div class="col-12">--}}
-{{--                    <div class="footer-info text-center">--}}
-{{--                        <p class="text-center">--}}
-{{--                            Designed by JDSG Team--}}
-{{--                        </p>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</footer>--}}
 
 <x-footer/>
 
