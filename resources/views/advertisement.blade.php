@@ -132,9 +132,7 @@
 
                                     <p class="font-weight-bold">{{mb_strimwidth($a->title,0,20,"...")}}</p>
                                     <form action="{{url('/advertisement')}}" type="get">
-                                        {{--                                        <a href="{{url('/advertisement')}}" class="float-right w-50 text-right" name="x">--}}
                                         <button type="submit" class="btn btn-primary border-radius-20" class="fas fa-pen-square mr-1" name="x" value="{{$a->id}}">  Więcej  </button>
-                                        {{--                                        </a>--}}
                                     </form>
 {{--                                    {{$a->cost}}--}}
                                 </a>

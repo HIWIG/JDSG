@@ -25,7 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="add columns to advert">
+    <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="add buttons in advertisement and category view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/advertisement.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/advertisement.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
@@ -232,7 +232,7 @@
       <workItem from="1612457424992" duration="1785000" />
       <workItem from="1612509687336" duration="108000" />
       <workItem from="1612509896292" duration="974000" />
-      <workItem from="1613214620912" duration="2734000" />
+      <workItem from="1613214620912" duration="3693000" />
     </task>
     <task id="LOCAL-00001" summary="Added first version of RegisterController">
       <created>1611268176118</created>
@@ -360,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613151150082</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add buttons in advertisement and category view">
+      <created>1613220668598</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1613220668598</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,6 +418,7 @@
     <MESSAGE value="add header to advertisement" />
     <MESSAGE value="fix header on advertisement" />
     <MESSAGE value="add columns to advert" />
-    <option name="LAST_COMMIT_MESSAGE" value="add columns to advert" />
+    <MESSAGE value="add buttons in advertisement and category view" />
+    <option name="LAST_COMMIT_MESSAGE" value="add buttons in advertisement and category view" />
   </component>
 </project>
