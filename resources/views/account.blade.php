@@ -40,8 +40,8 @@
                             </ul>
                         </div>
 
-                        <div>
-                            <h5>Twoje ogłoszenia:</h5>
+                        <div class="mt-5">
+                            <h5 class="mb-3">Twoje ogłoszenia:</h5>
                             <ul style="list-style-type:none">
                             @foreach($ads as $ad)
                                     <div class="vl col-12"></div>
@@ -92,7 +92,7 @@
                             <img width="150" src="img/userimg.png" class="img-fluid  border border-primary br-circle" style="border-radius:50%" alt="User image">
                         </div>
                         <div>
-                            <a href="#" class="btn btn-primary mt-2 mb-3 w-100 border-radius-20 box-shadow-black"><i class="fas fa-pen-square mr-1"></i>Dodaj Ogłoszenie</a>
+                            <a href="{{route('addproduct')}}" class="btn btn-primary mt-2 mb-3 w-100 border-radius-20 box-shadow-black"><i class="fas fa-pen-square mr-1"></i>Dodaj Ogłoszenie</a>
                         </div>
                         <div>
                             <form action="{{route('logout')}}" method="post">
