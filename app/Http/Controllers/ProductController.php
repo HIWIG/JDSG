@@ -29,7 +29,6 @@ class ProductController extends Controller
             ->take(6)
             ->get();
         return view('index', compact('ads'));
-
     }
 
     public function search(Request $request)

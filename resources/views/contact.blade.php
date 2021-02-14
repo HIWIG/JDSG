@@ -109,10 +109,7 @@
     </div>
 </section>
 <x-footer/>
-<script src="js/jquery.js" type="text/javascript"></script>
-<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-
-<script defer src="js/EventFunctions.js" type="text/javascript"></script>
+<script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
 </body>
 </html>
 

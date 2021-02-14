@@ -25,7 +25,7 @@ class CreatesAdvertsTable extends Migration
 
                 $table->string('image');
                 $table->string('title');
-                $table->string('description');
+                $table->text('description');
                 $table->decimal('cost', 9, 2);
                 $table->timestamps();
 

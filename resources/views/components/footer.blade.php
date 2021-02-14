@@ -11,14 +11,13 @@
                         Description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </div>
                     <ul class="mt-3 footer-socials">
-                        <li>
-                            <a class="fab"><span class="fab fa-facebook-f p-2 rounded-icon"></span></a>
+                        {{--<li>
+                            <a class="fab"><span class="fab fa-facebook-f "></span></a>
 
                         </li>
                         <li>
                             <a class="fab" href="#" >
                                 <span class="fab fa-youtube p-2 rounded-icon"></span>
-
                             </a>
                         </li>
                         <li>
@@ -32,7 +31,7 @@
                                 <span class="fab fa-instagram p-2 rounded-icon"></span>
 
                             </a>
-                        </li>
+                        </li>--}}
                     </ul>
                 </div>
                 <div class="col-md-4 col-12">
@@ -89,9 +88,9 @@
                                 <strong>
                                     <i class="far fa-envelope"></i>
                                 </strong>
-                                <span>email@email.com
+                                <span>biuro@jdsg.pl
                                 <br>
-                                email2@email.com
+                                pomocjdsg@jdsg.pl
                                 </span>
                             </li>
                         </ul>

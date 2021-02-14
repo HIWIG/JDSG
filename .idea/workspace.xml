@@ -26,11 +26,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb904798-9961-47f5-aa09-c73d05c0c45c" name="Default Changelist" comment="Added LoginController">
-      <change afterPath="$PROJECT_DIR$/database/factories/InsertCategoriesFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_29_134708_creates_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_29_134708_creates_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_114109_creates_adverts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_29_114109_creates_adverts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +234,7 @@
       <workItem from="1612509687336" duration="108000" />
       <workItem from="1612509896292" duration="974000" />
       <workItem from="1613214620912" duration="4723000" />
-      <workItem from="1613304980317" duration="2722000" />
+      <workItem from="1613304980317" duration="4358000" />
     </task>
     <task id="LOCAL-00001" summary="Added first version of RegisterController">
       <created>1611268176118</created>
