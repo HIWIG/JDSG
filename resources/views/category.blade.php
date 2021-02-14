@@ -81,9 +81,9 @@
                             </figure>
                             <div class="advertContentDesciption p-3">
 
-                                <h5 class="pt-1 pb-2 advertTitle"><a href="#">{{$advert->title}}
+                                <h5 class="pt-1 pb-2 advertTitle ad-font-color">{{$advert->title}}
 
-                                        </a></h5>
+                                        </h5>
                                 <p> {{mb_strimwidth($advert->description,0,30,"...")}}</p>
                                 <ul class="list-inline">
                                     <li class="list-inline-item p-1">
@@ -138,7 +138,7 @@
                             </div>
                             <div class="col-8">
                                 <div class="advertContentDesciption p-3">
-                                    <h5 class="pt-1 pb-2 advertTitle"><a href="#">{{$advert->title}}</a></h5>
+                                    <h5 class="pt-1 pb-2 advertTitle ad-font-color">{{$advert->title}}</h5>
                                     <p> {{$advert->description}}</p>
                                     <ul class="list-inline">
                                         <li class="list-inline-item p-1">
@@ -155,7 +155,7 @@
                                         </li>
                                     </ul>
                                     <div class="listing-bottom clearfix pt-3 pb-2 border-top">
-                                        <a href="#" class="float-left w-50"><span class="fas fa-map-marker-alt font-menu-color pr-1"></span> Katowice</a>
+                                        <a href="#" class="float-left w-50"><span class="fas fa-map-marker-alt font-menu-color pr-1"></span> {{$advert->city}}</a>
                                         <form action="{{url('/advertisement')}}" type="get">
                                             <button type="submit" class="btn btn-primary border-radius-20" class="fas fa-pen-square mr-1" name="x" value="{{$advert->id}}">  Więcej  </button>
                                         </form>

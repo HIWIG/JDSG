@@ -119,7 +119,7 @@
                             <img src="{{asset('/storage/img/products/'.$advert->image)}}" class="img-fluid img-h-our1" alt="A generic square placeholder image with rounded corners in a figure.">
                         </figure>
                         <div class="advertContentDesciption p-3">
-                            <h5 class="pt-1 pb-2 advertTitle"><a href="#">{{mb_strimwidth($advert->title,0,25,"...")}}</a></h5>
+                            <h5 class="pt-1 pb-2 advertTitle ad-font-color">{{mb_strimwidth($advert->title,0,25,"...")}}</h5>
                             <p> {{mb_strimwidth($advert->description,0,30,"...")}}</p>
                             <ul class="list-inline">
                                 <li class="list-inline-item p-1">
