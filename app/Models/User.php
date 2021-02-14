@@ -11,6 +11,18 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
+    public $fist_name;
+
+    public function setFirstName($firstName)
+    {
+        $this->first_name = $firstName;
+    }
+
+    public function getFirstName()
+    {
+        return $this->first_name;
+    }
+
     /**
      * The attributes that are mass assignable.
      *

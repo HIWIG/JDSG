@@ -26,7 +26,7 @@ class CreatesCategoriesTable extends Migration
 
     public function InsertInto()
     {
-        $CATEGORIES = ['Laptop','Monitory','Klawiatury','Słuchawki','Myszki','Telefony','Dyski','Podzespoły Komputerowe','Konsole','Układy Scalone'];
+        $CATEGORIES = ['Laptopy','Monitory','Klawiatury','Słuchawki','Myszki','Telefony','Dyski','Podzespoły Komputerowe','Konsole','Układy Scalone'];
 
         foreach ($CATEGORIES as $cat)
         {

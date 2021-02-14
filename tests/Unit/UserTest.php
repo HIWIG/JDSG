@@ -2,6 +2,7 @@
 
 namespace Tests\Unit;
 
+use App\Models\User;
 use PHPUnit\Framework\TestCase;
 
 class UserTest extends TestCase
@@ -11,8 +12,13 @@ class UserTest extends TestCase
      *
      * @return void
      */
-    public function test_example()
+    public function test_UserFirstName()
     {
-        $this->assertTrue(true);
+        $user = new User();
+
+        $user->setFirstName('Johnny');
+
+        $this->assertEquals($user->getFirstName(),'Johnny');
+
     }
 }
