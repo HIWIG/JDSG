@@ -9,6 +9,19 @@ class Advert extends Model
 {
     use HasFactory;
 
+    public $cost;
+
+    public function setCost($cost)
+    {
+        $this->cost = $cost;
+    }
+
+    public function getCost()
+    {
+        return $this->cost;
+    }
+
+
  protected $table='adverts';
 
  protected  $fillable=['title','description','cost','categoryId','userId','image','phone','city'];
